@@ -67,7 +67,7 @@ async function scrapeCatalog() {
         await new Promise(resolve => setTimeout(resolve, 1000));
         
         // After clicking, check for the expanded content
-        const expandedList = await div.$(':scope > ul[class*="ObjectBrowser__CatalogBrowserHeaderList-"]');
+        const expandedList = await div.$(':scope > ul[class*="ObjectBrowser__CatalogBrowser"]');
         
         if (expandedList) {
           console.error('Found expanded list');
@@ -101,7 +101,10 @@ async function scrapeCatalog() {
                     await processExpandableDiv(nextDiv); }
             }
           } else { console.error(`No list items found after clicking "${headerText}"`); }
-        } else { console.error(`No expanded list found after clicking "${headerText}"`); }
+        } else {
+            console.error(`No expanded list found after clicking "${headerText}"`);
+            console.error('Current subtree:', JSON.stringify(null,null, 2));
+        }
         
         await new Promise(resolve => setTimeout(resolve, 1000));
         pathStack.pop();
