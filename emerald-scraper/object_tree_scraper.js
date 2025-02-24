@@ -27,9 +27,10 @@ async function scrapeCatalog() {
   // Recursive function to explore the catalog depth-first
   async function exploreCatalog() {
     try {
+      
       const headList = await page.$('div[class*="ObjectBrowser__HeaderContainer-"] + div + div');
       // Get all expandable divs at the current level
-      const expandableDivs = await headList.$$(':scope > div > div:first-child');
+      const expandableDivs = await headList.$$(':scope > div > div:not([class^="ExLine"])');
       console.error(`Found ${expandableDivs.length} expandable divs at the top level`);
       
       async function processExpandableDiv(div) {

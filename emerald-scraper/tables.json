@@ -1,0 +1,16 @@
+{
+  "objectName": "Model[TransportCondition, OvenDried]",
+  "sections": {
+    "Organizational Information": {
+      "Object": "Model[TransportCondition, OvenDried]",
+      "Type": "Model[TransportCondition]",
+      "ID": "id:kEJ9mqRV4Ye3",
+      "Name": "OvenDried"
+    },
+    "Model Information": {
+      "TransportLightSensitive": "True",
+      "TransportTemperature": "32. degrees Celsius",
+      "TransportCondition": "OvenDried"
+    }
+  }
+}
