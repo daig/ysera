@@ -27,18 +27,21 @@ async function scrapeCatalog() {
   // Recursive function to explore the catalog depth-first
   async function exploreCatalog() {
     try {
-      const headList = await page.$('div[class*="ObjectBrowser__CatalogBrowserHeader-"] + div');
+      const headList = await page.$('div[class*="ObjectBrowser__HeaderContainer-"] + div + div');
       // Get all expandable divs at the current level
-      const expandableDivs = await headList.$$('div > div');
+      const expandableDivs = await headList.$$(':scope > div > div');
       console.error(`Found ${expandableDivs.length} expandable divs at the top level`);
       
       async function processExpandableDiv(div) {
         // get the header div
-        const headerDiv = await div.$('div[class*=["ListItemAccordion__ListItemAccordionExpandableDiv-"]');
+        const headerDiv = await div.$(':scope > div[class*="ListItemAccordion__ListItemAccordionExpandableDiv-"]');
         // Get the header text
-        const headerTextElement = await headerDiv.$('span[class*="ObjectBrowser__CatalogBrowserHeaderText-"]');
+        const headerTextElement = await headerDiv.$('span');
+
         if (!headerTextElement) {
           console.error(`No header text found for div ${pathStack.join(' > ')}`);
+          console.error(`Found header div: ${await page.evaluate(el => el.outerHTML, headerDiv)}`);
+          throw new Error('No header text found');
           return;
         }
         
@@ -51,7 +54,7 @@ async function scrapeCatalog() {
         console.error(`Current path: ${pathStack.join(' > ')}`);
         
         // Find and click the expander
-        const expanderImg = await headerDiv.$('img[class*="ListItemAccordion__ListItemAccordionExpander-"]');
+        const expanderImg = await headerDiv.$(':scope > img[class*="ListItemAccordion__ListItemAccordionExpander-"]');
         if (!expanderImg) {
           console.error(`No expander found for "${headerText}"`);
           pathStack.pop();
@@ -64,18 +67,18 @@ async function scrapeCatalog() {
         await new Promise(resolve => setTimeout(resolve, 1000));
         
         // After clicking, check for the expanded content
-        const expandedList = await div.$('ul[class*="ObjectBrowser__CatalogBrowserHeaderList-"]');
+        const expandedList = await div.$(':scope > ul[class*="ObjectBrowser__CatalogBrowserHeaderList-"]');
         
         if (expandedList) {
           console.error('Found expanded list');
 
-          const listItems = await expandedList.$$('div');
+          const listItems = await expandedList.$$(':scope > div');
           console.error(`Found ${listItems.length} list items`);
 
           if (listItems.length > 0) {
             for (const listItem of listItems) {
                 // Check if this level has leaf nodes (links)
-                const leafLink = await listItem.$('a');
+                const leafLink = await listItem.$(':scope > a');
                 if (leafLink) {
                     console.error(`Found leaf link: ${leafLink}`);
                     // Process the leaf links
@@ -93,11 +96,9 @@ async function scrapeCatalog() {
                     if (!current.items) current.items = [];
                     current.items.push({ name, url });
                 }
-                else { // Look for nested expandable divs within this list
-                    const nextDiv = await listItem.$('div');
-                    if (nextDiv) { await processExpandableDiv(nextDiv); }
-                    else { console.error(`Div is not a link or nested expandable div ${pathStack.join(' > ')}`); }
-                }
+                else {
+                    const nextDiv = await listItem.$(':scope > div');
+                    await processExpandableDiv(nextDiv); }
             }
           } else { console.error(`No list items found after clicking "${headerText}"`); }
         } else { console.error(`No expanded list found after clicking "${headerText}"`); }
