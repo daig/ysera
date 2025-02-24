@@ -1,0 +1,915 @@
+{
+    "schemes": [
+        "https"
+    ],
+    "swagger": "2.0",
+    "info": {
+        "description": "Emerald Cloud Lab® (ECL®) is the only remotely operated research facility that handles all aspects of daily lab work —\nmethod design, materials logistics, sample preparation, instrument operation, data acquisition and analysis,\ntroubleshooting, waste disposal, and everything in between — without the user ever setting foot in the lab.\n\nWhile everything in ECL is available via Symbol Lab Language (SLL) APIs in Command Center, it is sometimes desirable\nto programmatically manipulate the data within ECL outside of Command Center.  This is best done via the Constellation\nAPI described below.\n\nThe first step to manipulating data via the Constellation API is generating an AuthToken via the Login API described\nbelow.  This token must be supplied in every subsequent request to constellation in the Authorization header with the\nform Authorization: Bearer \"authToken\"\n\nEvery piece of data in constellation is identified by a type and an id, both of which are strings.  A type consists of\nof a name and one or more parent types.  For example, Object.Data.Chromatography (which represents Chromatography data)\nhas name Chromatography with parent types Data and Object.  Each type defines a set of fields which hold values of\nof data for that object.  The fields are both set on the base type and are inherited from parent types.  To retrieve a list\nof types and their fields, consult the GetTypes API described below.  The id of an object is a simple string, which is typically\nof the form \"id:abcdef\"\n\nThere are three basic operations on constellation: upload - for creating or modifying data, download - for retrieving download,\nand search - for finding data.  These APIs are described in detail below.  There are additional operations like finding all changes\nto an object, also described below.\n",
+        "title": "Constellation API Documentation",
+        "contact": {
+            "name": "Emerald Cloud Lab",
+            "url": "/",
+            "email": "developer-support@emeraldcloudlab.com"
+        },
+        "version": "1.1.3"
+    },
+    "host": "constellation.emeraldcloudlab.com",
+    "paths": {
+        "/ise/signintoken": {
+            "post": {
+                "description": "Signin to the application.  This will return an auth token that should be included in the Authorization header",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Login"
+                ],
+                "summary": "Signin to the application",
+                "parameters": [
+                    {
+                        "description": "The login request",
+                        "name": "data",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/iseuserapp.loginPost"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/iseuserapp.loginResponse"
+                        }
+                    }
+                }
+            }
+        },
+        "/obj/download": {
+            "post": {
+                "security": [
+                    {
+                        "BearerAuth": []
+                    }
+                ],
+                "description": "Download information about one or more objects.",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Download"
+                ],
+                "summary": "Download information about one or more objects",
+                "parameters": [
+                    {
+                        "description": "The download request",
+                        "name": "data",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/objsapi.DownloadRequest"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/objsapi.DownloadResponse"
+                        }
+                    }
+                }
+            }
+        },
+        "/obj/objectlog": {
+            "post": {
+                "security": [
+                    {
+                        "BearerAuth": []
+                    }
+                ],
+                "description": "Returns the list of all changes that have been made over time to the supplied object or type",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Object Logs"
+                ],
+                "summary": "Show the list of changes to the supplied objects or types",
+                "parameters": [
+                    {
+                        "description": "The object log request",
+                        "name": "data",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/objsapi.ObjectLogRetrieveRequest"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/objsapi.ObjectLogRetrieveResponse"
+                        }
+                    }
+                }
+            }
+        },
+        "/obj/search": {
+            "post": {
+                "security": [
+                    {
+                        "BearerAuth": []
+                    }
+                ],
+                "description": "Search on objects within constellation.",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Search"
+                ],
+                "summary": "Search on objects in constellation",
+                "parameters": [
+                    {
+                        "description": "The search request",
+                        "name": "data",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/objsapi.SearchRequest"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/objsapi.SearchResponse"
+                        }
+                    }
+                }
+            }
+        },
+        "/obj/search-by-name": {
+            "post": {
+                "security": [
+                    {
+                        "BearerAuth": []
+                    }
+                ],
+                "description": "Search by object name on objects within constellation.  Note that is possible to simply pass the query on name to the normal search endpoint, but generally this will be faster and less resource intensive.",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Search"
+                ],
+                "summary": "Search by object name on objects in constellation",
+                "parameters": [
+                    {
+                        "description": "The search request",
+                        "name": "data",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/objsapi.SearchByNameObjectRequest"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/objsapi.SearchResponse"
+                        }
+                    }
+                }
+            }
+        },
+        "/obj/type/": {
+            "get": {
+                "security": [
+                    {
+                        "BearerAuth": []
+                    }
+                ],
+                "description": "Get a list of all supported types in constellation",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Types"
+                ],
+                "summary": "Get a list of all supported types in constellation",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/objsapi.GetTypeResponse"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/obj/type/{name}": {
+            "get": {
+                "security": [
+                    {
+                        "BearerAuth": []
+                    }
+                ],
+                "description": "Get information about a supplied type",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Types"
+                ],
+                "summary": "Get information about a type",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "The name of the type",
+                        "name": "name",
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/objsapi.GetTypeResponse"
+                        }
+                    }
+                }
+            }
+        },
+        "/obj/upload": {
+            "post": {
+                "security": [
+                    {
+                        "BearerAuth": []
+                    }
+                ],
+                "description": "Update or create one or more objects in constellation",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Upload"
+                ],
+                "summary": "Update or create one or more objects in constellation",
+                "parameters": [
+                    {
+                        "description": "The upload request",
+                        "name": "data",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/objsapi.UploadRequest"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/objsapi.UploadResponse"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "iseuserapp.loginPost": {
+            "type": "object",
+            "properties": {
+                "password": {
+                    "type": "string",
+                    "example": "myAwesomePassword"
+                },
+                "username": {
+                    "type": "string",
+                    "example": "scientist@science.com"
+                }
+            }
+        },
+        "iseuserapp.loginResponse": {
+            "type": "object",
+            "properties": {
+                "authToken": {
+                    "type": "string",
+                    "example": "eyJ.abc123"
+                },
+                "email": {
+                    "type": "string",
+                    "example": "scientist@science.com"
+                },
+                "id": {
+                    "type": "string",
+                    "example": "id:abc"
+                },
+                "type": {
+                    "type": "string",
+                    "example": "Object.User"
+                },
+                "username": {
+                    "type": "string",
+                    "example": "scientist"
+                }
+            }
+        },
+        "object.Reference": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "description": "The unique ID of the object. Guaranteed to be set.",
+                    "type": "string",
+                    "example": "id:\"abc\""
+                },
+                "name": {
+                    "description": "The name of the object itself. May be set, although may not. Depends\non the endpoint.",
+                    "type": "string",
+                    "example": "My Syringe"
+                },
+                "type": {
+                    "description": "The name of the type this object points to. Guaranteed to be set",
+                    "type": "string",
+                    "example": "Model.Container.Syringe"
+                }
+            }
+        },
+        "object.ReferenceUnresolved": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "description": "The ID of the object",
+                    "type": "string",
+                    "example": "id:\"abc\""
+                },
+                "name": {
+                    "description": "The name of the object - this will only be set on responses and cannot be set on upload",
+                    "type": "string"
+                },
+                "type": {
+                    "description": "The type of the object",
+                    "type": "string",
+                    "example": "Model.Container.Syringe"
+                }
+            }
+        },
+        "objsapi.DownloadObjectRequest": {
+            "type": "object",
+            "properties": {
+                "fields": {
+                    "description": "If no Fields or Traversals are specified, fetch all the fields in the object.\nFields should only include literal field names, to traverse links use the Traversals field",
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "example": [
+                        "Name",
+                        "Type"
+                    ]
+                },
+                "id": {
+                    "description": "DEPRECATED: use object, ID of the object to fetch",
+                    "type": "string",
+                    "example": "id:\"abc\""
+                },
+                "limit": {
+                    "description": "Limit the maximum number of values returned for any multiple fields.",
+                    "type": "integer",
+                    "example": 100
+                },
+                "object": {
+                    "$ref": "#/definitions/object.ReferenceUnresolved"
+                },
+                "traversals": {
+                    "description": "Request downloading of fields in objects which are linked to.\nEach FieldRequest indicates a series of traversals to make recursively.\n\nFor example:\nField1-\u003eField2[[2]]-\u003eField3\nThe above indicates that the value of Field3 should be fetched from all links at index 2 of\nField2 from a links in Field1 of the object to be downloaded.",
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/objsapi.FieldRequest"
+                    }
+                },
+                "type": {
+                    "description": "DEPRECATED: use object, Type of the object to fetch (Object.Protocol.HPLC for example).",
+                    "type": "string",
+                    "example": "Model.Container.Syringe"
+                }
+            }
+        },
+        "objsapi.DownloadObjectResponse": {
+            "type": "object",
+            "properties": {
+                "cas": {
+                    "description": "Represents the version of the object when it was downloaded",
+                    "type": "string",
+                    "example": "abc123"
+                },
+                "fields": {
+                    "description": "Key-Value pairs for all fields in the object specified in the DownloadObjectRequest",
+                    "type": "object",
+                    "additionalProperties": true
+                },
+                "id": {
+                    "description": "Deprecated, see ResolvedObject",
+                    "type": "string",
+                    "example": "id:\"abc\""
+                },
+                "limit": {
+                    "description": "The field length limit that was requested for this object (maximum length of multiple fields to be returned)",
+                    "type": "integer",
+                    "example": 100
+                },
+                "messages": {
+                    "description": "List of error messages encountered when trying to fulfill the DownloadObjectRequest",
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "example": [
+                        "Unable to find field \"foo\""
+                    ]
+                },
+                "object": {
+                    "description": "Object as originally passed to Download",
+                    "$ref": "#/definitions/object.ReferenceUnresolved"
+                },
+                "resolved_object": {
+                    "description": "Resolved object, guaranteed to have id + type if set. May also have name.",
+                    "$ref": "#/definitions/object.Reference"
+                },
+                "status_code": {
+                    "description": "An enumerated return value indicating success/failure of the DownloadObjectRequest",
+                    "type": "integer",
+                    "example": 0
+                },
+                "traversed_objects": {
+                    "description": "All the intermediate objects traversed when following a link traversal specification (Field-\u003eField2).\nThese will contain the link IDs for the intermediate objects for reconstructing the traversal results.",
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/objsapi.DownloadObjectResponse"
+                    }
+                },
+                "type": {
+                    "description": "Deprecated, see ResolvedObject",
+                    "type": "string",
+                    "example": "Model.Container.Syringe"
+                }
+            }
+        },
+        "objsapi.DownloadRequest": {
+            "type": "object",
+            "properties": {
+                "requests": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/objsapi.DownloadObjectRequest"
+                    }
+                }
+            }
+        },
+        "objsapi.DownloadResponse": {
+            "type": "object",
+            "properties": {
+                "responses": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/objsapi.DownloadObjectResponse"
+                    }
+                }
+            }
+        },
+        "objsapi.FieldRequest": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "description": "Name of the field",
+                    "type": "string",
+                    "example": "Model"
+                },
+                "next": {
+                    "description": "Indicates the subsequent requests to make after fetching the values for the current\nfield/index",
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/objsapi.FieldRequest"
+                    }
+                }
+            }
+        },
+        "objsapi.GetTypeResponse": {
+            "type": "object",
+            "properties": {
+                "description": {
+                    "type": "string",
+                    "example": "A model for a device/part designed to aspirate and dispense liquid by moving a plunger inside a sealed cylinder."
+                },
+                "fields": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "additionalProperties": true
+                    }
+                },
+                "fullName": {
+                    "type": "string",
+                    "example": "Model.Container.Syringe"
+                },
+                "id": {
+                    "type": "string",
+                    "example": "mKKOvR"
+                },
+                "name": {
+                    "type": "string",
+                    "example": "Model.Container.Syringe"
+                }
+            }
+        },
+        "objsapi.ObjectLog": {
+            "type": "object",
+            "properties": {
+                "data": {
+                    "type": "object",
+                    "additionalProperties": true
+                },
+                "fields": {
+                    "type": "object",
+                    "additionalProperties": true
+                },
+                "log_type": {
+                    "type": "string"
+                },
+                "object": {
+                    "$ref": "#/definitions/object.ReferenceUnresolved"
+                },
+                "revision_time": {
+                    "type": "string"
+                },
+                "revision_user": {
+                    "$ref": "#/definitions/object.ReferenceUnresolved"
+                },
+                "user": {
+                    "$ref": "#/definitions/object.ReferenceUnresolved"
+                }
+            }
+        },
+        "objsapi.ObjectLogRetrieveRequest": {
+            "type": "object",
+            "properties": {
+                "fields": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "example": [
+                        "Name",
+                        "Type"
+                    ]
+                },
+                "includeFieldValues": {
+                    "type": "boolean",
+                    "example": true
+                },
+                "limit": {
+                    "type": "integer",
+                    "example": 100
+                },
+                "object": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/object.ReferenceUnresolved"
+                    }
+                },
+                "subTypes": {
+                    "type": "boolean",
+                    "example": true
+                },
+                "types": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "example": [
+                        "Model.Container",
+                        "Object.Container"
+                    ]
+                },
+                "userObj": {
+                    "$ref": "#/definitions/object.ReferenceUnresolved"
+                }
+            }
+        },
+        "objsapi.ObjectLogRetrieveResponse": {
+            "type": "object",
+            "properties": {
+                "objectLogs": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/objsapi.ObjectLog"
+                    }
+                }
+            }
+        },
+        "objsapi.PutFields": {
+            "type": "object",
+            "properties": {
+                "fields": {
+                    "description": "JSON representation of the fields to be uploaded",
+                    "type": "object",
+                    "additionalProperties": true
+                },
+                "references": {
+                    "description": "A list of all the objects that are being modified in this upload.  This must be set when modifying existing objects",
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/object.ReferenceUnresolved"
+                    }
+                }
+            }
+        },
+        "objsapi.QueryInfo": {
+            "type": "object",
+            "properties": {
+                "query": {
+                    "type": "string",
+                    "example": "Name==\"Foo\""
+                },
+                "types": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "example": [
+                        "Model.Container",
+                        "Object.Container"
+                    ]
+                }
+            }
+        },
+        "objsapi.SearchByNameObjectRequest": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "example": "My Syringe"
+                },
+                "softLimit": {
+                    "description": "a soft limit of -1 returns all values",
+                    "type": "integer",
+                    "example": 100
+                },
+                "subTypes": {
+                    "type": "boolean",
+                    "example": true
+                },
+                "types": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "example": [
+                        "Model.Container",
+                        "Object.Container"
+                    ]
+                }
+            }
+        },
+        "objsapi.SearchObjectRequest": {
+            "type": "object",
+            "properties": {
+                "clauses": {
+                    "description": "Only clauses _or_ type + query may be set.",
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/objsapi.QueryInfo"
+                    }
+                },
+                "ignore_time": {
+                    "description": "If set, all temporal links along the search paths are treated as normal links and so only the latest values will\nbe queried.",
+                    "type": "boolean"
+                },
+                "ordering": {
+                    "description": "What ordering to use for search results. Default is ReverseNewestFirst.\nAvailable orderings are OldestFirst, NewestFirst, and ReverseNewestFirst",
+                    "type": "string",
+                    "example": "NewestFirst"
+                },
+                "softLimit": {
+                    "description": "A limit on the number of results which may be exceeded, but once exceeded\nwill cause processing to exit early. May not return stable results,\njust will return at least limit if there are more than limit results.\nAllows for some search optimizations",
+                    "type": "integer",
+                    "example": 100
+                },
+                "subTypes": {
+                    "description": "Whether or not to include subtypes",
+                    "type": "boolean",
+                    "example": true
+                }
+            }
+        },
+        "objsapi.SearchRequest": {
+            "type": "object",
+            "properties": {
+                "queries": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/objsapi.SearchObjectRequest"
+                    }
+                }
+            }
+        },
+        "objsapi.SearchResponse": {
+            "type": "object",
+            "properties": {
+                "results": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/objsapi.SearchResultObject"
+                    }
+                }
+            }
+        },
+        "objsapi.SearchResultObject": {
+            "type": "object",
+            "properties": {
+                "references": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/object.Reference"
+                    }
+                }
+            }
+        },
+        "objsapi.UploadObjectRequest": {
+            "type": "object",
+            "properties": {
+                "fields": {
+                    "description": "Key/Value pairs containing the data to upload to the object",
+                    "$ref": "#/definitions/objsapi.PutFields"
+                },
+                "id": {
+                    "description": "DEPRECATED - Use object field instead: The ID of a the object to modify. Should not be specified if this is a creation",
+                    "type": "string",
+                    "example": "id:\"abc\""
+                },
+                "object": {
+                    "description": "The object being modified",
+                    "$ref": "#/definitions/object.ReferenceUnresolved"
+                },
+                "type": {
+                    "description": "DEPRECATED - Use object field instead: Type of the object to create (if ID is specified this will be ignored).",
+                    "type": "string",
+                    "example": "Model.Container.Syringe"
+                }
+            }
+        },
+        "objsapi.UploadObjectResponse": {
+            "type": "object",
+            "properties": {
+                "cas": {
+                    "type": "string"
+                },
+                "client_id": {
+                    "description": "Deprecated, see Object",
+                    "type": "string"
+                },
+                "id": {
+                    "description": "Deprecated, see Object",
+                    "type": "string"
+                },
+                "new_object": {
+                    "type": "boolean"
+                },
+                "object": {
+                    "description": "Object exactly as uploaded in the UploadRequest",
+                    "$ref": "#/definitions/object.ReferenceUnresolved"
+                },
+                "resolved_object": {
+                    "description": "Resolved object which will contain Type + ID. Unset if the object\nreference couldn't be resolved for any reason.",
+                    "$ref": "#/definitions/object.Reference"
+                },
+                "type": {
+                    "description": "Deprecated, see Object",
+                    "type": "string"
+                }
+            }
+        },
+        "objsapi.UploadRequest": {
+            "type": "object",
+            "properties": {
+                "requests": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/objsapi.UploadObjectRequest"
+                    }
+                }
+            }
+        },
+        "objsapi.UploadResponse": {
+            "type": "object",
+            "properties": {
+                "client_id_objects": {
+                    "description": "List of all object.ReferenceUnresolved which had ClientIDs in this request\nthat includes in the ReferenceUnresolved the new Objectstore Object id.",
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/object.ReferenceUnresolved"
+                    }
+                },
+                "message": {
+                    "description": "If there was an error completing the upload, further information will be provided in the Message",
+                    "type": "string"
+                },
+                "modified_references": {
+                    "description": "List of object IDs modified during this upload",
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/object.Reference"
+                    }
+                },
+                "new_objects": {
+                    "description": "List of all new objects created (including previously empty objects which have been uploaded to)",
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/object.Reference"
+                    }
+                },
+                "responses": {
+                    "description": "List of responses with for the objects which were updated. This will be empty if there was an error",
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/objsapi.UploadObjectResponse"
+                    }
+                },
+                "status_code": {
+                    "description": "Will be UploadStatusOK for a successful request or one of the additional status codes for other\nspecific failure scenarios",
+                    "type": "integer"
+                }
+            }
+        }
+    },
+    "securityDefinitions": {
+        "BearerAuth": {
+            "type": "apiKey",
+            "name": "Authorization",
+            "in": "header"
+        }
+    },
+    "tags": [
+        {
+            "description": "Generating an auth token.  This must be called before any of the other APIs",
+            "name": "Login"
+        },
+        {
+            "description": "Get information about types available within constellation",
+            "name": "Types"
+        },
+        {
+            "description": "Creating or modifying data within constellation",
+            "name": "Upload"
+        },
+        {
+            "description": "Retrieving data from constellation",
+            "name": "Download"
+        },
+        {
+            "description": "Finding data in constellation",
+            "name": "Search"
+        },
+        {
+            "description": "Finding changes on objects in constellation",
+            "name": "Object Logs"
+        }
+    ]
+}
