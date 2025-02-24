@@ -16,7 +16,7 @@ async function scrapeCatalog() {
   
   // Wait for initial page load
   console.error('Waiting for initial page load...');
-  await new Promise(resolve => setTimeout(resolve, 2000));
+  await new Promise(resolve => setTimeout(resolve, 1500));
   
   // Result object to store the scraped data
   const result = {};
@@ -29,7 +29,7 @@ async function scrapeCatalog() {
     try {
       const headList = await page.$('div[class*="ObjectBrowser__HeaderContainer-"] + div + div');
       // Get all expandable divs at the current level
-      const expandableDivs = await headList.$$(':scope > div > div');
+      const expandableDivs = await headList.$$(':scope > div > div:first-child');
       console.error(`Found ${expandableDivs.length} expandable divs at the top level`);
       
       async function processExpandableDiv(div) {
@@ -64,7 +64,7 @@ async function scrapeCatalog() {
         // Click to expand
         console.error(`Clicking expander for "${headerText}"`);
         await expanderImg.click();
-        await new Promise(resolve => setTimeout(resolve, 1000));
+        await new Promise(resolve => setTimeout(resolve, 750));
         
         // After clicking, check for the expanded content
         const expandedList = await div.$(':scope > ul[class*="ObjectBrowser__CatalogBrowser"]');
@@ -106,7 +106,6 @@ async function scrapeCatalog() {
             console.error('Current subtree:', JSON.stringify(null,null, 2));
         }
         
-        await new Promise(resolve => setTimeout(resolve, 1000));
         pathStack.pop();
       }
 
