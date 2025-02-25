@@ -8,6 +8,7 @@ type Field = { name: string; description: string; }
 type FieldValue = { kind: 'link'; link: string; }
                 | { kind: 'scalar'; value: string; }
                 | { kind: 'subtable'; subtable: DataTable; }
+                | { kind: 'list'; values: string[]; }
 type Record = { field: Field; value: FieldValue; }
 type PlotImage = { src: string; }
 type SectionHeader = { name: string; }
@@ -18,11 +19,14 @@ type DataTable = {
   rows: FieldValue[][]; 
 }
 
+type ListValue = { values: string[]; }
+
 type TD = { kind: 'field', field: Field }
         | { kind: 'section', section: SectionHeader }
         | { kind: 'plot', plot: PlotImage }
         | { kind: 'value', value: FieldValue}
         | { kind: 'subtable', subtable: DataTable }
+        | { kind: 'list', values: ListValue }
 
 type Result = {
   objectName: string;
@@ -61,7 +65,41 @@ async function parseSectionHeaderTD(page: Page, rowDatum: ElementHandle): Promis
   return { name: name };
 }
 
+async function parseListValueDIV(page: Page, rowDatum: ElementHandle): Promise<FieldValue> {
+  // If the element itself is the div with the class, use it directly
+  const isListDiv = await page.evaluate((el: Element) => 
+    el.className.includes('PublishedObject__PublishedObjectMultipleFieldValue'), rowDatum);
+  
+  let listDiv;
+  if (isListDiv) {
+    listDiv = rowDatum;
+  } else {
+    // Otherwise look for a nested div
+    listDiv = await rowDatum.$('div[class^="PublishedObject__PublishedObjectMultipleFieldValue"]');
+  }
+  
+  if (!listDiv) throw new Error('List div not found');
+  
+  const valueTDs = await listDiv.$$('td[class^="PublishedObject__PublishedObjectTableFieldValueData"]');
+  const values: string[] = [];
+  
+  for (const td of valueTDs) {
+    const value = await page.evaluate((el: Element) => el.textContent!.trim(), td);
+    values.push(value);
+  }
+  
+  console.log(`List values: ${values.join(', ')}`);
+  return { kind: 'list', values };
+}
+
 async function parseValueTD(page: Page, rowDatum: ElementHandle): Promise<FieldValue> {
+  // First check if this is a list value
+  const listDiv = await rowDatum.$('div[class^="PublishedObject__PublishedObjectMultipleFieldValue"]');
+  if (listDiv) {
+    return parseListValueDIV(page, rowDatum);
+  }
+
+  // Otherwise handle as before
   const a = await rowDatum.$('a');
   if (a) {
     const link = await page.evaluate((el: HTMLAnchorElement) => el.href, a);
@@ -128,10 +166,15 @@ async function parseTD(page: Page, rowDatum: ElementHandle): Promise<TD> {
       return { kind: 'value', value: await parseValueTD(page, rowDatum) };
     case '': //subtable
       return { kind: 'subtable', subtable: await parseSubtableTD(page, rowDatum) };
+    case 'PublishedObject__PublishedObjectMultipleFieldValue':
+      const fieldValue = await parseListValueDIV(page, rowDatum);
+      if (fieldValue.kind === 'list') {
+        return { kind: 'list', values: { values: fieldValue.values } };
+      } else {
+        throw new Error('Expected list value from parseListValueDIV');
+      }
     default: 
       throw new Error(`Unknown class name: ${className}`);
-
-     
   }
 }
 
@@ -142,7 +185,7 @@ async function processRows(page: Page, result: any, rows: ElementHandle[]): Prom
 
     for (let i = 0; i < rows.length; i++) {
       const row = rows[i];
-      const rowData = await row.$$(':scope > td');
+      const rowData = await row.$$(':scope > td, :scope > div[class^="PublishedObject__PublishedObjectMultipleFieldValue"]');
       let fieldBuffer: Field | null = null;
 
       for (let j = 0; j < rowData.length; j++) {
@@ -159,6 +202,21 @@ async function processRows(page: Page, result: any, rows: ElementHandle[]): Prom
               fieldBuffer = null;
             } else { 
               throw new Error('No field found for value'); 
+            }
+            break;
+          case 'list':
+            if (fieldBuffer) {
+              console.log(`List for field: ${fieldBuffer.name}`);
+              currentRecords.push({ 
+                field: fieldBuffer, 
+                value: { 
+                  kind: 'list', 
+                  values: td.values.values 
+                } 
+              });
+              fieldBuffer = null;
+            } else {
+              throw new Error('No field found for list');
             }
             break;
           case 'subtable':
