@@ -1,50 +1,147 @@
 const puppeteer = require('puppeteer');
+import { parse } from 'path';
 import { Page, ElementHandle } from 'puppeteer';
 
 type Header = { text: string; }
-type Field = { text: string; description: string; }
-type Value = { value: String}
-type PlotImage = { image: string; }
-// type Subtable = { text: string; description: string; }
-type RowDatum = Header | Field | Value;
+enum ValueType { scalar, subtable }
+type Field = { name: string; description: string; }
+type FieldValue = { kind: 'link'; link: string; }
+                | { kind: 'scalar'; value: string; }
+                | { kind: 'subtable'; subtable: FieldValue[][]; }
+type PlotImage = { src: string; }
+type SectionHeader = { name: string; }
 
-async function parseHeader(page: Page, rowDatum: ElementHandle): Promise<Header> {
+type TD = { kind: 'field', field: Field }
+        | { kind: 'section', section: SectionHeader }
+        | { kind: 'plot', plot: PlotImage }
+        | { kind: 'value', value: FieldValue}
+
+async function getClassName(page: Page, rowDatum: ElementHandle): Promise<string> {
+  return await page.evaluate((el: Element) => el.className.split('-')[0], rowDatum);
+}
+
+async function parseHeaderTD(page: Page, rowDatum: ElementHandle): Promise<Header> {
     const text = await page.evaluate((el: Element) => el.textContent!.trim(), rowDatum);
     console.log(`Header: ${text}`);
     return { text: text };
 }
 
-async function parsePlotImage(page: Page, rowDatum: ElementHandle): Promise<PlotImage> {
+
+async function parsePlotImageTD(page: Page, rowDatum: ElementHandle): Promise<PlotImage> {
     // get the nested img element
     const img = await rowDatum.$('img');
     if (!img) throw new Error('Image not found');
     const src = await page.evaluate((el: HTMLImageElement) => el.src, img);
     console.log(`Plot Image: ${src}`);
-    return { image: src };
+    return { src: src };
 }
 
-async function processRows(page: Page, rows: ElementHandle[]): Promise<void> {
-    if (rows.length === 0) { console.error('No rows found'); return; }
-    const row = rows[0];
-    const rowData = await row.$$(':scope > td');
-    //check if the row is a header
-    if (rowData.length === 1) { 
-      const rowDatum = rowData[0];
-      const className = await page.evaluate((el: Element) => el.className.split('-')[0], rowData[0]);
+async function parseFieldTD(page: Page, rowDatum: ElementHandle): Promise<Field> {
+  const name = await page.evaluate((el: Element) => el.textContent!.trim(), rowDatum);
+  const description = await page.evaluate((el: Element) => el.getAttribute('title') || '', rowDatum);
+  return { name: name, description: description };
+}
 
-      switch (className) {
-        case 'PublishedObject__PublishedObjectTableCategoryHeaderData':
-          await parseHeader(page, rowDatum);
-          break;
-        case "PublishedObject__PublishedObjectTablePlotImageData":
-          await parsePlotImage(page, rowDatum);
-          break;
-        default: 
-          console.log(`Row is not a header: ${className}`);
-          break;
+async function parseSectionHeaderTD(page: Page, rowDatum: ElementHandle): Promise<SectionHeader> {
+  const name = await page.evaluate((el: Element) => el.textContent!.trim(), rowDatum);
+  return { name: name };
+}
+
+async function parseValueTD(page: Page, rowDatum: ElementHandle): Promise<FieldValue> {
+  const a = await rowDatum.$('a');
+  if (a) {
+    const link = await page.evaluate((el: HTMLAnchorElement) => el.href, a);
+    console.log(`Link: ${link}`);
+    return { kind: 'link', link: link };
+  }
+  const value = await page.evaluate((el: Element) => el.textContent!.trim(), rowDatum);
+  console.log(`Value: ${value}`);
+  return { kind: 'scalar', value };
+}
+
+async function parseSubtableHeader(page: Page, subtable: ElementHandle): Promise<string[]> {
+  const headTR = await subtable.$(':scope > thead[class^="PublishedObject__PublishedObjectSubfieldTableHeader"] > tr[class^="PublishedObject__PublishedObjectSubfieldTableRow"]]');
+  if (!headTR) throw new Error('Subtable header not found');
+  const headers = await headTR.$$(':scoep > th[class^="PublishedObject__PublishedObjectSubfieldTableHeaderData"]');
+  const headerTexts: string[] = [];
+  for (const header of headers) {
+    const headerText = await page.evaluate((el: Element) => el.textContent!.trim(), header);
+    console.log(`Header: ${headerText}`);
+    headerTexts.push(headerText);
+  }
+  return headerTexts;
+}
+
+async function parseSubtableBody(page: Page, subtable: ElementHandle): Promise<FieldValue[][]> {
+  const rowsTR = await subtable.$$(':scope > tbody > tr[class^="PublishedObject__PublishedObjectSubfieldTableRow"]');
+  if (!rowsTR) throw new Error('Subtable body not found');
+  const rowData: FieldValue[][] = [];
+  rowsTR.forEach(async (row,i) => {
+    const cells = await row.$$(':scope > td[class^="PublishedObject__PublishedObjectSubfieldTableData"]');
+    if (!cells) throw new Error('Subtable row not found');
+    rowData.push([]);
+    rowData[i] = [];
+    for (const cell of cells) {
+      const cv = await parseValueTD(page, cell);
+      if (cv.kind === 'scalar') { rowData[i].push(cv); }
+      else { throw new Error('Subtable cell is not a scalar'); }
+    }
+  });
+  return rowData;
+}
+async function parseSubtableTD(page: Page, rowDatum: ElementHandle): Promise<FieldValue[][]> {
+  const subtable = await rowDatum.$(':scope > div[class^="PublishedObject__PublishedObjectSubfieldTableContainer"] > table[class^="PublishedObject__PublishedObjectSubfieldTableElement"]');
+  if (!subtable) throw new Error('Subtable not found');
+  console.log(`Subtable: ${subtable}`);
+  const headerTexts = await parseSubtableHeader(page, subtable);
+  const subtableBody = await parseSubtableBody(page, subtable);
+}
+
+async function parseTD(page: Page, rowDatum: ElementHandle): Promise<TD> {
+  const className = await getClassName(page, rowDatum);
+  switch (className) {
+    case 'PublishedObject__PublishedObjectTablePlotImageData':
+      return { kind: 'plot', plot: await parsePlotImageTD(page, rowDatum) };
+    case 'PublishedObject__PublishedObjectTableFieldNameData':
+      return { kind: 'field', field: await parseFieldTD(page, rowDatum) };
+    case 'PublishedObject__PublishedObjectTableCategoryHeaderData':
+      return { kind: 'section', section: await parseSectionHeaderTD(page, rowDatum) };
+    case 'PublishedObject__PublishedObjectTableFieldValueData':
+      return { kind: 'value', value: await parseValueTD(page, rowDatum) };
+    case '': //subtable
+      return { kind: 'subtable', subtable: await parseSubtableTD(page, rowDatum) };
+    default: 
+      throw new Error(`Unknown class name: ${className}`);
+
+     
+  }
+}
+
+async function processRows(page: Page, result: any, rows: ElementHandle[]): Promise<void> {
+    if (rows.length === 0) { console.error('No rows found'); return; }
+    for (var i = 0; i < rows.length; i++) {
+      const row = rows[i];
+      const rowData = await row.$$(':scope > td');
+      var rowBuffer: TD[] = [];
+      for (var j = 0; j < rowData.length; j++) {
+
+        var td = await parseTD(page, rowData[j]);
+
+        switch (td.kind) {
+          case 'field':
+            console.log(`Field: ${td.field.name}`);
+            rowBuffer.push(td);
+            continue;
+          case 'section':
+            console.log(`Section: ${td.section.name}`);
+            break;
+          case 'plot':
+            console.log(`Plot: ${td.plot.src}`);
+            result.img = td.plot;
+            break;
+        }
       }
     }
-      return;
 }
 
 async function scrapeTableData(url: string): Promise<void> {
@@ -67,6 +164,7 @@ async function scrapeTableData(url: string): Promise<void> {
   
   const result = {
     objectName: '',
+    img: null,
     sections: {}
   };
 
@@ -79,12 +177,14 @@ async function scrapeTableData(url: string): Promise<void> {
     const mainNameRow = await mainTable.$(':scope > thead > tr > td[colspan="2"]');
     // print the name
     const mainName = await page.evaluate((el: Element) => el.textContent?.trim() || '', mainNameRow);
+    result.objectName = mainName;
+    console.log(`Object Name: ${mainName}`);
 
     const mainBody = await mainTable.$(':scope > tbody');
     if (!mainBody) { throw new Error('Table body not found'); }
 
     const rows = await mainBody.$$(':scope > tr');
-    await processRows(page, rows);
+    await processRows(page, result, rows);
 
   } catch (error) { console.error('Error during scraping:', error);
   } finally { await browser.close(); }
