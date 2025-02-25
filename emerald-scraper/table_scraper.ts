@@ -8,8 +8,10 @@ type Field = { name: string; description: string; }
 type FieldValue = { kind: 'link'; link: string; }
                 | { kind: 'scalar'; value: string; }
                 | { kind: 'subtable'; subtable: FieldValue[][]; }
+type Record = { field: Field; value: FieldValue; }
 type PlotImage = { src: string; }
 type SectionHeader = { name: string; }
+type Section = { name: string; records: Record[]; }
 
 type DataTable = { header: string[]; rows: FieldValue[][] }
 
@@ -18,6 +20,12 @@ type TD = { kind: 'field', field: Field }
         | { kind: 'plot', plot: PlotImage }
         | { kind: 'value', value: FieldValue}
         | { kind: 'subtable', subtable: DataTable }
+
+type Result = {
+  objectName: string;
+  img: PlotImage | null;
+  sections: Section[];
+}
 
 async function getClassName(page: Page, rowDatum: ElementHandle): Promise<string> {
   return await page.evaluate((el: Element) => el.className.split('-')[0], rowDatum);
@@ -89,7 +97,7 @@ async function parseSubtableBody(page: Page, subtable: ElementHandle): Promise<F
       const cv = await parseValueTD(page, cell);
       if (cv.kind === 'scalar') { rowValues.push(cv); }
       else { throw new Error('Subtable cell is not a scalar'); }
-    rowData.push(rowValues);
+    rowData.push(rowValues.slice());
     }
   }
   return rowData;
@@ -126,10 +134,12 @@ async function parseTD(page: Page, rowDatum: ElementHandle): Promise<TD> {
 
 async function processRows(page: Page, result: any, rows: ElementHandle[]): Promise<void> {
     if (rows.length === 0) { console.error('No rows found'); return; }
+    const records: Record[] = [];
+    var sectionName: string | null = null;
     for (var i = 0; i < rows.length; i++) {
       const row = rows[i];
       const rowData = await row.$$(':scope > td');
-      var rowBuffer: TD[] = [];
+      var fieldBuffer: Field | null = null;
       for (var j = 0; j < rowData.length; j++) {
 
         var td = await parseTD(page, rowData[j]);
@@ -137,11 +147,23 @@ async function processRows(page: Page, result: any, rows: ElementHandle[]): Prom
         switch (td.kind) {
           case 'field':
             console.log(`Field: ${td.field.name}`);
-            rowBuffer.push(td);
+            fieldBuffer = td.field;
+            continue;
+          case 'value':
+            if (fieldBuffer) {
+              records.push({ field: fieldBuffer, value: td.value });
+              fieldBuffer = null;
+            } else { throw new Error('No field found for value'); }
             continue;
           case 'section':
             console.log(`Section: ${td.section.name}`);
-            break;
+            if (sectionName) {
+              result.sections.push({ name: sectionName, records: records.slice() });
+              sectionName = td.section.name;
+            } else if (records.length == 0) {
+              sectionName = td.section.name;
+            } else { throw new Error('Records found without section name found'); }
+            continue;
           case 'plot':
             console.log(`Plot: ${td.plot.src}`);
             result.img = td.plot;
@@ -149,9 +171,11 @@ async function processRows(page: Page, result: any, rows: ElementHandle[]): Prom
         }
       }
     }
+  result.sections.push({ name: sectionName, records: records.slice() });
+  return result;
 }
 
-async function scrapeTableData(url: string): Promise<void> {
+async function scrapeTableData(url: string): Promise<Result> {
   // Launch a new browser instance (non-headless)
   const browser = await puppeteer.launch({ 
     headless: false,
@@ -169,10 +193,10 @@ async function scrapeTableData(url: string): Promise<void> {
   console.error('Waiting for page content to load...');
   await page.waitForSelector('table', { timeout: 10000 });
   
-  const result = {
+  const result: Result = {
     objectName: '',
     img: null,
-    sections: {}
+    sections: []
   };
 
   try {
@@ -195,6 +219,8 @@ async function scrapeTableData(url: string): Promise<void> {
 
   } catch (error) { console.error('Error during scraping:', error);
   } finally { await browser.close(); }
+  console.log(`Result: ${JSON.stringify(result, null, 2)}`);
+  return result;
 }
 
 
