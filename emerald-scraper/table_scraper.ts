@@ -7,13 +7,16 @@ enum ValueType { scalar, subtable }
 type Field = { name: string; description: string; }
 type FieldValue = { kind: 'link'; link: string; }
                 | { kind: 'scalar'; value: string; }
-                | { kind: 'subtable'; subtable: FieldValue[][]; }
+                | { kind: 'subtable'; subtable: DataTable; }
 type Record = { field: Field; value: FieldValue; }
 type PlotImage = { src: string; }
 type SectionHeader = { name: string; }
 type Section = { name: string; records: Record[]; }
 
-type DataTable = { header: string[]; rows: FieldValue[][] }
+type DataTable = { 
+  header: string[]; 
+  rows: FieldValue[][]; 
+}
 
 type TD = { kind: 'field', field: Field }
         | { kind: 'section', section: SectionHeader }
@@ -134,36 +137,57 @@ async function parseTD(page: Page, rowDatum: ElementHandle): Promise<TD> {
 
 async function processRows(page: Page, result: any, rows: ElementHandle[]): Promise<void> {
     if (rows.length === 0) { console.error('No rows found'); return; }
-    const records: Record[] = [];
-    var sectionName: string | null = null;
-    for (var i = 0; i < rows.length; i++) {
+    let currentRecords: Record[] = [];
+    let currentSection: string | null = null;
+
+    for (let i = 0; i < rows.length; i++) {
       const row = rows[i];
       const rowData = await row.$$(':scope > td');
-      var fieldBuffer: Field | null = null;
-      for (var j = 0; j < rowData.length; j++) {
+      let fieldBuffer: Field | null = null;
 
-        var td = await parseTD(page, rowData[j]);
+      for (let j = 0; j < rowData.length; j++) {
+        const td = await parseTD(page, rowData[j]);
 
         switch (td.kind) {
           case 'field':
             console.log(`Field: ${td.field.name}`);
             fieldBuffer = td.field;
-            continue;
+            break;
           case 'value':
             if (fieldBuffer) {
-              records.push({ field: fieldBuffer, value: td.value });
+              currentRecords.push({ field: fieldBuffer, value: td.value });
               fieldBuffer = null;
-            } else { throw new Error('No field found for value'); }
-            continue;
+            } else { 
+              throw new Error('No field found for value'); 
+            }
+            break;
+          case 'subtable':
+            if (fieldBuffer) {
+              console.log(`Subtable for field: ${fieldBuffer.name}`);
+              currentRecords.push({ 
+                field: fieldBuffer, 
+                value: { 
+                  kind: 'subtable', 
+                  subtable: td.subtable 
+                } 
+              });
+              fieldBuffer = null;
+            } else {
+              throw new Error('No field found for subtable');
+            }
+            break;
           case 'section':
             console.log(`Section: ${td.section.name}`);
-            if (sectionName) {
-              result.sections.push({ name: sectionName, records: records.slice() });
-              sectionName = td.section.name;
-            } else if (records.length == 0) {
-              sectionName = td.section.name;
-            } else { throw new Error('Records found without section name found'); }
-            continue;
+            // If we have a previous section, save its records
+            if (currentSection) {
+              result.sections.push({ 
+                name: currentSection, 
+                records: [...currentRecords] // Create a new array copy
+              });
+              currentRecords = []; // Clear records for new section
+            }
+            currentSection = td.section.name;
+            break;
           case 'plot':
             console.log(`Plot: ${td.plot.src}`);
             result.img = td.plot;
@@ -171,8 +195,14 @@ async function processRows(page: Page, result: any, rows: ElementHandle[]): Prom
         }
       }
     }
-  result.sections.push({ name: sectionName, records: records.slice() });
-  return result;
+
+    // Don't forget to add the last section
+    if (currentSection && currentRecords.length > 0) {
+      result.sections.push({ 
+        name: currentSection, 
+        records: [...currentRecords]
+      });
+    }
 }
 
 async function scrapeTableData(url: string): Promise<Result> {

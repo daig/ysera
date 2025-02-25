@@ -1,6 +1,6 @@
 Object Name: Model[Container, Vessel, 0.3 mL clear glass GC vial]
-Plot Image: https://emeraldsci-ecl-blobstore-stage.s3-accelerate.amazonaws.com/shard6/c42c2fd4412f1e736e7892c5e38a94ef.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4DCKSYI6O7H3GASA%2F20250225%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250225T014809Z&X-Amz-Expires=7200&X-Amz-SignedHeaders=host&X-Amz-Signature=a6de4e11aa56c0a246dce6fd52504cb6b535f2fbd608097519707f2ca6ab65d3
-Plot: https://emeraldsci-ecl-blobstore-stage.s3-accelerate.amazonaws.com/shard6/c42c2fd4412f1e736e7892c5e38a94ef.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4DCKSYI6O7H3GASA%2F20250225%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250225T014809Z&X-Amz-Expires=7200&X-Amz-SignedHeaders=host&X-Amz-Signature=a6de4e11aa56c0a246dce6fd52504cb6b535f2fbd608097519707f2ca6ab65d3
+Plot Image: https://emeraldsci-ecl-blobstore-stage.s3-accelerate.amazonaws.com/shard6/c42c2fd4412f1e736e7892c5e38a94ef.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4DCKSYI6O7H3GASA%2F20250225%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250225T015938Z&X-Amz-Expires=7200&X-Amz-SignedHeaders=host&X-Amz-Signature=6b4281a86b117152b4e28e509e567f874025d2ab9d6b309428ff546bca63f1c5
+Plot: https://emeraldsci-ecl-blobstore-stage.s3-accelerate.amazonaws.com/shard6/c42c2fd4412f1e736e7892c5e38a94ef.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4DCKSYI6O7H3GASA%2F20250225%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250225T015938Z&X-Amz-Expires=7200&X-Amz-SignedHeaders=host&X-Amz-Signature=6b4281a86b117152b4e28e509e567f874025d2ab9d6b309428ff546bca63f1c5
 Section: Organizational Information
 Field: Object
 Link: https://www.emeraldcloudlab.com/documentation/publish/object?id=id:dORYzZJDvjqw
@@ -51,6 +51,7 @@ Value: 0.01162 meters
 Value: 0.01162 meters
 Value: 0.03189 meters
 Subtable: {"header":["X Direction (Width)","Y Direction (Depth)","Z Direction (Height)"],"rows":[[{"kind":"scalar","value":"0.01162 meters"}],[{"kind":"scalar","value":"0.01162 meters"},{"kind":"scalar","value":"0.01162 meters"}],[{"kind":"scalar","value":"0.01162 meters"},{"kind":"scalar","value":"0.01162 meters"},{"kind":"scalar","value":"0.03189 meters"}]]}
+Subtable for field: Dimensions
 Field: InternalDiameter3D
 Header: Z Direction Offset (Height)
 Header: Internal Diameter
@@ -68,6 +69,7 @@ Cells: 2
 Value: 31.82 millimeters
 Value: 4.7 millimeters
 Subtable: {"header":["Z Direction Offset (Height)","Internal Diameter"],"rows":[[{"kind":"scalar","value":"1.85 millimeters"}],[{"kind":"scalar","value":"1.85 millimeters"},{"kind":"scalar","value":"1.14 millimeters"}],[{"kind":"scalar","value":"5.58 millimeters"}],[{"kind":"scalar","value":"5.58 millimeters"},{"kind":"scalar","value":"1.24 millimeters"}],[{"kind":"scalar","value":"12.17 millimeters"}],[{"kind":"scalar","value":"12.17 millimeters"},{"kind":"scalar","value":"4.7 millimeters"}],[{"kind":"scalar","value":"31.82 millimeters"}],[{"kind":"scalar","value":"31.82 millimeters"},{"kind":"scalar","value":"4.7 millimeters"}]]}
+Subtable for field: InternalDiameter3D
 Field: CrossSectionalShape
 Value: Circle
 Field: Footprint
@@ -86,6 +88,7 @@ Value: 0.00962 meters
 Value: 0.00962 meters
 Value: 0.0296 meters
 Subtable: {"header":["Name","Footprint","MaxWidth","MaxDepth","MaxHeight"],"rows":[[{"kind":"scalar","value":"A1"}],[{"kind":"scalar","value":"A1"},{"kind":"scalar","value":"Null"}],[{"kind":"scalar","value":"A1"},{"kind":"scalar","value":"Null"},{"kind":"scalar","value":"0.00962 meters"}],[{"kind":"scalar","value":"A1"},{"kind":"scalar","value":"Null"},{"kind":"scalar","value":"0.00962 meters"},{"kind":"scalar","value":"0.00962 meters"}],[{"kind":"scalar","value":"A1"},{"kind":"scalar","value":"Null"},{"kind":"scalar","value":"0.00962 meters"},{"kind":"scalar","value":"0.00962 meters"},{"kind":"scalar","value":"0.0296 meters"}]]}
+Subtable for field: Positions
 Field: AllowedPositions
 Value: A1
 Field: InternalDiameter
@@ -118,6 +121,7 @@ Value: 0.185039 inches
 Value: 0.354331 inches
 Value: Male
 Subtable: {"header":["Connector Name","Connector Type","Thread Type","Inner Diameter","Outer Diameter","Gender"],"rows":[[{"kind":"scalar","value":"Inlet/Outlet"}],[{"kind":"scalar","value":"Inlet/Outlet"},{"kind":"scalar","value":"Threaded"}],[{"kind":"scalar","value":"Inlet/Outlet"},{"kind":"scalar","value":"Threaded"},{"kind":"scalar","value":"GPI 9-425"}],[{"kind":"scalar","value":"Inlet/Outlet"},{"kind":"scalar","value":"Threaded"},{"kind":"scalar","value":"GPI 9-425"},{"kind":"scalar","value":"0.185039 inches"}],[{"kind":"scalar","value":"Inlet/Outlet"},{"kind":"scalar","value":"Threaded"},{"kind":"scalar","value":"GPI 9-425"},{"kind":"scalar","value":"0.185039 inches"},{"kind":"scalar","value":"0.354331 inches"}],[{"kind":"scalar","value":"Inlet/Outlet"},{"kind":"scalar","value":"Threaded"},{"kind":"scalar","value":"GPI 9-425"},{"kind":"scalar","value":"0.185039 inches"},{"kind":"scalar","value":"0.354331 inches"},{"kind":"scalar","value":"Male"}]]}
+Subtable for field: Connectors
 Section: Inventory
 Field: Products
 Section: Health & Safety
@@ -133,7 +137,7 @@ Value: Small
 Result: {
   "objectName": "Model[Container, Vessel, 0.3 mL clear glass GC vial]",
   "img": {
-    "src": "https://emeraldsci-ecl-blobstore-stage.s3-accelerate.amazonaws.com/shard6/c42c2fd4412f1e736e7892c5e38a94ef.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4DCKSYI6O7H3GASA%2F20250225%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250225T014809Z&X-Amz-Expires=7200&X-Amz-SignedHeaders=host&X-Amz-Signature=a6de4e11aa56c0a246dce6fd52504cb6b535f2fbd608097519707f2ca6ab65d3"
+    "src": "https://emeraldsci-ecl-blobstore-stage.s3-accelerate.amazonaws.com/shard6/c42c2fd4412f1e736e7892c5e38a94ef.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4DCKSYI6O7H3GASA%2F20250225%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250225T015938Z&X-Amz-Expires=7200&X-Amz-SignedHeaders=host&X-Amz-Signature=6b4281a86b117152b4e28e509e567f874025d2ab9d6b309428ff546bca63f1c5"
   },
   "sections": [
     {
@@ -184,46 +188,6 @@ Result: {
     {
       "name": "Container Specifications",
       "records": [
-        {
-          "field": {
-            "name": "Object",
-            "description": "Object of this Object."
-          },
-          "value": {
-            "kind": "link",
-            "link": "https://www.emeraldcloudlab.com/documentation/publish/object?id=id:dORYzZJDvjqw"
-          }
-        },
-        {
-          "field": {
-            "name": "Type",
-            "description": "Type of this Object."
-          },
-          "value": {
-            "kind": "link",
-            "link": "https://www.emeraldcloudlab.com/helpfiles/types/Model_Container_Vessel?toggles=open"
-          }
-        },
-        {
-          "field": {
-            "name": "ID",
-            "description": "ID of this Object."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "id:dORYzZJDvjqw"
-          }
-        },
-        {
-          "field": {
-            "name": "Name",
-            "description": "Name of this Object."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "0.3 mL clear glass GC vial"
-          }
-        },
         {
           "field": {
             "name": "ImageFile",
@@ -321,136 +285,6 @@ Result: {
       "records": [
         {
           "field": {
-            "name": "Object",
-            "description": "Object of this Object."
-          },
-          "value": {
-            "kind": "link",
-            "link": "https://www.emeraldcloudlab.com/documentation/publish/object?id=id:dORYzZJDvjqw"
-          }
-        },
-        {
-          "field": {
-            "name": "Type",
-            "description": "Type of this Object."
-          },
-          "value": {
-            "kind": "link",
-            "link": "https://www.emeraldcloudlab.com/helpfiles/types/Model_Container_Vessel?toggles=open"
-          }
-        },
-        {
-          "field": {
-            "name": "ID",
-            "description": "ID of this Object."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "id:dORYzZJDvjqw"
-          }
-        },
-        {
-          "field": {
-            "name": "Name",
-            "description": "Name of this Object."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "0.3 mL clear glass GC vial"
-          }
-        },
-        {
-          "field": {
-            "name": "ImageFile",
-            "description": "A photo of this model of container."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "Object[EmeraldCloudFile, id:D8KAEvGEprol]"
-          }
-        },
-        {
-          "field": {
-            "name": "ImageFileScale",
-            "description": "The scale relating pixels of ImageFile to real world distance."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "95. Pixels per centimeter"
-          }
-        },
-        {
-          "field": {
-            "name": "Opaque",
-            "description": "Indicates if the exterior of this container blocks the transmission of visible light."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "False"
-          }
-        },
-        {
-          "field": {
-            "name": "SelfStanding",
-            "description": "Indicates if this container is capable of staying upright when placed on a flat surface and does not require a rack."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "True"
-          }
-        },
-        {
-          "field": {
-            "name": "TransportStable",
-            "description": "Indicates if this container is capable of staying upright without assistance when being transported on an operator cart. Containers that are stable for transport can tolerate cart motion and accidental contact without falling, while those that are not must be resource picked into a rack."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "False"
-          }
-        },
-        {
-          "field": {
-            "name": "NeckType",
-            "description": "The GPI/SPI Neck Finish designation of the vessel used to determine the cap threading."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "9/425"
-          }
-        },
-        {
-          "field": {
-            "name": "InternalConicalDepth",
-            "description": "Height of the conical section of the vessel's contents holding cavity."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "9.89 millimeters"
-          }
-        },
-        {
-          "field": {
-            "name": "Skirted",
-            "description": "Indicates if this container has walls that extend below the vessel's well geometry to allow the vessel to stand upright on a flat surface without use of a rack."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "False"
-          }
-        },
-        {
-          "field": {
-            "name": "Stocked",
-            "description": "Indicates if the empty containers of this model are kept in stock for use on demand in experiments."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "True"
-          }
-        },
-        {
-          "field": {
             "name": "MinTemperature",
             "description": "Minimum temperature this type of container can be exposed to and maintain structural integrity."
           },
@@ -486,162 +320,131 @@ Result: {
       "records": [
         {
           "field": {
-            "name": "Object",
-            "description": "Object of this Object."
+            "name": "Dimensions",
+            "description": "The external dimensions of this model of container."
           },
           "value": {
-            "kind": "link",
-            "link": "https://www.emeraldcloudlab.com/documentation/publish/object?id=id:dORYzZJDvjqw"
+            "kind": "subtable",
+            "subtable": {
+              "header": [
+                "X Direction (Width)",
+                "Y Direction (Depth)",
+                "Z Direction (Height)"
+              ],
+              "rows": [
+                [
+                  {
+                    "kind": "scalar",
+                    "value": "0.01162 meters"
+                  }
+                ],
+                [
+                  {
+                    "kind": "scalar",
+                    "value": "0.01162 meters"
+                  },
+                  {
+                    "kind": "scalar",
+                    "value": "0.01162 meters"
+                  }
+                ],
+                [
+                  {
+                    "kind": "scalar",
+                    "value": "0.01162 meters"
+                  },
+                  {
+                    "kind": "scalar",
+                    "value": "0.01162 meters"
+                  },
+                  {
+                    "kind": "scalar",
+                    "value": "0.03189 meters"
+                  }
+                ]
+              ]
+            }
           }
         },
         {
           "field": {
-            "name": "Type",
-            "description": "Type of this Object."
+            "name": "InternalDiameter3D",
+            "description": "A list of the internal diameter of the container over the entire height of the container."
           },
           "value": {
-            "kind": "link",
-            "link": "https://www.emeraldcloudlab.com/helpfiles/types/Model_Container_Vessel?toggles=open"
-          }
-        },
-        {
-          "field": {
-            "name": "ID",
-            "description": "ID of this Object."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "id:dORYzZJDvjqw"
-          }
-        },
-        {
-          "field": {
-            "name": "Name",
-            "description": "Name of this Object."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "0.3 mL clear glass GC vial"
-          }
-        },
-        {
-          "field": {
-            "name": "ImageFile",
-            "description": "A photo of this model of container."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "Object[EmeraldCloudFile, id:D8KAEvGEprol]"
-          }
-        },
-        {
-          "field": {
-            "name": "ImageFileScale",
-            "description": "The scale relating pixels of ImageFile to real world distance."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "95. Pixels per centimeter"
-          }
-        },
-        {
-          "field": {
-            "name": "Opaque",
-            "description": "Indicates if the exterior of this container blocks the transmission of visible light."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "False"
-          }
-        },
-        {
-          "field": {
-            "name": "SelfStanding",
-            "description": "Indicates if this container is capable of staying upright when placed on a flat surface and does not require a rack."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "True"
-          }
-        },
-        {
-          "field": {
-            "name": "TransportStable",
-            "description": "Indicates if this container is capable of staying upright without assistance when being transported on an operator cart. Containers that are stable for transport can tolerate cart motion and accidental contact without falling, while those that are not must be resource picked into a rack."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "False"
-          }
-        },
-        {
-          "field": {
-            "name": "NeckType",
-            "description": "The GPI/SPI Neck Finish designation of the vessel used to determine the cap threading."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "9/425"
-          }
-        },
-        {
-          "field": {
-            "name": "InternalConicalDepth",
-            "description": "Height of the conical section of the vessel's contents holding cavity."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "9.89 millimeters"
-          }
-        },
-        {
-          "field": {
-            "name": "Skirted",
-            "description": "Indicates if this container has walls that extend below the vessel's well geometry to allow the vessel to stand upright on a flat surface without use of a rack."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "False"
-          }
-        },
-        {
-          "field": {
-            "name": "Stocked",
-            "description": "Indicates if the empty containers of this model are kept in stock for use on demand in experiments."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "True"
-          }
-        },
-        {
-          "field": {
-            "name": "MinTemperature",
-            "description": "Minimum temperature this type of container can be exposed to and maintain structural integrity."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "-100. degrees Celsius"
-          }
-        },
-        {
-          "field": {
-            "name": "MaxTemperature",
-            "description": "Maximum temperature this type of container can be exposed to and maintain structural integrity."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "300. degrees Celsius"
-          }
-        },
-        {
-          "field": {
-            "name": "MaxVolume",
-            "description": "Maximum volume of fluid the vessel can hold."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "0.3 milliliters"
+            "kind": "subtable",
+            "subtable": {
+              "header": [
+                "Z Direction Offset (Height)",
+                "Internal Diameter"
+              ],
+              "rows": [
+                [
+                  {
+                    "kind": "scalar",
+                    "value": "1.85 millimeters"
+                  }
+                ],
+                [
+                  {
+                    "kind": "scalar",
+                    "value": "1.85 millimeters"
+                  },
+                  {
+                    "kind": "scalar",
+                    "value": "1.14 millimeters"
+                  }
+                ],
+                [
+                  {
+                    "kind": "scalar",
+                    "value": "5.58 millimeters"
+                  }
+                ],
+                [
+                  {
+                    "kind": "scalar",
+                    "value": "5.58 millimeters"
+                  },
+                  {
+                    "kind": "scalar",
+                    "value": "1.24 millimeters"
+                  }
+                ],
+                [
+                  {
+                    "kind": "scalar",
+                    "value": "12.17 millimeters"
+                  }
+                ],
+                [
+                  {
+                    "kind": "scalar",
+                    "value": "12.17 millimeters"
+                  },
+                  {
+                    "kind": "scalar",
+                    "value": "4.7 millimeters"
+                  }
+                ],
+                [
+                  {
+                    "kind": "scalar",
+                    "value": "31.82 millimeters"
+                  }
+                ],
+                [
+                  {
+                    "kind": "scalar",
+                    "value": "31.82 millimeters"
+                  },
+                  {
+                    "kind": "scalar",
+                    "value": "4.7 millimeters"
+                  }
+                ]
+              ]
+            }
           }
         },
         {
@@ -662,6 +465,96 @@ Result: {
           "value": {
             "kind": "scalar",
             "value": "CEVial"
+          }
+        },
+        {
+          "field": {
+            "name": "Positions",
+            "description": "Spatial definitions of the positions that exist in this model of container, where MaxWidth and MaxDepth are the x and y dimensions of the maximum size of object that will fit in this position. MaxHeight is defined as the maximum height of object that can fit in this position without either encountering a barrier or creating a functional impediment to an experiment procedure."
+          },
+          "value": {
+            "kind": "subtable",
+            "subtable": {
+              "header": [
+                "Name",
+                "Footprint",
+                "MaxWidth",
+                "MaxDepth",
+                "MaxHeight"
+              ],
+              "rows": [
+                [
+                  {
+                    "kind": "scalar",
+                    "value": "A1"
+                  }
+                ],
+                [
+                  {
+                    "kind": "scalar",
+                    "value": "A1"
+                  },
+                  {
+                    "kind": "scalar",
+                    "value": "Null"
+                  }
+                ],
+                [
+                  {
+                    "kind": "scalar",
+                    "value": "A1"
+                  },
+                  {
+                    "kind": "scalar",
+                    "value": "Null"
+                  },
+                  {
+                    "kind": "scalar",
+                    "value": "0.00962 meters"
+                  }
+                ],
+                [
+                  {
+                    "kind": "scalar",
+                    "value": "A1"
+                  },
+                  {
+                    "kind": "scalar",
+                    "value": "Null"
+                  },
+                  {
+                    "kind": "scalar",
+                    "value": "0.00962 meters"
+                  },
+                  {
+                    "kind": "scalar",
+                    "value": "0.00962 meters"
+                  }
+                ],
+                [
+                  {
+                    "kind": "scalar",
+                    "value": "A1"
+                  },
+                  {
+                    "kind": "scalar",
+                    "value": "Null"
+                  },
+                  {
+                    "kind": "scalar",
+                    "value": "0.00962 meters"
+                  },
+                  {
+                    "kind": "scalar",
+                    "value": "0.00962 meters"
+                  },
+                  {
+                    "kind": "scalar",
+                    "value": "0.0296 meters"
+                  }
+                ]
+              ]
+            }
           }
         },
         {
@@ -731,246 +624,6 @@ Result: {
       "records": [
         {
           "field": {
-            "name": "Object",
-            "description": "Object of this Object."
-          },
-          "value": {
-            "kind": "link",
-            "link": "https://www.emeraldcloudlab.com/documentation/publish/object?id=id:dORYzZJDvjqw"
-          }
-        },
-        {
-          "field": {
-            "name": "Type",
-            "description": "Type of this Object."
-          },
-          "value": {
-            "kind": "link",
-            "link": "https://www.emeraldcloudlab.com/helpfiles/types/Model_Container_Vessel?toggles=open"
-          }
-        },
-        {
-          "field": {
-            "name": "ID",
-            "description": "ID of this Object."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "id:dORYzZJDvjqw"
-          }
-        },
-        {
-          "field": {
-            "name": "Name",
-            "description": "Name of this Object."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "0.3 mL clear glass GC vial"
-          }
-        },
-        {
-          "field": {
-            "name": "ImageFile",
-            "description": "A photo of this model of container."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "Object[EmeraldCloudFile, id:D8KAEvGEprol]"
-          }
-        },
-        {
-          "field": {
-            "name": "ImageFileScale",
-            "description": "The scale relating pixels of ImageFile to real world distance."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "95. Pixels per centimeter"
-          }
-        },
-        {
-          "field": {
-            "name": "Opaque",
-            "description": "Indicates if the exterior of this container blocks the transmission of visible light."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "False"
-          }
-        },
-        {
-          "field": {
-            "name": "SelfStanding",
-            "description": "Indicates if this container is capable of staying upright when placed on a flat surface and does not require a rack."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "True"
-          }
-        },
-        {
-          "field": {
-            "name": "TransportStable",
-            "description": "Indicates if this container is capable of staying upright without assistance when being transported on an operator cart. Containers that are stable for transport can tolerate cart motion and accidental contact without falling, while those that are not must be resource picked into a rack."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "False"
-          }
-        },
-        {
-          "field": {
-            "name": "NeckType",
-            "description": "The GPI/SPI Neck Finish designation of the vessel used to determine the cap threading."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "9/425"
-          }
-        },
-        {
-          "field": {
-            "name": "InternalConicalDepth",
-            "description": "Height of the conical section of the vessel's contents holding cavity."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "9.89 millimeters"
-          }
-        },
-        {
-          "field": {
-            "name": "Skirted",
-            "description": "Indicates if this container has walls that extend below the vessel's well geometry to allow the vessel to stand upright on a flat surface without use of a rack."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "False"
-          }
-        },
-        {
-          "field": {
-            "name": "Stocked",
-            "description": "Indicates if the empty containers of this model are kept in stock for use on demand in experiments."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "True"
-          }
-        },
-        {
-          "field": {
-            "name": "MinTemperature",
-            "description": "Minimum temperature this type of container can be exposed to and maintain structural integrity."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "-100. degrees Celsius"
-          }
-        },
-        {
-          "field": {
-            "name": "MaxTemperature",
-            "description": "Maximum temperature this type of container can be exposed to and maintain structural integrity."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "300. degrees Celsius"
-          }
-        },
-        {
-          "field": {
-            "name": "MaxVolume",
-            "description": "Maximum volume of fluid the vessel can hold."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "0.3 milliliters"
-          }
-        },
-        {
-          "field": {
-            "name": "CrossSectionalShape",
-            "description": "The shape of the outside of this container in the X-Y plane."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "Circle"
-          }
-        },
-        {
-          "field": {
-            "name": "Footprint",
-            "description": "Standard form factor of the exterior bottom portion of this model of container used to seat the container in an open position."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "CEVial"
-          }
-        },
-        {
-          "field": {
-            "name": "AllowedPositions",
-            "description": "Generates a pattern of all the valid position names for this model of container."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "A1"
-          }
-        },
-        {
-          "field": {
-            "name": "InternalDiameter",
-            "description": "Interior diameter of the vessel's contents holding cavity."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "9.62 millimeters"
-          }
-        },
-        {
-          "field": {
-            "name": "Aperture",
-            "description": "The minimum opening diameter encountered when aspirating from the container."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "4.7 millimeters"
-          }
-        },
-        {
-          "field": {
-            "name": "InternalDepth",
-            "description": "The distance from the aperture to the bottom of vessel's contents-holding cavity."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "29.6 millimeters"
-          }
-        },
-        {
-          "field": {
-            "name": "InternalBottomShape",
-            "description": "Shape of the bottom of the vessel's contents holding cavity."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "VBottom"
-          }
-        },
-        {
-          "field": {
-            "name": "CappedHeight",
-            "description": "The overall height of the vessel with the cap on, if applicable (height in Dimensions field represents uncapped height)."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "33.19 millimeters"
-          }
-        },
-        {
-          "field": {
             "name": "DefaultStorageCondition",
             "description": "The condition in which containers of this model are stored when not in use by an experiment; this condition may be overridden by the specific storage condition of any given container."
           },
@@ -986,764 +639,130 @@ Result: {
       "records": [
         {
           "field": {
-            "name": "Object",
-            "description": "Object of this Object."
+            "name": "Connectors",
+            "description": "Specifications for the ends of this plumbing component that may connect to other plumbing components or instrument ports."
           },
           "value": {
-            "kind": "link",
-            "link": "https://www.emeraldcloudlab.com/documentation/publish/object?id=id:dORYzZJDvjqw"
-          }
-        },
-        {
-          "field": {
-            "name": "Type",
-            "description": "Type of this Object."
-          },
-          "value": {
-            "kind": "link",
-            "link": "https://www.emeraldcloudlab.com/helpfiles/types/Model_Container_Vessel?toggles=open"
-          }
-        },
-        {
-          "field": {
-            "name": "ID",
-            "description": "ID of this Object."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "id:dORYzZJDvjqw"
-          }
-        },
-        {
-          "field": {
-            "name": "Name",
-            "description": "Name of this Object."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "0.3 mL clear glass GC vial"
-          }
-        },
-        {
-          "field": {
-            "name": "ImageFile",
-            "description": "A photo of this model of container."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "Object[EmeraldCloudFile, id:D8KAEvGEprol]"
-          }
-        },
-        {
-          "field": {
-            "name": "ImageFileScale",
-            "description": "The scale relating pixels of ImageFile to real world distance."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "95. Pixels per centimeter"
-          }
-        },
-        {
-          "field": {
-            "name": "Opaque",
-            "description": "Indicates if the exterior of this container blocks the transmission of visible light."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "False"
-          }
-        },
-        {
-          "field": {
-            "name": "SelfStanding",
-            "description": "Indicates if this container is capable of staying upright when placed on a flat surface and does not require a rack."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "True"
-          }
-        },
-        {
-          "field": {
-            "name": "TransportStable",
-            "description": "Indicates if this container is capable of staying upright without assistance when being transported on an operator cart. Containers that are stable for transport can tolerate cart motion and accidental contact without falling, while those that are not must be resource picked into a rack."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "False"
-          }
-        },
-        {
-          "field": {
-            "name": "NeckType",
-            "description": "The GPI/SPI Neck Finish designation of the vessel used to determine the cap threading."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "9/425"
-          }
-        },
-        {
-          "field": {
-            "name": "InternalConicalDepth",
-            "description": "Height of the conical section of the vessel's contents holding cavity."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "9.89 millimeters"
-          }
-        },
-        {
-          "field": {
-            "name": "Skirted",
-            "description": "Indicates if this container has walls that extend below the vessel's well geometry to allow the vessel to stand upright on a flat surface without use of a rack."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "False"
-          }
-        },
-        {
-          "field": {
-            "name": "Stocked",
-            "description": "Indicates if the empty containers of this model are kept in stock for use on demand in experiments."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "True"
-          }
-        },
-        {
-          "field": {
-            "name": "MinTemperature",
-            "description": "Minimum temperature this type of container can be exposed to and maintain structural integrity."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "-100. degrees Celsius"
-          }
-        },
-        {
-          "field": {
-            "name": "MaxTemperature",
-            "description": "Maximum temperature this type of container can be exposed to and maintain structural integrity."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "300. degrees Celsius"
-          }
-        },
-        {
-          "field": {
-            "name": "MaxVolume",
-            "description": "Maximum volume of fluid the vessel can hold."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "0.3 milliliters"
-          }
-        },
-        {
-          "field": {
-            "name": "CrossSectionalShape",
-            "description": "The shape of the outside of this container in the X-Y plane."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "Circle"
-          }
-        },
-        {
-          "field": {
-            "name": "Footprint",
-            "description": "Standard form factor of the exterior bottom portion of this model of container used to seat the container in an open position."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "CEVial"
-          }
-        },
-        {
-          "field": {
-            "name": "AllowedPositions",
-            "description": "Generates a pattern of all the valid position names for this model of container."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "A1"
-          }
-        },
-        {
-          "field": {
-            "name": "InternalDiameter",
-            "description": "Interior diameter of the vessel's contents holding cavity."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "9.62 millimeters"
-          }
-        },
-        {
-          "field": {
-            "name": "Aperture",
-            "description": "The minimum opening diameter encountered when aspirating from the container."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "4.7 millimeters"
-          }
-        },
-        {
-          "field": {
-            "name": "InternalDepth",
-            "description": "The distance from the aperture to the bottom of vessel's contents-holding cavity."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "29.6 millimeters"
-          }
-        },
-        {
-          "field": {
-            "name": "InternalBottomShape",
-            "description": "Shape of the bottom of the vessel's contents holding cavity."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "VBottom"
-          }
-        },
-        {
-          "field": {
-            "name": "CappedHeight",
-            "description": "The overall height of the vessel with the cap on, if applicable (height in Dimensions field represents uncapped height)."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "33.19 millimeters"
-          }
-        },
-        {
-          "field": {
-            "name": "DefaultStorageCondition",
-            "description": "The condition in which containers of this model are stored when not in use by an experiment; this condition may be overridden by the specific storage condition of any given container."
-          },
-          "value": {
-            "kind": "link",
-            "link": "https://www.emeraldcloudlab.com/documentation/publish/object?id=id:7X104vnR18vX"
+            "kind": "subtable",
+            "subtable": {
+              "header": [
+                "Connector Name",
+                "Connector Type",
+                "Thread Type",
+                "Inner Diameter",
+                "Outer Diameter",
+                "Gender"
+              ],
+              "rows": [
+                [
+                  {
+                    "kind": "scalar",
+                    "value": "Inlet/Outlet"
+                  }
+                ],
+                [
+                  {
+                    "kind": "scalar",
+                    "value": "Inlet/Outlet"
+                  },
+                  {
+                    "kind": "scalar",
+                    "value": "Threaded"
+                  }
+                ],
+                [
+                  {
+                    "kind": "scalar",
+                    "value": "Inlet/Outlet"
+                  },
+                  {
+                    "kind": "scalar",
+                    "value": "Threaded"
+                  },
+                  {
+                    "kind": "scalar",
+                    "value": "GPI 9-425"
+                  }
+                ],
+                [
+                  {
+                    "kind": "scalar",
+                    "value": "Inlet/Outlet"
+                  },
+                  {
+                    "kind": "scalar",
+                    "value": "Threaded"
+                  },
+                  {
+                    "kind": "scalar",
+                    "value": "GPI 9-425"
+                  },
+                  {
+                    "kind": "scalar",
+                    "value": "0.185039 inches"
+                  }
+                ],
+                [
+                  {
+                    "kind": "scalar",
+                    "value": "Inlet/Outlet"
+                  },
+                  {
+                    "kind": "scalar",
+                    "value": "Threaded"
+                  },
+                  {
+                    "kind": "scalar",
+                    "value": "GPI 9-425"
+                  },
+                  {
+                    "kind": "scalar",
+                    "value": "0.185039 inches"
+                  },
+                  {
+                    "kind": "scalar",
+                    "value": "0.354331 inches"
+                  }
+                ],
+                [
+                  {
+                    "kind": "scalar",
+                    "value": "Inlet/Outlet"
+                  },
+                  {
+                    "kind": "scalar",
+                    "value": "Threaded"
+                  },
+                  {
+                    "kind": "scalar",
+                    "value": "GPI 9-425"
+                  },
+                  {
+                    "kind": "scalar",
+                    "value": "0.185039 inches"
+                  },
+                  {
+                    "kind": "scalar",
+                    "value": "0.354331 inches"
+                  },
+                  {
+                    "kind": "scalar",
+                    "value": "Male"
+                  }
+                ]
+              ]
+            }
           }
         }
       ]
     },
     {
       "name": "Inventory",
-      "records": [
-        {
-          "field": {
-            "name": "Object",
-            "description": "Object of this Object."
-          },
-          "value": {
-            "kind": "link",
-            "link": "https://www.emeraldcloudlab.com/documentation/publish/object?id=id:dORYzZJDvjqw"
-          }
-        },
-        {
-          "field": {
-            "name": "Type",
-            "description": "Type of this Object."
-          },
-          "value": {
-            "kind": "link",
-            "link": "https://www.emeraldcloudlab.com/helpfiles/types/Model_Container_Vessel?toggles=open"
-          }
-        },
-        {
-          "field": {
-            "name": "ID",
-            "description": "ID of this Object."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "id:dORYzZJDvjqw"
-          }
-        },
-        {
-          "field": {
-            "name": "Name",
-            "description": "Name of this Object."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "0.3 mL clear glass GC vial"
-          }
-        },
-        {
-          "field": {
-            "name": "ImageFile",
-            "description": "A photo of this model of container."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "Object[EmeraldCloudFile, id:D8KAEvGEprol]"
-          }
-        },
-        {
-          "field": {
-            "name": "ImageFileScale",
-            "description": "The scale relating pixels of ImageFile to real world distance."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "95. Pixels per centimeter"
-          }
-        },
-        {
-          "field": {
-            "name": "Opaque",
-            "description": "Indicates if the exterior of this container blocks the transmission of visible light."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "False"
-          }
-        },
-        {
-          "field": {
-            "name": "SelfStanding",
-            "description": "Indicates if this container is capable of staying upright when placed on a flat surface and does not require a rack."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "True"
-          }
-        },
-        {
-          "field": {
-            "name": "TransportStable",
-            "description": "Indicates if this container is capable of staying upright without assistance when being transported on an operator cart. Containers that are stable for transport can tolerate cart motion and accidental contact without falling, while those that are not must be resource picked into a rack."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "False"
-          }
-        },
-        {
-          "field": {
-            "name": "NeckType",
-            "description": "The GPI/SPI Neck Finish designation of the vessel used to determine the cap threading."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "9/425"
-          }
-        },
-        {
-          "field": {
-            "name": "InternalConicalDepth",
-            "description": "Height of the conical section of the vessel's contents holding cavity."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "9.89 millimeters"
-          }
-        },
-        {
-          "field": {
-            "name": "Skirted",
-            "description": "Indicates if this container has walls that extend below the vessel's well geometry to allow the vessel to stand upright on a flat surface without use of a rack."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "False"
-          }
-        },
-        {
-          "field": {
-            "name": "Stocked",
-            "description": "Indicates if the empty containers of this model are kept in stock for use on demand in experiments."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "True"
-          }
-        },
-        {
-          "field": {
-            "name": "MinTemperature",
-            "description": "Minimum temperature this type of container can be exposed to and maintain structural integrity."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "-100. degrees Celsius"
-          }
-        },
-        {
-          "field": {
-            "name": "MaxTemperature",
-            "description": "Maximum temperature this type of container can be exposed to and maintain structural integrity."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "300. degrees Celsius"
-          }
-        },
-        {
-          "field": {
-            "name": "MaxVolume",
-            "description": "Maximum volume of fluid the vessel can hold."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "0.3 milliliters"
-          }
-        },
-        {
-          "field": {
-            "name": "CrossSectionalShape",
-            "description": "The shape of the outside of this container in the X-Y plane."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "Circle"
-          }
-        },
-        {
-          "field": {
-            "name": "Footprint",
-            "description": "Standard form factor of the exterior bottom portion of this model of container used to seat the container in an open position."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "CEVial"
-          }
-        },
-        {
-          "field": {
-            "name": "AllowedPositions",
-            "description": "Generates a pattern of all the valid position names for this model of container."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "A1"
-          }
-        },
-        {
-          "field": {
-            "name": "InternalDiameter",
-            "description": "Interior diameter of the vessel's contents holding cavity."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "9.62 millimeters"
-          }
-        },
-        {
-          "field": {
-            "name": "Aperture",
-            "description": "The minimum opening diameter encountered when aspirating from the container."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "4.7 millimeters"
-          }
-        },
-        {
-          "field": {
-            "name": "InternalDepth",
-            "description": "The distance from the aperture to the bottom of vessel's contents-holding cavity."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "29.6 millimeters"
-          }
-        },
-        {
-          "field": {
-            "name": "InternalBottomShape",
-            "description": "Shape of the bottom of the vessel's contents holding cavity."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "VBottom"
-          }
-        },
-        {
-          "field": {
-            "name": "CappedHeight",
-            "description": "The overall height of the vessel with the cap on, if applicable (height in Dimensions field represents uncapped height)."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "33.19 millimeters"
-          }
-        },
-        {
-          "field": {
-            "name": "DefaultStorageCondition",
-            "description": "The condition in which containers of this model are stored when not in use by an experiment; this condition may be overridden by the specific storage condition of any given container."
-          },
-          "value": {
-            "kind": "link",
-            "link": "https://www.emeraldcloudlab.com/documentation/publish/object?id=id:7X104vnR18vX"
-          }
-        }
-      ]
+      "records": []
     },
     {
       "name": "Health & Safety",
       "records": [
-        {
-          "field": {
-            "name": "Object",
-            "description": "Object of this Object."
-          },
-          "value": {
-            "kind": "link",
-            "link": "https://www.emeraldcloudlab.com/documentation/publish/object?id=id:dORYzZJDvjqw"
-          }
-        },
-        {
-          "field": {
-            "name": "Type",
-            "description": "Type of this Object."
-          },
-          "value": {
-            "kind": "link",
-            "link": "https://www.emeraldcloudlab.com/helpfiles/types/Model_Container_Vessel?toggles=open"
-          }
-        },
-        {
-          "field": {
-            "name": "ID",
-            "description": "ID of this Object."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "id:dORYzZJDvjqw"
-          }
-        },
-        {
-          "field": {
-            "name": "Name",
-            "description": "Name of this Object."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "0.3 mL clear glass GC vial"
-          }
-        },
-        {
-          "field": {
-            "name": "ImageFile",
-            "description": "A photo of this model of container."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "Object[EmeraldCloudFile, id:D8KAEvGEprol]"
-          }
-        },
-        {
-          "field": {
-            "name": "ImageFileScale",
-            "description": "The scale relating pixels of ImageFile to real world distance."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "95. Pixels per centimeter"
-          }
-        },
-        {
-          "field": {
-            "name": "Opaque",
-            "description": "Indicates if the exterior of this container blocks the transmission of visible light."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "False"
-          }
-        },
-        {
-          "field": {
-            "name": "SelfStanding",
-            "description": "Indicates if this container is capable of staying upright when placed on a flat surface and does not require a rack."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "True"
-          }
-        },
-        {
-          "field": {
-            "name": "TransportStable",
-            "description": "Indicates if this container is capable of staying upright without assistance when being transported on an operator cart. Containers that are stable for transport can tolerate cart motion and accidental contact without falling, while those that are not must be resource picked into a rack."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "False"
-          }
-        },
-        {
-          "field": {
-            "name": "NeckType",
-            "description": "The GPI/SPI Neck Finish designation of the vessel used to determine the cap threading."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "9/425"
-          }
-        },
-        {
-          "field": {
-            "name": "InternalConicalDepth",
-            "description": "Height of the conical section of the vessel's contents holding cavity."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "9.89 millimeters"
-          }
-        },
-        {
-          "field": {
-            "name": "Skirted",
-            "description": "Indicates if this container has walls that extend below the vessel's well geometry to allow the vessel to stand upright on a flat surface without use of a rack."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "False"
-          }
-        },
-        {
-          "field": {
-            "name": "Stocked",
-            "description": "Indicates if the empty containers of this model are kept in stock for use on demand in experiments."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "True"
-          }
-        },
-        {
-          "field": {
-            "name": "MinTemperature",
-            "description": "Minimum temperature this type of container can be exposed to and maintain structural integrity."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "-100. degrees Celsius"
-          }
-        },
-        {
-          "field": {
-            "name": "MaxTemperature",
-            "description": "Maximum temperature this type of container can be exposed to and maintain structural integrity."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "300. degrees Celsius"
-          }
-        },
-        {
-          "field": {
-            "name": "MaxVolume",
-            "description": "Maximum volume of fluid the vessel can hold."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "0.3 milliliters"
-          }
-        },
-        {
-          "field": {
-            "name": "CrossSectionalShape",
-            "description": "The shape of the outside of this container in the X-Y plane."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "Circle"
-          }
-        },
-        {
-          "field": {
-            "name": "Footprint",
-            "description": "Standard form factor of the exterior bottom portion of this model of container used to seat the container in an open position."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "CEVial"
-          }
-        },
-        {
-          "field": {
-            "name": "AllowedPositions",
-            "description": "Generates a pattern of all the valid position names for this model of container."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "A1"
-          }
-        },
-        {
-          "field": {
-            "name": "InternalDiameter",
-            "description": "Interior diameter of the vessel's contents holding cavity."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "9.62 millimeters"
-          }
-        },
-        {
-          "field": {
-            "name": "Aperture",
-            "description": "The minimum opening diameter encountered when aspirating from the container."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "4.7 millimeters"
-          }
-        },
-        {
-          "field": {
-            "name": "InternalDepth",
-            "description": "The distance from the aperture to the bottom of vessel's contents-holding cavity."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "29.6 millimeters"
-          }
-        },
-        {
-          "field": {
-            "name": "InternalBottomShape",
-            "description": "Shape of the bottom of the vessel's contents holding cavity."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "VBottom"
-          }
-        },
-        {
-          "field": {
-            "name": "CappedHeight",
-            "description": "The overall height of the vessel with the cap on, if applicable (height in Dimensions field represents uncapped height)."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "33.19 millimeters"
-          }
-        },
-        {
-          "field": {
-            "name": "DefaultStorageCondition",
-            "description": "The condition in which containers of this model are stored when not in use by an experiment; this condition may be overridden by the specific storage condition of any given container."
-          },
-          "value": {
-            "kind": "link",
-            "link": "https://www.emeraldcloudlab.com/documentation/publish/object?id=id:7X104vnR18vX"
-          }
-        },
         {
           "field": {
             "name": "Sterile",
@@ -1759,266 +778,6 @@ Result: {
     {
       "name": "Compatibility",
       "records": [
-        {
-          "field": {
-            "name": "Object",
-            "description": "Object of this Object."
-          },
-          "value": {
-            "kind": "link",
-            "link": "https://www.emeraldcloudlab.com/documentation/publish/object?id=id:dORYzZJDvjqw"
-          }
-        },
-        {
-          "field": {
-            "name": "Type",
-            "description": "Type of this Object."
-          },
-          "value": {
-            "kind": "link",
-            "link": "https://www.emeraldcloudlab.com/helpfiles/types/Model_Container_Vessel?toggles=open"
-          }
-        },
-        {
-          "field": {
-            "name": "ID",
-            "description": "ID of this Object."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "id:dORYzZJDvjqw"
-          }
-        },
-        {
-          "field": {
-            "name": "Name",
-            "description": "Name of this Object."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "0.3 mL clear glass GC vial"
-          }
-        },
-        {
-          "field": {
-            "name": "ImageFile",
-            "description": "A photo of this model of container."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "Object[EmeraldCloudFile, id:D8KAEvGEprol]"
-          }
-        },
-        {
-          "field": {
-            "name": "ImageFileScale",
-            "description": "The scale relating pixels of ImageFile to real world distance."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "95. Pixels per centimeter"
-          }
-        },
-        {
-          "field": {
-            "name": "Opaque",
-            "description": "Indicates if the exterior of this container blocks the transmission of visible light."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "False"
-          }
-        },
-        {
-          "field": {
-            "name": "SelfStanding",
-            "description": "Indicates if this container is capable of staying upright when placed on a flat surface and does not require a rack."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "True"
-          }
-        },
-        {
-          "field": {
-            "name": "TransportStable",
-            "description": "Indicates if this container is capable of staying upright without assistance when being transported on an operator cart. Containers that are stable for transport can tolerate cart motion and accidental contact without falling, while those that are not must be resource picked into a rack."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "False"
-          }
-        },
-        {
-          "field": {
-            "name": "NeckType",
-            "description": "The GPI/SPI Neck Finish designation of the vessel used to determine the cap threading."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "9/425"
-          }
-        },
-        {
-          "field": {
-            "name": "InternalConicalDepth",
-            "description": "Height of the conical section of the vessel's contents holding cavity."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "9.89 millimeters"
-          }
-        },
-        {
-          "field": {
-            "name": "Skirted",
-            "description": "Indicates if this container has walls that extend below the vessel's well geometry to allow the vessel to stand upright on a flat surface without use of a rack."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "False"
-          }
-        },
-        {
-          "field": {
-            "name": "Stocked",
-            "description": "Indicates if the empty containers of this model are kept in stock for use on demand in experiments."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "True"
-          }
-        },
-        {
-          "field": {
-            "name": "MinTemperature",
-            "description": "Minimum temperature this type of container can be exposed to and maintain structural integrity."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "-100. degrees Celsius"
-          }
-        },
-        {
-          "field": {
-            "name": "MaxTemperature",
-            "description": "Maximum temperature this type of container can be exposed to and maintain structural integrity."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "300. degrees Celsius"
-          }
-        },
-        {
-          "field": {
-            "name": "MaxVolume",
-            "description": "Maximum volume of fluid the vessel can hold."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "0.3 milliliters"
-          }
-        },
-        {
-          "field": {
-            "name": "CrossSectionalShape",
-            "description": "The shape of the outside of this container in the X-Y plane."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "Circle"
-          }
-        },
-        {
-          "field": {
-            "name": "Footprint",
-            "description": "Standard form factor of the exterior bottom portion of this model of container used to seat the container in an open position."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "CEVial"
-          }
-        },
-        {
-          "field": {
-            "name": "AllowedPositions",
-            "description": "Generates a pattern of all the valid position names for this model of container."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "A1"
-          }
-        },
-        {
-          "field": {
-            "name": "InternalDiameter",
-            "description": "Interior diameter of the vessel's contents holding cavity."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "9.62 millimeters"
-          }
-        },
-        {
-          "field": {
-            "name": "Aperture",
-            "description": "The minimum opening diameter encountered when aspirating from the container."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "4.7 millimeters"
-          }
-        },
-        {
-          "field": {
-            "name": "InternalDepth",
-            "description": "The distance from the aperture to the bottom of vessel's contents-holding cavity."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "29.6 millimeters"
-          }
-        },
-        {
-          "field": {
-            "name": "InternalBottomShape",
-            "description": "Shape of the bottom of the vessel's contents holding cavity."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "VBottom"
-          }
-        },
-        {
-          "field": {
-            "name": "CappedHeight",
-            "description": "The overall height of the vessel with the cap on, if applicable (height in Dimensions field represents uncapped height)."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "33.19 millimeters"
-          }
-        },
-        {
-          "field": {
-            "name": "DefaultStorageCondition",
-            "description": "The condition in which containers of this model are stored when not in use by an experiment; this condition may be overridden by the specific storage condition of any given container."
-          },
-          "value": {
-            "kind": "link",
-            "link": "https://www.emeraldcloudlab.com/documentation/publish/object?id=id:7X104vnR18vX"
-          }
-        },
-        {
-          "field": {
-            "name": "Sterile",
-            "description": "Indicates that this model of container arrives sterile from the manufacturer."
-          },
-          "value": {
-            "kind": "scalar",
-            "value": "False"
-          }
-        },
         {
           "field": {
             "name": "PreferredBalance",
