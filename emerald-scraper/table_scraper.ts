@@ -11,10 +11,13 @@ type FieldValue = { kind: 'link'; link: string; }
 type PlotImage = { src: string; }
 type SectionHeader = { name: string; }
 
+type DataTable = { header: string[]; rows: FieldValue[][] }
+
 type TD = { kind: 'field', field: Field }
         | { kind: 'section', section: SectionHeader }
         | { kind: 'plot', plot: PlotImage }
         | { kind: 'value', value: FieldValue}
+        | { kind: 'subtable', subtable: DataTable }
 
 async function getClassName(page: Page, rowDatum: ElementHandle): Promise<string> {
   return await page.evaluate((el: Element) => el.className.split('-')[0], rowDatum);
@@ -60,9 +63,9 @@ async function parseValueTD(page: Page, rowDatum: ElementHandle): Promise<FieldV
 }
 
 async function parseSubtableHeader(page: Page, subtable: ElementHandle): Promise<string[]> {
-  const headTR = await subtable.$(':scope > thead[class^="PublishedObject__PublishedObjectSubfieldTableHeader"] > tr[class^="PublishedObject__PublishedObjectSubfieldTableRow"]]');
+  const headTR = await subtable.$(':scope > thead[class^="PublishedObject__PublishedObjectSubfieldTableHeader"] > tr[class^="PublishedObject__PublishedObjectSubfieldTableRow"]');
   if (!headTR) throw new Error('Subtable header not found');
-  const headers = await headTR.$$(':scoep > th[class^="PublishedObject__PublishedObjectSubfieldTableHeaderData"]');
+  const headers = await headTR.$$(':scope > th[class^="PublishedObject__PublishedObjectSubfieldTableHeaderData"]');
   const headerTexts: string[] = [];
   for (const header of headers) {
     const headerText = await page.evaluate((el: Element) => el.textContent!.trim(), header);
@@ -74,27 +77,31 @@ async function parseSubtableHeader(page: Page, subtable: ElementHandle): Promise
 
 async function parseSubtableBody(page: Page, subtable: ElementHandle): Promise<FieldValue[][]> {
   const rowsTR = await subtable.$$(':scope > tbody > tr[class^="PublishedObject__PublishedObjectSubfieldTableRow"]');
+  console.log(`Rows: ${rowsTR.length}`);
   if (!rowsTR) throw new Error('Subtable body not found');
   const rowData: FieldValue[][] = [];
-  rowsTR.forEach(async (row,i) => {
-    const cells = await row.$$(':scope > td[class^="PublishedObject__PublishedObjectSubfieldTableData"]');
+  for (const row of rowsTR) {
+    const cells = await row.$$(':scope > td[class^="PublishedObject__PublishedObjectTableSubFieldValueData"]');
+    console.log(`Cells: ${cells.length}`);
     if (!cells) throw new Error('Subtable row not found');
-    rowData.push([]);
-    rowData[i] = [];
+    const rowValues: FieldValue[] = [];
     for (const cell of cells) {
       const cv = await parseValueTD(page, cell);
-      if (cv.kind === 'scalar') { rowData[i].push(cv); }
+      if (cv.kind === 'scalar') { rowValues.push(cv); }
       else { throw new Error('Subtable cell is not a scalar'); }
+    rowData.push(rowValues);
     }
-  });
+  }
   return rowData;
 }
-async function parseSubtableTD(page: Page, rowDatum: ElementHandle): Promise<FieldValue[][]> {
+async function parseSubtableTD(page: Page, rowDatum: ElementHandle): Promise<DataTable> {
   const subtable = await rowDatum.$(':scope > div[class^="PublishedObject__PublishedObjectSubfieldTableContainer"] > table[class^="PublishedObject__PublishedObjectSubfieldTableElement"]');
   if (!subtable) throw new Error('Subtable not found');
-  console.log(`Subtable: ${subtable}`);
   const headerTexts = await parseSubtableHeader(page, subtable);
   const subtableBody = await parseSubtableBody(page, subtable);
+  const subtableData: DataTable = { header: headerTexts, rows: subtableBody };
+  console.log(`Subtable: ${JSON.stringify(subtableData)}`);
+  return subtableData;
 }
 
 async function parseTD(page: Page, rowDatum: ElementHandle): Promise<TD> {
