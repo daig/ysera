@@ -1,8 +1,7 @@
 {
   "typeName": "Model[Container] Documentation",
-  "typeDescription": "Model information for a physical container used to organize and track resources in the ECL.",
   "url": "https://www.emeraldcloudlab.com/helpfiles/types/model_container?toggles=open&toggles=open",
-  "scrapedAt": "2025-02-26T04:44:48.383Z",
+  "scrapedAt": "2025-02-26T03:32:35.253Z",
   "sections": [
     {
       "title": "Organizational Information",
