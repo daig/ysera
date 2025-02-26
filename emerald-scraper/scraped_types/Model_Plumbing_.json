@@ -1,0 +1,1251 @@
+{
+  "typeName": "Model[Plumbing] Documentation",
+  "typeDescription": "Model information for a component used to direct the flow of liquids or gases throughout the laboratory.",
+  "url": "https://www.emeraldcloudlab.com/helpfiles/types/model_plumbing?toggles=open&toggles=open",
+  "scrapedAt": "2025-02-26T03:41:27.177Z",
+  "sections": [
+    {
+      "title": "Organizational Information",
+      "fields": [
+        {
+          "name": "Name",
+          "description": "Name of this Object.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "String",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_String",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Pattern Description:",
+              "value": "A string.",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "ID",
+          "description": "ID of this Object.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "String",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_String",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Pattern Description:",
+              "value": "The ID of this object.",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Object",
+          "description": "Object of this Object.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "Model[Plumbing, _String]",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Pattern Description:",
+              "value": "The object reference of this object.",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Type",
+          "description": "Type of this Object.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "Model[Plumbing]",
+              "link": "/helpfiles/types/model_plumbing",
+              "isMultiValue": false
+            },
+            {
+              "type": "Pattern Description:",
+              "value": "Model[Plumbing]",
+              "link": "/helpfiles/types/model_plumbing",
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Notebook",
+          "description": "Notebook this object belongs to.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Pattern Description:",
+              "value": "Object[LaboratoryNotebook]",
+              "link": "/helpfiles/types/object_laboratorynotebook",
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Object[LaboratoryNotebook][Objects]",
+                  "link": "/helpfiles/types/object_laboratorynotebook?toggles=open#Objects"
+                }
+              ],
+              "value": "Object[LaboratoryNotebook][Objects]",
+              "link": "/helpfiles/types/object_laboratorynotebook?toggles=open#Objects",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Objects",
+          "description": "Objects that represent instances of this model.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Object[Plumbing][Model]",
+                  "link": "/helpfiles/types/object_plumbing?toggles=open#Model"
+                }
+              ],
+              "value": "Object[Plumbing][Model]",
+              "link": "/helpfiles/types/object_plumbing?toggles=open#Model",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Deprecated",
+          "description": "Indicates that this model is historical and no longer used in the lab.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Authors",
+          "description": "The person who created this model.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Object[User]",
+                  "link": "/helpfiles/types/object_user"
+                }
+              ],
+              "value": "Object[User]",
+              "link": "/helpfiles/types/object_user",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        }
+      ]
+    },
+    {
+      "title": "Plumbing Information",
+      "fields": [
+        {
+          "name": "Size",
+          "description": "The length of this plumbing component, in the direction of fluid flow.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 meter",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterEqualP[0 Meter]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "WettedMaterials",
+          "description": "The materials of which this plumbing component is made that come in direct contact with the samples.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "MaterialP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "InnerDiameter",
+          "description": "The diameter of the hollow, fluid-containing portion of this plumbing component.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 inch",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterP[0 Inch]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "OuterDiameter",
+          "description": "The diameter of the entire plumbing component, orthogonal to the flow of fluid.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 inch",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterP[0 Inch]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Connectors",
+          "description": "Specifications for the ends of this plumbing component that may connect to other plumbing components or instrument ports.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {
+            "Connector Name": [
+              {
+                "type": "Header:",
+                "value": "Connector Name",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "String",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "ConnectorNameP",
+                "link": null,
+                "isMultiValue": false
+              }
+            ],
+            "Connector Type": [
+              {
+                "type": "Header:",
+                "value": "Connector Type",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Expression",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "ConnectorP",
+                "link": null,
+                "isMultiValue": false
+              }
+            ],
+            "Thread Type": [
+              {
+                "type": "Header:",
+                "value": "Thread Type",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Expression",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "ThreadP|GroundGlassJointSizeP|None",
+                "link": null,
+                "isMultiValue": false
+              }
+            ],
+            "Inner Diameter": [
+              {
+                "type": "Header:",
+                "value": "Inner Diameter",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Real",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Unit:",
+                "value": "1 inch",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "GreaterP[0 Inch]",
+                "link": null,
+                "isMultiValue": false
+              }
+            ],
+            "Outer Diameter": [
+              {
+                "type": "Header:",
+                "value": "Outer Diameter",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Real",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Unit:",
+                "value": "1 inch",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "GreaterP[0 Inch]",
+                "link": null,
+                "isMultiValue": false
+              }
+            ],
+            "Gender": [
+              {
+                "type": "Header:",
+                "value": "Gender",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Expression",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "ConnectorGenderP|None",
+                "link": null,
+                "isMultiValue": false
+              }
+            ]
+          }
+        },
+        {
+          "name": "DeadVolume",
+          "description": "The fluid volume that can be contained in this plumbing component.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 milliliter",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterP[0 Milli Liter]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "FluidCategory",
+          "description": "Type of fluids that can be used with this plumbing component.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "FluidCategoryP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "ImageFile",
+          "description": "A photo of this model of plumbing component.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Object[EmeraldCloudFile]",
+                  "link": "/helpfiles/types/object_emeraldcloudfile"
+                }
+              ],
+              "value": "Object[EmeraldCloudFile]",
+              "link": "/helpfiles/types/object_emeraldcloudfile",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        }
+      ]
+    },
+    {
+      "title": "Inventory",
+      "fields": [
+        {
+          "name": "ProductDocumentationFiles",
+          "description": "PDFs of any product documentation provided by the supplier of this model plumbing.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Object[EmeraldCloudFile]",
+                  "link": "/helpfiles/types/object_emeraldcloudfile"
+                }
+              ],
+              "value": "Object[EmeraldCloudFile]",
+              "link": "/helpfiles/types/object_emeraldcloudfile",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Products",
+          "description": "Products ordering information for this plumbing component.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Object[Product][ProductModel]",
+                  "link": "/helpfiles/types/object_product?toggles=open#ProductModel"
+                }
+              ],
+              "value": "Object[Product][ProductModel]",
+              "link": "/helpfiles/types/object_product?toggles=open#ProductModel",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "KitProducts",
+          "description": "Products ordering information for this model if this model is part of one or more kits.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Object[Product][KitComponents, ProductModel]",
+                  "link": "/helpfiles/types/object_product?toggles=open#KitComponents"
+                }
+              ],
+              "value": "Object[Product][KitComponents, ProductModel]",
+              "link": "/helpfiles/types/object_product?toggles=open#KitComponents",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "MixedBatchProducts",
+          "description": "Products ordering information for this model if this model is part of one or more mixed batches.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Object[Product][MixedBatchComponents, ProductModel]",
+                  "link": "/helpfiles/types/object_product?toggles=open#MixedBatchComponents"
+                }
+              ],
+              "value": "Object[Product][MixedBatchComponents, ProductModel]",
+              "link": "/helpfiles/types/object_product?toggles=open#MixedBatchComponents",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        }
+      ]
+    },
+    {
+      "title": "Operating Limits",
+      "fields": [
+        {
+          "name": "MinPressure",
+          "description": "Minimum pressure that can be tolerated by this plumbing component without deformation.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 pound‐force per inch squared",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "PressureP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "MaxPressure",
+          "description": "Maximum pressure that can be applied to this plumbing component.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 pound‐force per inch squared",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterP[0 PSI]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "MinTemperature",
+          "description": "Minimum temperature this plumbing component can be exposed to and maintain structural integrity.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 degree Celsius",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterP[0 Kelvin]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "MaxTemperature",
+          "description": "Maximum temperature this plumbing component can be exposed to and maintain structural integrity.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 degree Celsius",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterP[0 Kelvin]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "MaxNumberOfHours",
+          "description": "The amount of time this plumbing can be used during experiments before performance is expected to degrade and the plumbing should be replaced.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 hour",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterP[0 Hour]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "MaxNumberOfUses",
+          "description": "The maximum number of uses for which this plumbing is expected to perform before performance is expected to degrade and the plumbing should be replaced.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Integer",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterP[0, 1]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        }
+      ]
+    },
+    {
+      "title": "Storage Information",
+      "fields": [
+        {
+          "name": "Expires",
+          "description": "Indicates if plumbing components of this model type expire over time.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "ShelfLife",
+          "description": "The length of time after receipt that plumbing components of this model type are recommended for use before being discarded.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 day",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterP[0 Day]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "UnsealedShelfLife",
+          "description": "The length of time after DateUnsealed that plumbing components of this model are recommended for use before being discarded.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 day",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterP[0 Day]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "DefaultStorageCondition",
+          "description": "The condition in which plumbing components of this model are stored when not in use by an experiment; this condition may be overridden by the specific storage condition of any given plumbing component.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Model[StorageCondition]",
+                  "link": "/helpfiles/types/model_storagecondition"
+                }
+              ],
+              "value": "Model[StorageCondition]",
+              "link": "/helpfiles/types/model_storagecondition",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        }
+      ]
+    },
+    {
+      "title": "Compatibility",
+      "fields": [
+        {
+          "name": "PreferredWashBin",
+          "description": "Indicates the recommended bin for dishwashing this container.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Model[Container, WashBin]",
+                  "link": "/helpfiles/types/model_container_washbin"
+                }
+              ],
+              "value": "Model[Container, WashBin]",
+              "link": "/helpfiles/types/model_container_washbin",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        }
+      ]
+    },
+    {
+      "title": "Qualifications & Maintenance",
+      "fields": [
+        {
+          "name": "SupportedInstruments",
+          "description": "A list of instruments for which this model is replacement part or an accompanying accessory.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Model[Instrument][ReplacementParts]",
+                  "link": "/helpfiles/types/model_instrument?toggles=open#ReplacementParts"
+                },
+                {
+                  "text": "Model[Instrument][AssociatedAccessories, 1]",
+                  "link": "/helpfiles/types/model_instrument?toggles=open#AssociatedAccessories"
+                }
+              ],
+              "value": "Model[Instrument][ReplacementParts] | Model[Instrument][AssociatedAccessories, 1]",
+              "link": "/helpfiles/types/model_instrument?toggles=open#ReplacementParts",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "CleaningMethod",
+          "description": "Indicates the type of cleaning that is employed for this plumbing component before reuse.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "CleaningMethodP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        }
+      ]
+    },
+    {
+      "title": "Sample Preparation",
+      "fields": [
+        {
+          "name": "Preparable",
+          "description": "Indicates if this samples/items of this model maybe prepared as needed during the course of an experiment.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Boolean",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1189 @@
+{
+  "typeName": "Model[Pricing] Documentation",
+  "typeDescription": "Model information of a client pricing scheme for a billing cycle.",
+  "url": "https://www.emeraldcloudlab.com/helpfiles/types/model_pricing?toggles=open&toggles=open",
+  "scrapedAt": "2025-02-26T03:50:46.429Z",
+  "sections": [
+    {
+      "title": "Organizational Information",
+      "fields": [
+        {
+          "name": "Name",
+          "description": "Name of this Object.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "String",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_String",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Pattern Description:",
+              "value": "A string.",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "ID",
+          "description": "ID of this Object.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "String",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_String",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Pattern Description:",
+              "value": "The ID of this object.",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Object",
+          "description": "Object of this Object.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "Model[Pricing, _String]",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Pattern Description:",
+              "value": "The object reference of this object.",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Type",
+          "description": "Type of this Object.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "Model[Pricing]",
+              "link": "/helpfiles/types/model_pricing",
+              "isMultiValue": false
+            },
+            {
+              "type": "Pattern Description:",
+              "value": "Model[Pricing]",
+              "link": "/helpfiles/types/model_pricing",
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Notebook",
+          "description": "Notebook this object belongs to.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Pattern Description:",
+              "value": "Object[LaboratoryNotebook]",
+              "link": "/helpfiles/types/object_laboratorynotebook",
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Object[LaboratoryNotebook][Objects]",
+                  "link": "/helpfiles/types/object_laboratorynotebook?toggles=open#Objects"
+                }
+              ],
+              "value": "Object[LaboratoryNotebook][Objects]",
+              "link": "/helpfiles/types/object_laboratorynotebook?toggles=open#Objects",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "PricingPlanName",
+          "description": "The name given to this pricing scheme.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "String",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_String",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "PlanType",
+          "description": "Whether the account is continuous across many months (Subscription) or running ad hoc experiments without long-term commitment (AlaCarte).",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "SubscriptionTypeP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "AccountType",
+          "description": "Type of the organization this pricing model is used for.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "AccountTypeP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "NumberOfThreads",
+          "description": "The overall usage of ECL laboratory and operator resources afforded by this specific pricing scheme.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Integer",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterEqualP[0, 1]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "NumberOfThreadsLog",
+          "description": "Historical record of changes in the number of threads available to the team.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {
+            "Date": [
+              {
+                "type": "Header:",
+                "value": "Date",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Date",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "_?DateObjectQ",
+                "link": null,
+                "isMultiValue": false
+              }
+            ],
+            "Number of threads": [
+              {
+                "type": "Header:",
+                "value": "Number of threads",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Integer",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "GreaterEqualP[0, 1]",
+                "link": null,
+                "isMultiValue": false
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Pricing Information",
+      "fields": [
+        {
+          "name": "CommitmentLength",
+          "description": "The commitment duration of the current account.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 month",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterEqualP[1 Month, 1 Month]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "NumberOfBaselineUsers",
+          "description": "The quantity of users available at the SoftwareBasePrice.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Integer",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterEqualP[1, 1]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "CommandCenterPrice",
+          "description": "The amount charged by the ECL per additional user beyond the baseline amount.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 US dollar",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterEqualP[0 USD]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "ConstellationPrice",
+          "description": "The amount charged by the ECL for every million items stored in the Constellation database.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1\n------- US dollars per unity\n1000000",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "USD\nHold[GreaterEqualP[0 --------]]\n                       6\n                     10  Unit",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "LabAccessFee",
+          "description": "The amount charged by the ECL for the LabCapacity.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 US dollar",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterEqualP[0 USD]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "PricePerExperiment",
+          "description": "The amount charged by the ECL for each protocol run in the facility.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 US dollar",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterEqualP[0 USD]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "PricePerPriorityExperiment",
+          "description": "The amount charged by the ECL for each priority protocol run in the facility that exceed IncludedPriorityProtocols.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 US dollar",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterEqualP[0 USD]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "OperatorTimePrice",
+          "description": "The amount charged by the ECL for operator time per hour based on the QualificationLevel.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {
+            "Qualification Level": [
+              {
+                "type": "Header:",
+                "value": "Qualification Level",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Integer",
+                "link": null,
+                "isMultiValue": false
+              }
+            ],
+            "Price per hour": [
+              {
+                "type": "Header:",
+                "value": "Price per hour",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Real",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Unit:",
+                "value": "1 US dollar per hour",
+                "link": null,
+                "isMultiValue": false
+              }
+            ]
+          }
+        },
+        {
+          "name": "OperatorPriorityTimePrice",
+          "description": "The amount charged by the ECL for operator time on priority protocols based on the QualificationLevel.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {
+            "Qualification Level": [
+              {
+                "type": "Header:",
+                "value": "Qualification Level",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Integer",
+                "link": null,
+                "isMultiValue": false
+              }
+            ],
+            "Price per hour": [
+              {
+                "type": "Header:",
+                "value": "Price per hour",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Real",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Unit:",
+                "value": "1 US dollar per hour",
+                "link": null,
+                "isMultiValue": false
+              }
+            ]
+          }
+        },
+        {
+          "name": "InstrumentPricing",
+          "description": "The amount charged by the ECL for instrument time based on the tier level.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {
+            "Tier": [
+              {
+                "type": "Header:",
+                "value": "Tier",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Integer",
+                "link": null,
+                "isMultiValue": false
+              }
+            ],
+            "Price per hour": [
+              {
+                "type": "Header:",
+                "value": "Price per hour",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Real",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Unit:",
+                "value": "1 US dollar per hour",
+                "link": null,
+                "isMultiValue": false
+              }
+            ]
+          }
+        },
+        {
+          "name": "CleanUpPricing",
+          "description": "The amount charged by the ECL for cleaning dishware and materials based on the type of cleaning.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {
+            "Cleaning Type": [
+              {
+                "type": "Header:",
+                "value": "Cleaning Type",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Expression",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "CleaningP",
+                "link": null,
+                "isMultiValue": false
+              }
+            ],
+            "Price per Item": [
+              {
+                "type": "Header:",
+                "value": "Price per Item",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Real",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Unit:",
+                "value": "1 US dollar",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "GreaterEqualP[0 USD]",
+                "link": null,
+                "isMultiValue": false
+              }
+            ]
+          }
+        },
+        {
+          "name": "StockingPricing",
+          "description": "The amount charged by the ECL for provisioning items based on the cost to stock.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {
+            "Storage Condition": [
+              {
+                "type": "Header:",
+                "value": "Storage Condition",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Link",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Relation:",
+                "valueList": [
+                  {
+                    "text": "Model[StorageCondition]",
+                    "link": "/helpfiles/types/model_storagecondition"
+                  }
+                ],
+                "value": "Model[StorageCondition]",
+                "link": "/helpfiles/types/model_storagecondition",
+                "isMultiValue": true
+              }
+            ],
+            "Price Per Volume": [
+              {
+                "type": "Header:",
+                "value": "Price Per Volume",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Real",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Unit:",
+                "value": "1 US dollar per centimeter cubed",
+                "link": null,
+                "isMultiValue": false
+              }
+            ]
+          }
+        },
+        {
+          "name": "WastePricing",
+          "description": "The amount charged by the ECL for disposing waste.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {
+            "Waste Type": [
+              {
+                "type": "Header:",
+                "value": "Waste Type",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Expression",
+                "link": null,
+                "isMultiValue": false
+              }
+            ],
+            "Disposal cost": [
+              {
+                "type": "Header:",
+                "value": "Disposal cost",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Real",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Unit:",
+                "value": "1 US dollar per kilogram",
+                "link": null,
+                "isMultiValue": false
+              }
+            ]
+          }
+        },
+        {
+          "name": "StoragePricing",
+          "description": "The amount charged by the ECL for storing materials.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {
+            "Storage Condition": [
+              {
+                "type": "Header:",
+                "value": "Storage Condition",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Link",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Relation:",
+                "valueList": [
+                  {
+                    "text": "Model[StorageCondition]",
+                    "link": "/helpfiles/types/model_storagecondition"
+                  }
+                ],
+                "value": "Model[StorageCondition]",
+                "link": "/helpfiles/types/model_storagecondition",
+                "isMultiValue": true
+              }
+            ],
+            "Price per cubic centimeter per month": [
+              {
+                "type": "Header:",
+                "value": "Price per cubic centimeter per month",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Real",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Unit:",
+                "value": "1 US dollar per centimeter cubed hour",
+                "link": null,
+                "isMultiValue": false
+              }
+            ]
+          }
+        },
+        {
+          "name": "IncludedPriorityProtocols",
+          "description": "The number of free priority protocols allowed per billing cycle.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Integer",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterEqualP[0, 1]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "IncludedInstrumentHours",
+          "description": "The number of free hours available each month not subject to InstrumentPricing.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 hour",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterEqualP[0 Hour]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "IncludedCleanings",
+          "description": "The number of free occasions to clean items (e.g. dishwash glassware) not subject to cleaning fees.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Integer",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterEqualP[0, 1]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "IncludedStockingFees",
+          "description": "The price of free stocking not subject to fees.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 US dollar",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterEqualP[0 USD]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "IncludedWasteDisposalFees",
+          "description": "The price of waste disposal not subject to fees.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 US dollar",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterEqualP[0 USD]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "IncludedStorage",
+          "description": "The amount of storage not subject to fees.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 kilo centimeter cubed",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "3\nHold[GreaterEqualP[0 Kilo Centimeter ]]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "IncludedShipmentFees",
+          "description": "The price of shipments not subject to fees.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 US dollar",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterEqualP[0 USD]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "PrivateTutoringFee",
+          "description": "The amount charged by the ECL for office hours each month.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 US dollar",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterEqualP[0 USD]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "IncludedConstellationStorage",
+          "description": "The number of stored database objects not subject to fees.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1000000 unities",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "6\nHold[GreaterEqualP[0 (10  Unit)]]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        }
+      ]
+    }
+  ]
+}

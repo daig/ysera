@@ -1,0 +1,1420 @@
+{
+  "typeName": "Model[Part] Documentation",
+  "typeDescription": "Model information for an interchangeable part used in the maintenance of laboratory equipment or facilities.",
+  "url": "https://www.emeraldcloudlab.com/helpfiles/types/model_part?toggles=open&toggles=open",
+  "scrapedAt": "2025-02-26T03:41:21.272Z",
+  "sections": [
+    {
+      "title": "Organizational Information",
+      "fields": [
+        {
+          "name": "Name",
+          "description": "Name of this Object.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "String",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_String",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Pattern Description:",
+              "value": "A string.",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "ID",
+          "description": "ID of this Object.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "String",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_String",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Pattern Description:",
+              "value": "The ID of this object.",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Object",
+          "description": "Object of this Object.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "Model[Part, _String]",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Pattern Description:",
+              "value": "The object reference of this object.",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Type",
+          "description": "Type of this Object.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "Model[Part]",
+              "link": "/helpfiles/types/model_part",
+              "isMultiValue": false
+            },
+            {
+              "type": "Pattern Description:",
+              "value": "Model[Part]",
+              "link": "/helpfiles/types/model_part",
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Notebook",
+          "description": "Notebook this object belongs to.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Pattern Description:",
+              "value": "Object[LaboratoryNotebook]",
+              "link": "/helpfiles/types/object_laboratorynotebook",
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Object[LaboratoryNotebook][Objects]",
+                  "link": "/helpfiles/types/object_laboratorynotebook?toggles=open#Objects"
+                }
+              ],
+              "value": "Object[LaboratoryNotebook][Objects]",
+              "link": "/helpfiles/types/object_laboratorynotebook?toggles=open#Objects",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Objects",
+          "description": "Objects that represent instances of this model.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Object[Part][Model]",
+                  "link": "/helpfiles/types/object_part?toggles=open#Model"
+                }
+              ],
+              "value": "Object[Part][Model]",
+              "link": "/helpfiles/types/object_part?toggles=open#Model",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Deprecated",
+          "description": "Indicates if this modelPart is historical and no longer used in the lab.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Authors",
+          "description": "The person who created this part model.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Object[User]",
+                  "link": "/helpfiles/types/object_user"
+                }
+              ],
+              "value": "Object[User]",
+              "link": "/helpfiles/types/object_user",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "ImageFile",
+          "description": "An example photo of this model of part.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Object[EmeraldCloudFile]",
+                  "link": "/helpfiles/types/object_emeraldcloudfile"
+                }
+              ],
+              "value": "Object[EmeraldCloudFile]",
+              "link": "/helpfiles/types/object_emeraldcloudfile",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        }
+      ]
+    },
+    {
+      "title": "Part Specifications",
+      "fields": [
+        {
+          "name": "Schematics",
+          "description": "Detailed drawings of the part that explain its capabilities and limitations.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {
+            "Schematic": [
+              {
+                "type": "Header:",
+                "value": "Schematic",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Link",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "_Link",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Relation:",
+                "valueList": [
+                  {
+                    "text": "Object[EmeraldCloudFile]",
+                    "link": "/helpfiles/types/object_emeraldcloudfile"
+                  }
+                ],
+                "value": "Object[EmeraldCloudFile]",
+                "link": "/helpfiles/types/object_emeraldcloudfile",
+                "isMultiValue": true
+              }
+            ],
+            "Caption": [
+              {
+                "type": "Header:",
+                "value": "Caption",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "String",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "_String",
+                "link": null,
+                "isMultiValue": false
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Storage Information",
+      "fields": [
+        {
+          "name": "Expires",
+          "description": "Indicates if parts of this model type expire over time.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "ShelfLife",
+          "description": "The length of time after creation that parts of this model type are recommended for use before it should be discarded.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 day",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterP[0 Day]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "UnsealedShelfLife",
+          "description": "The length of time after DateUnsealed that parts of this model type are recommended for use before it should be discarded.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 day",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterP[0 Day]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "DefaultStorageCondition",
+          "description": "The condition in which parts of this model are stored when not in use by an experiment; this condition may be overridden by the specific storage condition of any given part.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Model[StorageCondition]",
+                  "link": "/helpfiles/types/model_storagecondition"
+                }
+              ],
+              "value": "Model[StorageCondition]",
+              "link": "/helpfiles/types/model_storagecondition",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        }
+      ]
+    },
+    {
+      "title": "Plumbing Information",
+      "fields": [
+        {
+          "name": "Connectors",
+          "description": "Specifications for the ends of this plumbing component that may connect to other plumbing components or instrument ports.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {
+            "Connector Name": [
+              {
+                "type": "Header:",
+                "value": "Connector Name",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "String",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "ConnectorNameP",
+                "link": null,
+                "isMultiValue": false
+              }
+            ],
+            "Connector Type": [
+              {
+                "type": "Header:",
+                "value": "Connector Type",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Expression",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "ConnectorP",
+                "link": null,
+                "isMultiValue": false
+              }
+            ],
+            "Thread Type": [
+              {
+                "type": "Header:",
+                "value": "Thread Type",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Expression",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "ThreadP|GroundGlassJointSizeP|None",
+                "link": null,
+                "isMultiValue": false
+              }
+            ],
+            "Inner Diameter": [
+              {
+                "type": "Header:",
+                "value": "Inner Diameter",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Real",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Unit:",
+                "value": "1 inch",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "GreaterP[0 Inch]",
+                "link": null,
+                "isMultiValue": false
+              }
+            ],
+            "Outer Diameter": [
+              {
+                "type": "Header:",
+                "value": "Outer Diameter",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Real",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Unit:",
+                "value": "1 inch",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "GreaterP[0 Inch]",
+                "link": null,
+                "isMultiValue": false
+              }
+            ],
+            "Gender": [
+              {
+                "type": "Header:",
+                "value": "Gender",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Expression",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "ConnectorGenderP|None",
+                "link": null,
+                "isMultiValue": false
+              }
+            ]
+          }
+        },
+        {
+          "name": "Size",
+          "description": "The length of this part, in the direction of fluid flow.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 meter",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterEqualP[0 Meter]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        }
+      ]
+    },
+    {
+      "title": "Wiring Information",
+      "fields": [
+        {
+          "name": "WiringConnectors",
+          "description": "Specifications for the ends of the wiring connectors on this Part model that may plug into and conductively connect to other wiring components or instrument wiring connectors.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {
+            "Wiring Connector Name": [
+              {
+                "type": "Header:",
+                "value": "Wiring Connector Name",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "String",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "WiringConnectorNameP",
+                "link": null,
+                "isMultiValue": false
+              }
+            ],
+            "Wiring Connector Type": [
+              {
+                "type": "Header:",
+                "value": "Wiring Connector Type",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Expression",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "WiringConnectorP",
+                "link": null,
+                "isMultiValue": false
+              }
+            ],
+            "Gender": [
+              {
+                "type": "Header:",
+                "value": "Gender",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Expression",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "ConnectorGenderP|None",
+                "link": null,
+                "isMultiValue": false
+              }
+            ]
+          }
+        },
+        {
+          "name": "WiringLength",
+          "description": "The length of this part, in the direction of electricity flow.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 centimeter",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterP[0 Centimeter]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "WiringDiameters",
+          "description": "For each member of WiringConnectors, its effective conductive diameter.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 millimeter",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterP[0 Millimeter]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        }
+      ]
+    },
+    {
+      "title": "Inventory",
+      "fields": [
+        {
+          "name": "ProductDocumentationFiles",
+          "description": "PDFs of any product documentation provided by the supplier of this modelPart.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Object[EmeraldCloudFile]",
+                  "link": "/helpfiles/types/object_emeraldcloudfile"
+                }
+              ],
+              "value": "Object[EmeraldCloudFile]",
+              "link": "/helpfiles/types/object_emeraldcloudfile",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Products",
+          "description": "Products ordering information for this model of part.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Object[Product][ProductModel]",
+                  "link": "/helpfiles/types/object_product?toggles=open#ProductModel"
+                }
+              ],
+              "value": "Object[Product][ProductModel]",
+              "link": "/helpfiles/types/object_product?toggles=open#ProductModel",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "KitProducts",
+          "description": "Products ordering information for this model if this model is part of one or more kits.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Object[Product][KitComponents, ProductModel]",
+                  "link": "/helpfiles/types/object_product?toggles=open#KitComponents"
+                }
+              ],
+              "value": "Object[Product][KitComponents, ProductModel]",
+              "link": "/helpfiles/types/object_product?toggles=open#KitComponents",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "MixedBatchProducts",
+          "description": "Products ordering information for this model if this model is part of one or more mixed batches.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Object[Product][MixedBatchComponents, ProductModel]",
+                  "link": "/helpfiles/types/object_product?toggles=open#MixedBatchComponents"
+                }
+              ],
+              "value": "Object[Product][MixedBatchComponents, ProductModel]",
+              "link": "/helpfiles/types/object_product?toggles=open#MixedBatchComponents",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        }
+      ]
+    },
+    {
+      "title": "Compatibility",
+      "fields": [
+        {
+          "name": "PreferredWashBin",
+          "description": "Indicates the recommended bin for dishwashing this container.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Model[Container, WashBin]",
+                  "link": "/helpfiles/types/model_container_washbin"
+                }
+              ],
+              "value": "Model[Container, WashBin]",
+              "link": "/helpfiles/types/model_container_washbin",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "WettedMaterials",
+          "description": "The materials of which this part is made that may come in direct contact with fluids.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "MaterialP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        }
+      ]
+    },
+    {
+      "title": "Dimensions & Positions",
+      "fields": [
+        {
+          "name": "Footprint",
+          "description": "Standard form factor of the exterior bottom portion of this model of part used to seat the part in an open position.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "FootprintP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        }
+      ]
+    },
+    {
+      "title": "Qualifications & Maintenance",
+      "fields": [
+        {
+          "name": "MaintenanceFrequency",
+          "description": "A list of the maintenance models for this part model and their required frequencies.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {
+            "Maintenance Model": [
+              {
+                "type": "Header:",
+                "value": "Maintenance Model",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Link",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "_Link",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Relation:",
+                "valueList": [
+                  {
+                    "text": "Model[Maintenance][Targets]",
+                    "link": "/helpfiles/types/model_maintenance?toggles=open#Targets"
+                  }
+                ],
+                "value": "Model[Maintenance][Targets]",
+                "link": "/helpfiles/types/model_maintenance?toggles=open#Targets",
+                "isMultiValue": true
+              }
+            ],
+            "Frequency": [
+              {
+                "type": "Header:",
+                "value": "Frequency",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Real",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Unit:",
+                "value": "1 day",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "GreaterP[0 Day]",
+                "link": null,
+                "isMultiValue": false
+              }
+            ]
+          }
+        },
+        {
+          "name": "QualificationFrequency",
+          "description": "A list of the Qualification models for this part model and their required frequencies.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {
+            "Qualification Model": [
+              {
+                "type": "Header:",
+                "value": "Qualification Model",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Link",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "_Link",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Relation:",
+                "valueList": [
+                  {
+                    "text": "Model[Qualification][Targets]",
+                    "link": "/helpfiles/types/model_qualification?toggles=open#Targets"
+                  }
+                ],
+                "value": "Model[Qualification][Targets]",
+                "link": "/helpfiles/types/model_qualification?toggles=open#Targets",
+                "isMultiValue": true
+              }
+            ],
+            "Frequency": [
+              {
+                "type": "Header:",
+                "value": "Frequency",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Real",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Unit:",
+                "value": "1 day",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "GreaterP[0 Day]",
+                "link": null,
+                "isMultiValue": false
+              }
+            ]
+          }
+        },
+        {
+          "name": "SupportedInstruments",
+          "description": "A list of instruments for which this model is replacement part or an accompanying accessory.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Model[Instrument][ReplacementParts]",
+                  "link": "/helpfiles/types/model_instrument?toggles=open#ReplacementParts"
+                },
+                {
+                  "text": "Model[Instrument][AssociatedAccessories, 1]",
+                  "link": "/helpfiles/types/model_instrument?toggles=open#AssociatedAccessories"
+                }
+              ],
+              "value": "Model[Instrument][ReplacementParts] | Model[Instrument][AssociatedAccessories, 1]",
+              "link": "/helpfiles/types/model_instrument?toggles=open#ReplacementParts",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "CleaningMethod",
+          "description": "Indicates the type of cleaning that is employed for this part before reuse.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "CleaningMethodP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "ContinuousOperation",
+          "description": "Indicates if the part is required to operate continuously in the lab, regardless of if it is InUse by a specific protocol.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Boolean",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        }
+      ]
+    },
+    {
+      "title": "Operating Limits",
+      "fields": [
+        {
+          "name": "MaxNumberOfHours",
+          "description": "The amount of time this part can be used during experiments before performance is expected to degrade and the part should be replaced.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 hour",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterP[0 Hour]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "MaxNumberOfUses",
+          "description": "The maximum number of uses for which this part is expected to perform before performance is expected to degrade and the part should be replaced.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Integer",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterP[0, 1]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        }
+      ]
+    },
+    {
+      "title": "Sample Preparation",
+      "fields": [
+        {
+          "name": "Preparable",
+          "description": "Indicates if this samples/items of this model maybe prepared as needed during the course of an experiment.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Boolean",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,291 @@
+{
+  "typeName": "Model[TransportCondition] Documentation",
+  "typeDescription": "Specifies how samples should be transported when in used in the laboratory.",
+  "url": "https://www.emeraldcloudlab.com/helpfiles/types/model_transportcondition?toggles=open&toggles=open",
+  "scrapedAt": "2025-02-26T03:42:15.193Z",
+  "sections": [
+    {
+      "title": "Organizational Information",
+      "fields": [
+        {
+          "name": "Name",
+          "description": "Name of this Object.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "String",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_String",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Pattern Description:",
+              "value": "A string.",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "ID",
+          "description": "ID of this Object.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "String",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_String",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Pattern Description:",
+              "value": "The ID of this object.",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Object",
+          "description": "Object of this Object.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "Model[TransportCondition, _String]",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Pattern Description:",
+              "value": "The object reference of this object.",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Type",
+          "description": "Type of this Object.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "Model[TransportCondition]",
+              "link": "/helpfiles/types/model_transportcondition",
+              "isMultiValue": false
+            },
+            {
+              "type": "Pattern Description:",
+              "value": "Model[TransportCondition]",
+              "link": "/helpfiles/types/model_transportcondition",
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Notebook",
+          "description": "Notebook this object belongs to.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Pattern Description:",
+              "value": "Object[LaboratoryNotebook]",
+              "link": "/helpfiles/types/object_laboratorynotebook",
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Object[LaboratoryNotebook][Objects]",
+                  "link": "/helpfiles/types/object_laboratorynotebook?toggles=open#Objects"
+                }
+              ],
+              "value": "Object[LaboratoryNotebook][Objects]",
+              "link": "/helpfiles/types/object_laboratorynotebook?toggles=open#Objects",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Deprecated",
+          "description": "Indicates if this item model is historical and no longer used in the lab.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Boolean",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        }
+      ]
+    },
+    {
+      "title": "Model Information",
+      "fields": [
+        {
+          "name": "TransportLightSensitive",
+          "description": "Indicates if this sample should be transported with a light sensitive cover when used in the laboratory.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Boolean",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "TransportTemperature",
+          "description": "The temperature at which this sample should be transported in the lab in a portable cooler/heater. If this field is Null, the sample will be transported at Ambient temperature.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 degree Celsius",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterP[0 Kelvin]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "TransportCondition",
+          "description": "The shortcut symbol that refers to the genre of transport provided by this object.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "TransportConditionP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        }
+      ]
+    }
+  ]
+}

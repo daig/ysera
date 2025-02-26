@@ -1,0 +1,7 @@
+Batch Scraping Started at 2025-02-26T03:36:45.216Z
+[2025-02-26T03:36:45.222Z] Loaded 3448 types from all_types_structured.json
+[2025-02-26T03:36:45.226Z] Processing 3 types in 1 batches
+[2025-02-26T03:36:45.226Z] Starting batch 1/1
+[2025-02-26T03:36:45.226Z] Running batch from index 20 to 22 (3 types)
+[2025-02-26T03:36:55.075Z] Batch completed successfully (20 - 22)
+[2025-02-26T03:36:55.075Z] All batches completed!

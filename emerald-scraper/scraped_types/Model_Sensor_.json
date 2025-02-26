@@ -1,0 +1,1073 @@
+{
+  "typeName": "Model[Sensor] Documentation",
+  "typeDescription": "Model information for a device used to interrogate the state of a sample or the surrounding environment.",
+  "url": "https://www.emeraldcloudlab.com/helpfiles/types/model_sensor?toggles=open&toggles=open",
+  "scrapedAt": "2025-02-26T03:42:03.936Z",
+  "sections": [
+    {
+      "title": "Organizational Information",
+      "fields": [
+        {
+          "name": "Name",
+          "description": "Name of this Object.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "String",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_String",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Pattern Description:",
+              "value": "A string.",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "ID",
+          "description": "ID of this Object.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "String",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_String",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Pattern Description:",
+              "value": "The ID of this object.",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Object",
+          "description": "Object of this Object.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "Model[Sensor, _String]",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Pattern Description:",
+              "value": "The object reference of this object.",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Type",
+          "description": "Type of this Object.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "Model[Sensor]",
+              "link": "/helpfiles/types/model_sensor",
+              "isMultiValue": false
+            },
+            {
+              "type": "Pattern Description:",
+              "value": "Model[Sensor]",
+              "link": "/helpfiles/types/model_sensor",
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Notebook",
+          "description": "Notebook this object belongs to.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Pattern Description:",
+              "value": "Object[LaboratoryNotebook]",
+              "link": "/helpfiles/types/object_laboratorynotebook",
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Object[LaboratoryNotebook][Objects]",
+                  "link": "/helpfiles/types/object_laboratorynotebook?toggles=open#Objects"
+                }
+              ],
+              "value": "Object[LaboratoryNotebook][Objects]",
+              "link": "/helpfiles/types/object_laboratorynotebook?toggles=open#Objects",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Objects",
+          "description": "Objects that represent instances of this model.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Object[Sensor][Model]",
+                  "link": "/helpfiles/types/object_sensor?toggles=open#Model"
+                }
+              ],
+              "value": "Object[Sensor][Model]",
+              "link": "/helpfiles/types/object_sensor?toggles=open#Model",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Deprecated",
+          "description": "Indicates if this modelSensor is historical and no longer used in the lab.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Authors",
+          "description": "The person(s) who created this sensor model.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Object[User]",
+                  "link": "/helpfiles/types/object_user"
+                }
+              ],
+              "value": "Object[User]",
+              "link": "/helpfiles/types/object_user",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "ImageFile",
+          "description": "A photo of this sensor model.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Object[EmeraldCloudFile]",
+                  "link": "/helpfiles/types/object_emeraldcloudfile"
+                }
+              ],
+              "value": "Object[EmeraldCloudFile]",
+              "link": "/helpfiles/types/object_emeraldcloudfile",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "UserManualFiles",
+          "description": "PDFs for the manuals or instruction guides for this model of sensor.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Object[EmeraldCloudFile]",
+                  "link": "/helpfiles/types/object_emeraldcloudfile"
+                }
+              ],
+              "value": "Object[EmeraldCloudFile]",
+              "link": "/helpfiles/types/object_emeraldcloudfile",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        }
+      ]
+    },
+    {
+      "title": "Sensor Information",
+      "fields": [
+        {
+          "name": "SensorOutputSignal",
+          "description": "The type of signal with which the sensor outputs measurement data.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "SensorOutputTypeP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "PLCVariableType",
+          "description": "The type of variable used to represent this sensor model on the PLC that controls the sensor.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "PLCVariableTypeP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "PowerInput",
+          "description": "Describes the source of power for the sensor.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "DirectCurrentP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Method",
+          "description": "Describes what is initially measured by this sensor (before any processing).",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "MeasurementMethodP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        }
+      ]
+    },
+    {
+      "title": "Dimensions & Positions",
+      "fields": [
+        {
+          "name": "Dimensions",
+          "description": "The external dimensions of this sensor.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {
+            "Dimension X": [
+              {
+                "type": "Header:",
+                "value": "Dimension X",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Real",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Unit:",
+                "value": "1 meter",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "GreaterP[0 Meter]",
+                "link": null,
+                "isMultiValue": false
+              }
+            ],
+            "Dimension Y": [
+              {
+                "type": "Header:",
+                "value": "Dimension Y",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Real",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Unit:",
+                "value": "1 meter",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "GreaterP[0 Meter]",
+                "link": null,
+                "isMultiValue": false
+              }
+            ],
+            "Dimension Z": [
+              {
+                "type": "Header:",
+                "value": "Dimension Z",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Real",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Unit:",
+                "value": "1 meter",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "GreaterP[0 Meter]",
+                "link": null,
+                "isMultiValue": false
+              }
+            ]
+          }
+        },
+        {
+          "name": "CrossSectionalShape",
+          "description": "The shape of this model of sensor in the X-Y plane.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "CrossSectionalShapeP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        }
+      ]
+    },
+    {
+      "title": "Qualifications & Maintenance",
+      "fields": [
+        {
+          "name": "QualificationFrequency",
+          "description": "A list of the Qualifications which should be run on this sensor and their required frequencies.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {
+            "Model Qualification Object": [
+              {
+                "type": "Header:",
+                "value": "Model Qualification Object",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Link",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "_Link",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Relation:",
+                "valueList": [
+                  {
+                    "text": "Model[Qualification][Targets]",
+                    "link": "/helpfiles/types/model_qualification?toggles=open#Targets"
+                  }
+                ],
+                "value": "Model[Qualification][Targets]",
+                "link": "/helpfiles/types/model_qualification?toggles=open#Targets",
+                "isMultiValue": true
+              }
+            ],
+            "Time": [
+              {
+                "type": "Header:",
+                "value": "Time",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Real",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Unit:",
+                "value": "1 day",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "GreaterEqualP[0 Day]",
+                "link": null,
+                "isMultiValue": false
+              }
+            ]
+          }
+        },
+        {
+          "name": "MaintenanceFrequency",
+          "description": "A list of the maintenances which are run on this sensor and their required frequencies.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {
+            "Model Maintenance Object": [
+              {
+                "type": "Header:",
+                "value": "Model Maintenance Object",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Link",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "_Link",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Relation:",
+                "valueList": [
+                  {
+                    "text": "Model[Maintenance][Targets]",
+                    "link": "/helpfiles/types/model_maintenance?toggles=open#Targets"
+                  }
+                ],
+                "value": "Model[Maintenance][Targets]",
+                "link": "/helpfiles/types/model_maintenance?toggles=open#Targets",
+                "isMultiValue": true
+              }
+            ],
+            "Time": [
+              {
+                "type": "Header:",
+                "value": "Time",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Real",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Unit:",
+                "value": "1 day",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "GreaterEqualP[0 Day]",
+                "link": null,
+                "isMultiValue": false
+              }
+            ]
+          }
+        },
+        {
+          "name": "ContinuousOperation",
+          "description": "Indicates if the sensor is required to operate continuously in the lab, regardless of if it is InUse by a specific protocol.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Boolean",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        }
+      ]
+    },
+    {
+      "title": "Inventory",
+      "fields": [
+        {
+          "name": "Products",
+          "description": "A list of products storing purchasing information for sensors described by this model.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Object[Product][ProductModel]",
+                  "link": "/helpfiles/types/object_product?toggles=open#ProductModel"
+                }
+              ],
+              "value": "Object[Product][ProductModel]",
+              "link": "/helpfiles/types/object_product?toggles=open#ProductModel",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "KitProducts",
+          "description": "Products ordering information for this model if this model is part of one or more kits.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Object[Product][KitComponents, ProductModel]",
+                  "link": "/helpfiles/types/object_product?toggles=open#KitComponents"
+                }
+              ],
+              "value": "Object[Product][KitComponents, ProductModel]",
+              "link": "/helpfiles/types/object_product?toggles=open#KitComponents",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "MixedBatchProducts",
+          "description": "Products ordering information for this model if this model is part of one or more mixed batches.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Object[Product][MixedBatchComponents, ProductModel]",
+                  "link": "/helpfiles/types/object_product?toggles=open#MixedBatchComponents"
+                }
+              ],
+              "value": "Object[Product][MixedBatchComponents, ProductModel]",
+              "link": "/helpfiles/types/object_product?toggles=open#MixedBatchComponents",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Manufacturer",
+          "description": "The company that originally manufactured this model of sensor.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Object[Company, Supplier][SensorsManufactured]",
+                  "link": "/helpfiles/types/object_company_supplier?toggles=open#SensorsManufactured"
+                }
+              ],
+              "value": "Object[Company, Supplier][SensorsManufactured]",
+              "link": "/helpfiles/types/object_company_supplier?toggles=open#SensorsManufactured",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "SupportedInstruments",
+          "description": "A list of instruments for which this model is an accompanying accessory.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Model[Instrument][AssociatedAccessories, 1]",
+                  "link": "/helpfiles/types/model_instrument?toggles=open#AssociatedAccessories"
+                }
+              ],
+              "value": "Model[Instrument][AssociatedAccessories, 1]",
+              "link": "/helpfiles/types/model_instrument?toggles=open#AssociatedAccessories",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        }
+      ]
+    },
+    {
+      "title": "Storage Information",
+      "fields": [
+        {
+          "name": "Expires",
+          "description": "Indicates if sensors of this model type expire over time.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "ShelfLife",
+          "description": "The length of time after creation that sensors of this model type are recommended for use before it should be discarded.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 day",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterP[0 Day]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "UnsealedShelfLife",
+          "description": "The length of time after DateUnsealed that sensors of this model type are recommended for use before it should be discarded.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 day",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterP[0 Day]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "DefaultStorageCondition",
+          "description": "The condition in which sensors of this model are stored when not in use by an experiment; this condition may be overridden by the specific storage condition of any given sensor.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Model[StorageCondition]",
+                  "link": "/helpfiles/types/model_storagecondition"
+                }
+              ],
+              "value": "Model[StorageCondition]",
+              "link": "/helpfiles/types/model_storagecondition",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        }
+      ]
+    }
+  ]
+}

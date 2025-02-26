@@ -1,0 +1,3493 @@
+{
+  "typeName": "Model[Container, MicroscopeSlide] Documentation",
+  "typeDescription": "A model for a microscope slide that can contain samples to be imaged with a microscope.",
+  "url": "https://www.emeraldcloudlab.com/helpfiles/types/Model_Container_MicroscopeSlide.html?toggles=open&toggles=open",
+  "scrapedAt": "2025-02-26T03:44:49.955Z",
+  "sections": [
+    {
+      "title": "Organizational Information",
+      "fields": [
+        {
+          "name": "Name",
+          "description": "Name of this Object.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "String",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_String",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Pattern Description:",
+              "value": "A string.",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "ID",
+          "description": "ID of this Object.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "String",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_String",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Pattern Description:",
+              "value": "The ID of this object.",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Object",
+          "description": "Object of this Object.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "Model[Container, MicroscopeSlide, _String]",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Pattern Description:",
+              "value": "The object reference of this object.",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Type",
+          "description": "Type of this Object.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "Model[Container, MicroscopeSlide]",
+              "link": "/helpfiles/types/model_container_microscopeslide",
+              "isMultiValue": false
+            },
+            {
+              "type": "Pattern Description:",
+              "value": "Model[Container, MicroscopeSlide]",
+              "link": "/helpfiles/types/model_container_microscopeslide",
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Notebook",
+          "description": "Notebook this object belongs to.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Pattern Description:",
+              "value": "Object[LaboratoryNotebook]",
+              "link": "/helpfiles/types/object_laboratorynotebook",
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Object[LaboratoryNotebook][Objects]",
+                  "link": "/helpfiles/types/object_laboratorynotebook?toggles=open#Objects"
+                }
+              ],
+              "value": "Object[LaboratoryNotebook][Objects]",
+              "link": "/helpfiles/types/object_laboratorynotebook?toggles=open#Objects",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Objects",
+          "description": "Objects that represent instances of this model.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Object[Container, MicroscopeSlide][Model]",
+                  "link": "/helpfiles/types/object_container_microscopeslide?toggles=open#Model"
+                }
+              ],
+              "value": "Object[Container, MicroscopeSlide][Model]",
+              "link": "/helpfiles/types/object_container_microscopeslide?toggles=open#Model",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Synonyms",
+          "description": "List of possible alternative names this model goes by.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "String",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_String",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Deprecated",
+          "description": "Indicates that this model is historical and no longer used in the lab.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Authors",
+          "description": "The person who created this model.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Object[User]",
+                  "link": "/helpfiles/types/object_user"
+                }
+              ],
+              "value": "Object[User]",
+              "link": "/helpfiles/types/object_user",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "ProductDocumentationFiles",
+          "description": "PDFs of product documentation provided by the supplier of this model.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Object[EmeraldCloudFile]",
+                  "link": "/helpfiles/types/object_emeraldcloudfile"
+                }
+              ],
+              "value": "Object[EmeraldCloudFile]",
+              "link": "/helpfiles/types/object_emeraldcloudfile",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        }
+      ]
+    },
+    {
+      "title": "Storage Information",
+      "fields": [
+        {
+          "name": "Expires",
+          "description": "Indicates if containers of this model expire after a given amount of time.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "ShelfLife",
+          "description": "The length of time after DateCreated that containers of this model are recommended for use before they should be discarded.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 day",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterP[0 Day]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "UnsealedShelfLife",
+          "description": "The length of time after DateUnsealed that containers of this model are recommended for use before they should be discarded.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 day",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterP[0 Day]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "ExpirationHazard",
+          "description": "Indicates if containers of this model become hazardous once they are expired and therefore must be automatically disposed of when they pass their expiration date.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Boolean",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "DefaultStorageCondition",
+          "description": "The condition in which containers of this model are stored when not in use by an experiment; this condition may be overridden by the specific storage condition of any given container.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Model[StorageCondition]",
+                  "link": "/helpfiles/types/model_storagecondition"
+                }
+              ],
+              "value": "Model[StorageCondition]",
+              "link": "/helpfiles/types/model_storagecondition",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "StorageBuffer",
+          "description": "Indicates that containers of this model come stocked from the manufacturer with a storage buffer inside of the container.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Boolean",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "StorageBufferVolume",
+          "description": "Indicates the amount of storage buffer containers of this model come stocked with.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 microliter",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterP[0 Microliter]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        }
+      ]
+    },
+    {
+      "title": "Container Specifications",
+      "fields": [
+        {
+          "name": "InstrumentSchematics",
+          "description": "Detailed drawings of the instrument that explain its capabilities and limitations.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {
+            "Schematic": [
+              {
+                "type": "Header:",
+                "value": "Schematic",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Link",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "_Link",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Relation:",
+                "valueList": [
+                  {
+                    "text": "Object[EmeraldCloudFile]",
+                    "link": "/helpfiles/types/object_emeraldcloudfile"
+                  }
+                ],
+                "value": "Object[EmeraldCloudFile]",
+                "link": "/helpfiles/types/object_emeraldcloudfile",
+                "isMultiValue": true
+              }
+            ],
+            "Caption": [
+              {
+                "type": "Header:",
+                "value": "Caption",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "String",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "_String",
+                "link": null,
+                "isMultiValue": false
+              }
+            ]
+          }
+        },
+        {
+          "name": "ImageFile",
+          "description": "A photo of this model of container.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Object[EmeraldCloudFile]",
+                  "link": "/helpfiles/types/object_emeraldcloudfile"
+                }
+              ],
+              "value": "Object[EmeraldCloudFile]",
+              "link": "/helpfiles/types/object_emeraldcloudfile",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "ImageFileScale",
+          "description": "The scale relating pixels of ImageFile to real world distance.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 Pixels per centimeter",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "0 Pixel\nHold[GreaterEqualP[-----------]]\n                   Centi Meter",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Schematics",
+          "description": "Detailed drawings of the container that explain its capabilities and limitations.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {
+            "Schematic": [
+              {
+                "type": "Header:",
+                "value": "Schematic",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Link",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "_Link",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Relation:",
+                "valueList": [
+                  {
+                    "text": "Object[EmeraldCloudFile]",
+                    "link": "/helpfiles/types/object_emeraldcloudfile"
+                  }
+                ],
+                "value": "Object[EmeraldCloudFile]",
+                "link": "/helpfiles/types/object_emeraldcloudfile",
+                "isMultiValue": true
+              }
+            ],
+            "Caption": [
+              {
+                "type": "Header:",
+                "value": "Caption",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "String",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "_String",
+                "link": null,
+                "isMultiValue": false
+              }
+            ]
+          }
+        },
+        {
+          "name": "Reusability",
+          "description": "Indicates that this container can be used repeatedly.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Boolean",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Ampoule",
+          "description": "Indicates a sealed vessel containing a measured quantity of substance, meant for single-use.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Boolean",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Hermetic",
+          "description": "Indicates if this container has an airtight seal at its aperture.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Boolean",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Squeezable",
+          "description": "Indicates this container must be squeezed in order to have its contents removed.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Boolean",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "PermanentlySealed",
+          "description": "Indicates if this model of container is permanently sealed closed and can not be opened to transfer anything into or out of it.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Boolean",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Opaque",
+          "description": "Indicates if the exterior of this container blocks the transmission of light.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Boolean",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "CleaningMethod",
+          "description": "Indicates the type of cleaning that is employed for this model of container before reuse.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "CleaningMethodP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "TareWeight",
+          "description": "The mean weight of empty containers of this model. Experimental tare weights of new containers of this model must be within 5% of this weight.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 gram",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterP[0 Gram]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "TareWeightDistribution",
+          "description": "The statistical distribution of the mean weight of empty containers of this model.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "DistributionP[Gram]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "ContainerMaterials",
+          "description": "The materials of which this container is made that come in direct contact with the samples it contains.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "MaterialP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Coating",
+          "description": "The molecule that coats the interior of this container.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Model[Molecule]",
+                  "link": "/helpfiles/types/model_molecule"
+                }
+              ],
+              "value": "Model[Molecule]",
+              "link": "/helpfiles/types/model_molecule",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Treatment",
+          "description": "The treatment, if any, on the interior of this container.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "WellTreatmentP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "PreferredBalance",
+          "description": "Indicates the recommended balance type for weighing a sample in this type of container.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BalanceModeP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "PreferredCamera",
+          "description": "Indicates the recommended camera type for taking an image of a sample in this type of container.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "CameraCategoryP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "CompatibleCameras",
+          "description": "Indicates camera types capable of taking an image of a sample in this type of container.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "CameraCategoryP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "PreferredIllumination",
+          "description": "The illumination source that should be used when acquiring images of this container.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "IlluminationDirectionP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "DisposableCaps",
+          "description": "Indicates if this container uses interchangeable caps that are disposable; i.e. the cap on the container could be changed to another equivalent cap at any time.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Transportable",
+          "description": "Indicates that this container can be used to move its contents through the lab removing the need to individually act on the objects it holds.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Boolean",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Immobile",
+          "description": "Indicates if this container is affixed to its location and can not be moved.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "DetergentSensitive",
+          "description": "Indicates if the container should not be used for holding detergent-containing solutions and should be hand washed using a detergent-free procedure, for example containers for samples or solutions used in liquid chromatography coupled to mass spectrometry (LCMS) experiments in order to avoid contamination of the LCMS system.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Boolean",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Aspiratable",
+          "description": "Indicates if this samples can be transferred out of this container when it is not Covered.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Boolean",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Dispensable",
+          "description": "Indicates if this samples can be into this container when it is not Covered.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Boolean",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "SlideTreatment",
+          "description": "The treatment, if any, on the surface of the microscope slide.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "SlideTreatmentP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "HorizontalMargin",
+          "description": "Distance from the left edge of the plate to the edge of the first position.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 millimeter",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterEqualP[0 Milli Meter]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "VerticalMargin",
+          "description": "Distance from the top edge of the plate to the edge of the first position.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 millimeter",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterEqualP[0 Milli Meter]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "HorizontalPitch",
+          "description": "Center-to-center distance from one position to the next in a given row.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 millimeter",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterP[0 Milli Meter]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "VerticalPitch",
+          "description": "Center-to-center distance from one position to the next in a given column.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 millimeter",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterP[0 Milli Meter]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "HorizontalOffset",
+          "description": "Distance between the center of position A1 and position B1 in the X direction.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 millimeter",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "DistanceP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "VerticalOffset",
+          "description": "Distance between the center of position A1 and position A2 in the Y direction.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 millimeter",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "DistanceP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Coverslipped",
+          "description": "Indicates if a coverslip is placed over the sample on this microscope slide.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "CoverslipThickness",
+          "description": "The physical thickness of the coverslip placed on over the sample on the microscope slide.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 millimeter",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterEqualP[0 Milli Meter]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "PreferredObjective\nMagnification",
+          "description": "Indicates the recommended objective magnification for acquiring an image from this type of microscope slide.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterP[0]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        }
+      ]
+    },
+    {
+      "title": "Compatibility",
+      "fields": [
+        {
+          "name": "UltrasonicIncompatible",
+          "description": "Indicates if volume measurements of samples contained within objects of this model are likely to give errant readings when measurements are conducted via ultrasonic liquid level detection.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "PreferredWashBin",
+          "description": "Indicates the recommended bin for dishwashing this container.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Model[Container, WashBin]",
+                  "link": "/helpfiles/types/model_container_washbin"
+                }
+              ],
+              "value": "Model[Container, WashBin]",
+              "link": "/helpfiles/types/model_container_washbin",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "PreferredMixer",
+          "description": "Indicates the recommended mixer for this container.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Model[Instrument]",
+                  "link": "/helpfiles/types/model_instrument"
+                }
+              ],
+              "value": "Model[Instrument]",
+              "link": "/helpfiles/types/model_instrument",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "CompatibleCoverTypes",
+          "description": "The types of covers that are compatible with this container.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "CoverTypeP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "CompatibleCoverFootprints",
+          "description": "The cover footprint that can fit on top of this container.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "CoverFootprintP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "BuiltInCover",
+          "description": "Indicates if the container has a cover that is physically attached and cannot be physically separated from the container (ex. centrifuge tube).",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Boolean",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Parafilm",
+          "description": "Indicates if containers of this model should have their covers sealed with parafilm by default.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Boolean",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "AluminumFoil",
+          "description": "Indicates if containers of this model should be wrapped in aluminum foil to protect the container contents from light by default.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Boolean",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        }
+      ]
+    },
+    {
+      "title": "Operating Limits",
+      "fields": [
+        {
+          "name": "MinTemperature",
+          "description": "Minimum temperature this type of container can be exposed to and maintain structural integrity.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 degree Celsius",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterP[0 Kelvin]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "MaxTemperature",
+          "description": "Maximum temperature this type of container can be exposed to and maintain structural integrity.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 degree Celsius",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterP[0 Kelvin]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "MinVolume",
+          "description": "The minimum volume required to create a uniform layer at the bottom of the container, indicating the smallest volume needed to reliably aspirate from the container, measure spectral properties, etc.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 milliliter",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterP[0 Micro Liter]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "MaxVolume",
+          "description": "Maximum volume of fluid the vessel can hold.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 milliliter",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterP[0 Micro Liter]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "MaxNumberOfHours",
+          "description": "The amount of time this container can be used during experiments before performance is expected to degrade and the container should be replaced.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 hour",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterP[0 Hour]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "MaxNumberOfUses",
+          "description": "The maximum number of uses for which this container is expected to perform before performance is expected to degrade and the container should be replaced.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Integer",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterP[0, 1]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        }
+      ]
+    },
+    {
+      "title": "Inventory",
+      "fields": [
+        {
+          "name": "Products",
+          "description": "Products ordering information for this model.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Object[Product][ProductModel]",
+                  "link": "/helpfiles/types/object_product?toggles=open#ProductModel"
+                }
+              ],
+              "value": "Object[Product][ProductModel]",
+              "link": "/helpfiles/types/object_product?toggles=open#ProductModel",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "KitProducts",
+          "description": "Products ordering information for this model if this model is part of one or more kits.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Object[Product][KitComponents, ProductModel]",
+                  "link": "/helpfiles/types/object_product?toggles=open#KitComponents"
+                }
+              ],
+              "value": "Object[Product][KitComponents, ProductModel]",
+              "link": "/helpfiles/types/object_product?toggles=open#KitComponents",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "MixedBatchProducts",
+          "description": "Products ordering information for this model if this model is part of one or more mixed batches.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Object[Product][MixedBatchComponents, ProductModel]",
+                  "link": "/helpfiles/types/object_product?toggles=open#MixedBatchComponents"
+                }
+              ],
+              "value": "Object[Product][MixedBatchComponents, ProductModel]",
+              "link": "/helpfiles/types/object_product?toggles=open#MixedBatchComponents",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "ServiceProviders",
+          "description": "Companies that provide custom synthesis in this model.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Object[Company, Service][PreferredContainers]",
+                  "link": "/helpfiles/types/object_company_service?toggles=open#PreferredContainers"
+                },
+                {
+                  "text": "Object[Company, Supplier][PreferredContainers]",
+                  "link": "/helpfiles/types/object_company_supplier?toggles=open#PreferredContainers"
+                }
+              ],
+              "value": "Object[Company, Service][PreferredContainers] | Object[Company, Supplier][PreferredContainers]",
+              "link": "/helpfiles/types/object_company_service?toggles=open#PreferredContainers",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "RentByDefault",
+          "description": "Indicates if this container should be 'rented' from the ECL rather than purchased when it is needed during the course of an experiment.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Boolean",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        }
+      ]
+    },
+    {
+      "title": "Qualifications & Maintenance",
+      "fields": [
+        {
+          "name": "QualificationFrequency",
+          "description": "A list of the Qualification models and their required frequencies.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {
+            "Qualification": [
+              {
+                "type": "Header:",
+                "value": "Qualification",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Link",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "_Link",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Relation:",
+                "valueList": [
+                  {
+                    "text": "Model[Qualification][Targets]",
+                    "link": "/helpfiles/types/model_qualification?toggles=open#Targets"
+                  }
+                ],
+                "value": "Model[Qualification][Targets]",
+                "link": "/helpfiles/types/model_qualification?toggles=open#Targets",
+                "isMultiValue": true
+              }
+            ],
+            "Time": [
+              {
+                "type": "Header:",
+                "value": "Time",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Real",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Unit:",
+                "value": "1 day",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "_?TimeQ",
+                "link": null,
+                "isMultiValue": false
+              }
+            ]
+          }
+        },
+        {
+          "name": "MaintenanceFrequency",
+          "description": "A list of the maintenance models and their required frequencies.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {
+            "Maintenance": [
+              {
+                "type": "Header:",
+                "value": "Maintenance",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Link",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "_Link",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Relation:",
+                "valueList": [
+                  {
+                    "text": "Model[Maintenance][Targets]",
+                    "link": "/helpfiles/types/model_maintenance?toggles=open#Targets"
+                  }
+                ],
+                "value": "Model[Maintenance][Targets]",
+                "link": "/helpfiles/types/model_maintenance?toggles=open#Targets",
+                "isMultiValue": true
+              }
+            ],
+            "Time": [
+              {
+                "type": "Header:",
+                "value": "Time",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Real",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Unit:",
+                "value": "1 day",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "_?TimeQ",
+                "link": null,
+                "isMultiValue": false
+              }
+            ]
+          }
+        },
+        {
+          "name": "ContinuousOperation",
+          "description": "Indicates if the container is required to operate continuously in the lab, regardless of if it is InUse by a specific protocol, such as a gas supply.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Boolean",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        }
+      ]
+    },
+    {
+      "title": "Sensor Information",
+      "fields": [
+        {
+          "name": "SensorBarrier",
+          "description": "Sensors for which this model of container acts as a barrier. All such sensors located outside a container of this model are irrelevant to the container's contents.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "Object[Sensor]",
+              "link": "/helpfiles/types/object_sensor",
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        }
+      ]
+    },
+    {
+      "title": "Dimensions & Positions",
+      "fields": [
+        {
+          "name": "Dimensions",
+          "description": "The external dimensions of this model of container.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {
+            "X Direction (Width)": [
+              {
+                "type": "Header:",
+                "value": "X Direction (Width)",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Real",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Unit:",
+                "value": "1 meter",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "GreaterEqualP[0 Meter]",
+                "link": null,
+                "isMultiValue": false
+              }
+            ],
+            "Y Direction (Depth)": [
+              {
+                "type": "Header:",
+                "value": "Y Direction (Depth)",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Real",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Unit:",
+                "value": "1 meter",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "GreaterEqualP[0 Meter]",
+                "link": null,
+                "isMultiValue": false
+              }
+            ],
+            "Z Direction (Height)": [
+              {
+                "type": "Header:",
+                "value": "Z Direction (Height)",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Real",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Unit:",
+                "value": "1 meter",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "GreaterEqualP[0 Meter]",
+                "link": null,
+                "isMultiValue": false
+              }
+            ]
+          }
+        },
+        {
+          "name": "InternalDiameter3D",
+          "description": "A list of the internal diameter of the container over the entire height of the container.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {
+            "Z Direction Offset (Height)": [
+              {
+                "type": "Header:",
+                "value": "Z Direction Offset (Height)",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Real",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Unit:",
+                "value": "1 millimeter",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "GreaterP[0 Milli Meter]",
+                "link": null,
+                "isMultiValue": false
+              }
+            ],
+            "Internal Diameter": [
+              {
+                "type": "Header:",
+                "value": "Internal Diameter",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Real",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Unit:",
+                "value": "1 millimeter",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "GreaterP[0 Milli Meter]",
+                "link": null,
+                "isMultiValue": false
+              }
+            ]
+          }
+        },
+        {
+          "name": "CrossSectionalShape",
+          "description": "The shape of this container in the X-Y plane.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "CrossSectionalShapeP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Footprint",
+          "description": "Standard form factor of the exterior bottom portion of this model of container used to seat the container in an open position.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "FootprintP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Positions",
+          "description": "Spatial definitions of the positions that exist in this model of container.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {
+            "[Name]": [
+              {
+                "type": "Header:",
+                "value": "Name",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "String",
+                "link": null,
+                "isMultiValue": false
+              }
+            ],
+            "[Footprint]": [
+              {
+                "type": "Header:",
+                "value": "Footprint",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Expression",
+                "link": null,
+                "isMultiValue": false
+              }
+            ],
+            "[MaxWidth]": [
+              {
+                "type": "Header:",
+                "value": "MaxWidth",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Real",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Unit:",
+                "value": "1 meter",
+                "link": null,
+                "isMultiValue": false
+              }
+            ],
+            "[MaxDepth]": [
+              {
+                "type": "Header:",
+                "value": "MaxDepth",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Real",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Unit:",
+                "value": "1 meter",
+                "link": null,
+                "isMultiValue": false
+              }
+            ],
+            "[MaxHeight]": [
+              {
+                "type": "Header:",
+                "value": "MaxHeight",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Real",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Unit:",
+                "value": "1 meter",
+                "link": null,
+                "isMultiValue": false
+              }
+            ]
+          }
+        },
+        {
+          "name": "AvailableLayouts",
+          "description": "Readily available configurations of container models in specified positions within this container model.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Model[DeckLayout][ContainerModel]",
+                  "link": "/helpfiles/types/model_decklayout?toggles=open#ContainerModel"
+                }
+              ],
+              "value": "Model[DeckLayout][ContainerModel]",
+              "link": "/helpfiles/types/model_decklayout?toggles=open#ContainerModel",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "AllowedPositions",
+          "description": "Generates a pattern of all the valid position names for this model of container.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Computable",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Alternatives",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Expression:",
+              "value": "SafeEvaluate[{Field[Positions]}, Computables`Private`allowedPositions[Field[Positions]]]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "ContainerImage2DFile",
+          "description": "A file containing a top-down (X-Y plane) image of this model of container.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Object[EmeraldCloudFile]",
+                  "link": "/helpfiles/types/object_emeraldcloudfile"
+                }
+              ],
+              "value": "Object[EmeraldCloudFile]",
+              "link": "/helpfiles/types/object_emeraldcloudfile",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Shape2D",
+          "description": "A list of Graphics primitives corresponding to the 2D shape of this model of container.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "{(_Polygon | _Circle | _Line | _GraphicsComplex)..}",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Shape3D",
+          "description": "A list of Graphics primitives corresponding to the 3D shape of this model of container.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "{(_Polygon | _Circle | _Line | _GraphicsComplex)..}",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Rows",
+          "description": "The number of rows of positions on the microscope slide.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Integer",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterP[0, 1]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Columns",
+          "description": "The number of columns of positions on the microscope slide.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Integer",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterP[0, 1]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "NumberOfPositions",
+          "description": "Number of individual positions the microscope slide has.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Integer",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterP[0, 1]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "AspectRatio",
+          "description": "Ratio of the number of columns of positions vs the number of rows of positions on the microscope slide.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterP[0]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        }
+      ]
+    },
+    {
+      "title": "Plumbing Information",
+      "fields": [
+        {
+          "name": "Connectors",
+          "description": "Specifications for the ends of this plumbing component that may connect to other plumbing components or instrument ports.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {
+            "Connector Name": [
+              {
+                "type": "Header:",
+                "value": "Connector Name",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "String",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "ConnectorNameP",
+                "link": null,
+                "isMultiValue": false
+              }
+            ],
+            "Connector Type": [
+              {
+                "type": "Header:",
+                "value": "Connector Type",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Expression",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "ConnectorP",
+                "link": null,
+                "isMultiValue": false
+              }
+            ],
+            "Thread Type": [
+              {
+                "type": "Header:",
+                "value": "Thread Type",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Expression",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "ThreadP|GroundGlassJointSizeP|None",
+                "link": null,
+                "isMultiValue": false
+              }
+            ],
+            "Inner Diameter": [
+              {
+                "type": "Header:",
+                "value": "Inner Diameter",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Real",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Unit:",
+                "value": "1 inch",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "GreaterP[0 Inch]",
+                "link": null,
+                "isMultiValue": false
+              }
+            ],
+            "Outer Diameter": [
+              {
+                "type": "Header:",
+                "value": "Outer Diameter",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Real",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Unit:",
+                "value": "1 inch",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "GreaterP[0 Inch]",
+                "link": null,
+                "isMultiValue": false
+              }
+            ],
+            "Gender": [
+              {
+                "type": "Header:",
+                "value": "Gender",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Expression",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "ConnectorGenderP|None",
+                "link": null,
+                "isMultiValue": false
+              }
+            ]
+          }
+        },
+        {
+          "name": "Size",
+          "description": "The length of this container, in the direction of fluid flow.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 meter",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterEqualP[0 Meter]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        }
+      ]
+    },
+    {
+      "title": "Wiring Information",
+      "fields": [
+        {
+          "name": "WiringConnectors",
+          "description": "Specifications for the ends of the wiring connectors on this Container model that may plug into and conductively connect to other wiring components or instrument wiring connectors.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {
+            "Wiring Connector Name": [
+              {
+                "type": "Header:",
+                "value": "Wiring Connector Name",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "String",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "WiringConnectorNameP",
+                "link": null,
+                "isMultiValue": false
+              }
+            ],
+            "Wiring Connector Type": [
+              {
+                "type": "Header:",
+                "value": "Wiring Connector Type",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Expression",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "WiringConnectorP",
+                "link": null,
+                "isMultiValue": false
+              }
+            ],
+            "Gender": [
+              {
+                "type": "Header:",
+                "value": "Gender",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Expression",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "ConnectorGenderP|None",
+                "link": null,
+                "isMultiValue": false
+              }
+            ]
+          }
+        },
+        {
+          "name": "WiringLength",
+          "description": "The length of this container, in the direction of electricity flow.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 centimeter",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterP[0 Centimeter]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "WiringDiameters",
+          "description": "For each member of WiringConnectors, its effective conductive diameter.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 millimeter",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterP[0 Millimeter]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        }
+      ]
+    },
+    {
+      "title": "Health & Safety",
+      "fields": [
+        {
+          "name": "Sterile",
+          "description": "Indicates that this model of container arrives sterile from the manufacturer.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Sterilized",
+          "description": "Indicates if this model of container is sterilized by autoclaving upon receiving and, if it is reusable, after being cleaned before it is reused.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "SterilizationBag",
+          "description": "Indicates if this model of container is sealed in an autoclave bag before autoclaving. The bag protects its sterility until it is used.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "RNaseFree",
+          "description": "Indicates that this model of container is free of any RNases when received from the manufacturer.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Boolean",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        }
+      ]
+    },
+    {
+      "title": "Physical Properties",
+      "fields": [
+        {
+          "name": "NucleicAcidFree",
+          "description": "Indicates if this model of container is tested to be not contaminated with DNA and RNA by the manufacturer.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "PyrogenFree",
+          "description": "Indicates if this model of container is tested to be not contaminated with endotoxin by the manufacturer.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        }
+      ]
+    },
+    {
+      "title": "Sample Preparation",
+      "fields": [
+        {
+          "name": "Preparable",
+          "description": "Indicates if this samples/items of this model maybe prepared as needed during the course of an experiment.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Boolean",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        }
+      ]
+    }
+  ]
+}

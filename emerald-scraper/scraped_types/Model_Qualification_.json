@@ -1,0 +1,594 @@
+{
+  "typeName": "Model[Qualification] Documentation",
+  "typeDescription": "Model information for a scientific Qualification used to monitor the performance of an instrument or experiment.",
+  "url": "https://www.emeraldcloudlab.com/helpfiles/types/model_qualification?toggles=open&toggles=open",
+  "scrapedAt": "2025-02-26T03:50:57.796Z",
+  "sections": [
+    {
+      "title": "Organizational Information",
+      "fields": [
+        {
+          "name": "Name",
+          "description": "Name of this Object.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "String",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_String",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Pattern Description:",
+              "value": "A string.",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "ID",
+          "description": "ID of this Object.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "String",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_String",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Pattern Description:",
+              "value": "The ID of this object.",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Object",
+          "description": "Object of this Object.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "Model[Qualification, _String]",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Pattern Description:",
+              "value": "The object reference of this object.",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Type",
+          "description": "Type of this Object.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "Model[Qualification]",
+              "link": "/helpfiles/types/model_qualification",
+              "isMultiValue": false
+            },
+            {
+              "type": "Pattern Description:",
+              "value": "Model[Qualification]",
+              "link": "/helpfiles/types/model_qualification",
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Notebook",
+          "description": "Notebook this object belongs to.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Pattern Description:",
+              "value": "Object[LaboratoryNotebook]",
+              "link": "/helpfiles/types/object_laboratorynotebook",
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Object[LaboratoryNotebook][Objects]",
+                  "link": "/helpfiles/types/object_laboratorynotebook?toggles=open#Objects"
+                }
+              ],
+              "value": "Object[LaboratoryNotebook][Objects]",
+              "link": "/helpfiles/types/object_laboratorynotebook?toggles=open#Objects",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Objects",
+          "description": "Objects that represent instances of this model.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Object[Qualification][Model]",
+                  "link": "/helpfiles/types/object_qualification?toggles=open#Model"
+                }
+              ],
+              "value": "Object[Qualification][Model]",
+              "link": "/helpfiles/types/object_qualification?toggles=open#Model",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Purpose",
+          "description": "The purpose or intent of this model Qualification.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "String",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_String",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Authors",
+          "description": "The person(s) who created this Qualification model.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Object[User]",
+                  "link": "/helpfiles/types/object_user"
+                }
+              ],
+              "value": "Object[User]",
+              "link": "/helpfiles/types/object_user",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Deprecated",
+          "description": "Indicates if this model Qualification is historical and no longer used in the lab.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        }
+      ]
+    },
+    {
+      "title": "Qualifications & Maintenance",
+      "fields": [
+        {
+          "name": "Targets",
+          "description": "The object that this model of Qualification is designed to assess.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Model[Instrument][QualificationFrequency, 1]",
+                  "link": "/helpfiles/types/model_instrument?toggles=open#QualificationFrequency"
+                },
+                {
+                  "text": "Model[Container][QualificationFrequency, 1]",
+                  "link": "/helpfiles/types/model_container?toggles=open#QualificationFrequency"
+                },
+                {
+                  "text": "Model[Sample][QualificationFrequency, 1]",
+                  "link": "/helpfiles/types/model_sample?toggles=open#QualificationFrequency"
+                },
+                {
+                  "text": "Model[Sensor][QualificationFrequency, 1]",
+                  "link": "/helpfiles/types/model_sensor?toggles=open#QualificationFrequency"
+                },
+                {
+                  "text": "Model[Part][QualificationFrequency, 1]",
+                  "link": "/helpfiles/types/model_part?toggles=open#QualificationFrequency"
+                },
+                {
+                  "text": "Model[Item][QualificationFrequency, 1]",
+                  "link": "/helpfiles/types/model_item?toggles=open#QualificationFrequency"
+                },
+                {
+                  "text": "Model[User][QualificationFrequency, 1]",
+                  "link": "/helpfiles/types/model_user?toggles=open#QualificationFrequency"
+                }
+              ],
+              "value": "Model[Instrument][QualificationFrequency, 1] | Model[Container][QualificationFrequency, 1] | Model[Sample][QualificationFrequency, 1] | Model[Sensor][QualificationFrequency, 1] | Model[Part][QualificationFrequency, 1] | Model[Item][QualificationFrequency, 1] | Model[User][QualificationFrequency, 1]",
+              "link": "/helpfiles/types/model_instrument?toggles=open#QualificationFrequency",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "QualificationFrequency",
+          "description": "A list of the targets and their required frequencies in the form: {target Object, time interval}.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Computable",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "Model[Instrument]",
+              "link": "/helpfiles/types/model_instrument",
+              "isMultiValue": false
+            },
+            {
+              "type": "Expression:",
+              "value": "SafeEvaluate[{Field[Targets], Field[Object]}, Computables`Private`qualificationFrequenciesComputable[Field[Targets], Field[Object]]]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        }
+      ]
+    },
+    {
+      "title": "Experimental Results",
+      "fields": [
+        {
+          "name": "PassLog",
+          "description": "A historical record of the Qualifications that passed.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {
+            "Date": [
+              {
+                "type": "Header:",
+                "value": "Date",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Date",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "_?DateObjectQ",
+                "link": null,
+                "isMultiValue": false
+              }
+            ],
+            "Qualification": [
+              {
+                "type": "Header:",
+                "value": "Qualification",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Link",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "_Link",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Relation:",
+                "valueList": [
+                  {
+                    "text": "Object[Qualification]",
+                    "link": "/helpfiles/types/object_qualification"
+                  }
+                ],
+                "value": "Object[Qualification]",
+                "link": "/helpfiles/types/object_qualification",
+                "isMultiValue": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "FailLog",
+          "description": "A historical record of the Qualifications that failed.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {
+            "Date": [
+              {
+                "type": "Header:",
+                "value": "Date",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Date",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "_?DateObjectQ",
+                "link": null,
+                "isMultiValue": false
+              }
+            ],
+            "Qualification": [
+              {
+                "type": "Header:",
+                "value": "Qualification",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Link",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "_Link",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Relation:",
+                "valueList": [
+                  {
+                    "text": "Object[Qualification]",
+                    "link": "/helpfiles/types/object_qualification"
+                  }
+                ],
+                "value": "Object[Qualification]",
+                "link": "/helpfiles/types/object_qualification",
+                "isMultiValue": true
+              }
+            ],
+            "Troubleshooting": [
+              {
+                "type": "Header:",
+                "value": "Troubleshooting",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Link",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "_Link",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Relation:",
+                "valueList": [
+                  {
+                    "text": "Object[Troubleshooting]",
+                    "link": "/helpfiles/types/object_troubleshooting"
+                  }
+                ],
+                "value": "Object[Troubleshooting]",
+                "link": "/helpfiles/types/object_troubleshooting",
+                "isMultiValue": true
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Sample Preparation",
+      "fields": [
+        {
+          "name": "PreparatoryUnitOperations",
+          "description": "A list of transfers, consolidations, aliquiots, mixes and diutions that will be performed in the order listed to prepare samples for the qualification.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "SamplePreparationP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        }
+      ]
+    }
+  ]
+}

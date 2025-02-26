@@ -1,0 +1,678 @@
+{
+  "typeName": "Model[PrimerSet] Documentation",
+  "typeDescription": "Model information for a set of oligomer primers design to amplify a particular target in PCR.",
+  "url": "https://www.emeraldcloudlab.com/helpfiles/types/model_primerset?toggles=open&toggles=open",
+  "scrapedAt": "2025-02-26T03:50:49.151Z",
+  "sections": [
+    {
+      "title": "Organizational Information",
+      "fields": [
+        {
+          "name": "Name",
+          "description": "Name of this Object.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "String",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_String",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Pattern Description:",
+              "value": "A string.",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "ID",
+          "description": "ID of this Object.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "String",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_String",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Pattern Description:",
+              "value": "The ID of this object.",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Object",
+          "description": "Object of this Object.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "Model[PrimerSet, _String]",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Pattern Description:",
+              "value": "The object reference of this object.",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Type",
+          "description": "Type of this Object.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "Model[PrimerSet]",
+              "link": "/helpfiles/types/model_primerset",
+              "isMultiValue": false
+            },
+            {
+              "type": "Pattern Description:",
+              "value": "Model[PrimerSet]",
+              "link": "/helpfiles/types/model_primerset",
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Notebook",
+          "description": "Notebook this object belongs to.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Pattern Description:",
+              "value": "Object[LaboratoryNotebook]",
+              "link": "/helpfiles/types/object_laboratorynotebook",
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Object[LaboratoryNotebook][Objects]",
+                  "link": "/helpfiles/types/object_laboratorynotebook?toggles=open#Objects"
+                }
+              ],
+              "value": "Object[LaboratoryNotebook][Objects]",
+              "link": "/helpfiles/types/object_laboratorynotebook?toggles=open#Objects",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Synonyms",
+          "description": "List of possible alternative names this model goes by.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "String",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_String",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Authors",
+          "description": "The people who created this model.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Object[User]",
+                  "link": "/helpfiles/types/object_user"
+                }
+              ],
+              "value": "Object[User]",
+              "link": "/helpfiles/types/object_user",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Target",
+          "description": "The RNA transcript that is amplified by PCR using this primer set.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Model[Molecule, Oligomer][PrimerSets]",
+                  "link": "/helpfiles/types/model_molecule_oligomer?toggles=open#PrimerSets"
+                },
+                {
+                  "text": "Model[Molecule, cDNA][PrimerSets]",
+                  "link": "/helpfiles/types/model_molecule_cdna?toggles=open#PrimerSets"
+                },
+                {
+                  "text": "Model[Molecule, Transcript][PrimerSets]",
+                  "link": "/helpfiles/types/model_molecule_transcript?toggles=open#PrimerSets"
+                }
+              ],
+              "value": "Model[Molecule, Oligomer][PrimerSets] | Model[Molecule, cDNA][PrimerSets] | Model[Molecule, Transcript][PrimerSets]",
+              "link": "/helpfiles/types/model_molecule_oligomer?toggles=open#PrimerSets",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "ForwardPrimer",
+          "description": "The primer that binds to the antisense target strand (is a subsequence of the sense target strand) for this primer set.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Model[Molecule, Oligomer][PrimerSets]",
+                  "link": "/helpfiles/types/model_molecule_oligomer?toggles=open#PrimerSets"
+                },
+                {
+                  "text": "Model[Molecule, cDNA][PrimerSets]",
+                  "link": "/helpfiles/types/model_molecule_cdna?toggles=open#PrimerSets"
+                },
+                {
+                  "text": "Model[Molecule, Transcript][PrimerSets]",
+                  "link": "/helpfiles/types/model_molecule_transcript?toggles=open#PrimerSets"
+                }
+              ],
+              "value": "Model[Molecule, Oligomer][PrimerSets] | Model[Molecule, cDNA][PrimerSets] | Model[Molecule, Transcript][PrimerSets]",
+              "link": "/helpfiles/types/model_molecule_oligomer?toggles=open#PrimerSets",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "ReversePrimer",
+          "description": "The primer that binds to the sense target strand (is a subsequence of the antisense target strand) for this primer set.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Model[Molecule, Oligomer][PrimerSets]",
+                  "link": "/helpfiles/types/model_molecule_oligomer?toggles=open#PrimerSets"
+                },
+                {
+                  "text": "Model[Molecule, cDNA][PrimerSets]",
+                  "link": "/helpfiles/types/model_molecule_cdna?toggles=open#PrimerSets"
+                },
+                {
+                  "text": "Model[Molecule, Transcript][PrimerSets]",
+                  "link": "/helpfiles/types/model_molecule_transcript?toggles=open#PrimerSets"
+                }
+              ],
+              "value": "Model[Molecule, Oligomer][PrimerSets] | Model[Molecule, cDNA][PrimerSets] | Model[Molecule, Transcript][PrimerSets]",
+              "link": "/helpfiles/types/model_molecule_oligomer?toggles=open#PrimerSets",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Beacon",
+          "description": "A fluorescent beacon (possibly a molecular beacon) used to detect the amplicon for this primer set.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Model[Molecule, Oligomer][PrimerSets]",
+                  "link": "/helpfiles/types/model_molecule_oligomer?toggles=open#PrimerSets"
+                },
+                {
+                  "text": "Model[Molecule, cDNA][PrimerSets]",
+                  "link": "/helpfiles/types/model_molecule_cdna?toggles=open#PrimerSets"
+                },
+                {
+                  "text": "Model[Molecule, Transcript][PrimerSets]",
+                  "link": "/helpfiles/types/model_molecule_transcript?toggles=open#PrimerSets"
+                }
+              ],
+              "value": "Model[Molecule, Oligomer][PrimerSets] | Model[Molecule, cDNA][PrimerSets] | Model[Molecule, Transcript][PrimerSets]",
+              "link": "/helpfiles/types/model_molecule_oligomer?toggles=open#PrimerSets",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "BeaconTarget",
+          "description": "The reverse complement of the beacon's binding region for this primer set.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Model[Molecule, Oligomer][PrimerSets]",
+                  "link": "/helpfiles/types/model_molecule_oligomer?toggles=open#PrimerSets"
+                },
+                {
+                  "text": "Model[Molecule, cDNA][PrimerSets]",
+                  "link": "/helpfiles/types/model_molecule_cdna?toggles=open#PrimerSets"
+                },
+                {
+                  "text": "Model[Molecule, Transcript][PrimerSets]",
+                  "link": "/helpfiles/types/model_molecule_transcript?toggles=open#PrimerSets"
+                }
+              ],
+              "value": "Model[Molecule, Oligomer][PrimerSets] | Model[Molecule, cDNA][PrimerSets] | Model[Molecule, Transcript][PrimerSets]",
+              "link": "/helpfiles/types/model_molecule_oligomer?toggles=open#PrimerSets",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "SenseAmplicon",
+          "description": "The sense amplicon oligo for this primer set.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Model[Molecule, Oligomer][PrimerSets]",
+                  "link": "/helpfiles/types/model_molecule_oligomer?toggles=open#PrimerSets"
+                },
+                {
+                  "text": "Model[Molecule, cDNA][PrimerSets]",
+                  "link": "/helpfiles/types/model_molecule_cdna?toggles=open#PrimerSets"
+                },
+                {
+                  "text": "Model[Molecule, Transcript][PrimerSets]",
+                  "link": "/helpfiles/types/model_molecule_transcript?toggles=open#PrimerSets"
+                }
+              ],
+              "value": "Model[Molecule, Oligomer][PrimerSets] | Model[Molecule, cDNA][PrimerSets] | Model[Molecule, Transcript][PrimerSets]",
+              "link": "/helpfiles/types/model_molecule_oligomer?toggles=open#PrimerSets",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "AntisenseAmplicon",
+          "description": "The antisense amplicon oligo for this primer set.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Model[Molecule, Oligomer][PrimerSets]",
+                  "link": "/helpfiles/types/model_molecule_oligomer?toggles=open#PrimerSets"
+                },
+                {
+                  "text": "Model[Molecule, cDNA][PrimerSets]",
+                  "link": "/helpfiles/types/model_molecule_cdna?toggles=open#PrimerSets"
+                },
+                {
+                  "text": "Model[Molecule, Transcript][PrimerSets]",
+                  "link": "/helpfiles/types/model_molecule_transcript?toggles=open#PrimerSets"
+                }
+              ],
+              "value": "Model[Molecule, Oligomer][PrimerSets] | Model[Molecule, cDNA][PrimerSets] | Model[Molecule, Transcript][PrimerSets]",
+              "link": "/helpfiles/types/model_molecule_oligomer?toggles=open#PrimerSets",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        }
+      ]
+    },
+    {
+      "title": "Simulation Results",
+      "fields": [
+        {
+          "name": "DesignSimulation",
+          "description": "A simulation used to generate this primer set.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Object[Simulation, PrimerSet][Models]",
+                  "link": "/helpfiles/types/object_simulation_primerset?toggles=open#Models"
+                }
+              ],
+              "value": "Object[Simulation, PrimerSet][Models]",
+              "link": "/helpfiles/types/object_simulation_primerset?toggles=open#Models",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "BeaconSimulations",
+          "description": "A simulations used to test the molecular beacons that are part of this primer set.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Object[Simulation, MeltingCurve]",
+                  "link": "/helpfiles/types/object_simulation_meltingcurve"
+                }
+              ],
+              "value": "Object[Simulation, MeltingCurve]",
+              "link": "/helpfiles/types/object_simulation_meltingcurve",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        }
+      ]
+    },
+    {
+      "title": "Analysis & Reports",
+      "fields": [
+        {
+          "name": "LiteratureReferences",
+          "description": "Literature references that discuss this primer set.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Object[Report, Literature][References]",
+                  "link": "/helpfiles/types/object_report_literature?toggles=open#References"
+                }
+              ],
+              "value": "Object[Report, Literature][References]",
+              "link": "/helpfiles/types/object_report_literature?toggles=open#References",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        }
+      ]
+    }
+  ]
+}

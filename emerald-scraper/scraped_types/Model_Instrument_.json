@@ -1,0 +1,2348 @@
+{
+  "typeName": "Model[Instrument] Documentation",
+  "typeDescription": "Model information for a piece of scientific instrumentation used to perform experiments on the ECL.",
+  "url": "https://www.emeraldcloudlab.com/helpfiles/types/model_instrument?toggles=open&toggles=open",
+  "scrapedAt": "2025-02-26T03:40:58.777Z",
+  "sections": [
+    {
+      "title": "Organizational Information",
+      "fields": [
+        {
+          "name": "Name",
+          "description": "Name of this Object.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "String",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_String",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Pattern Description:",
+              "value": "A string.",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "ID",
+          "description": "ID of this Object.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "String",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_String",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Pattern Description:",
+              "value": "The ID of this object.",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Object",
+          "description": "Object of this Object.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "Model[Instrument, _String]",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Pattern Description:",
+              "value": "The object reference of this object.",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Type",
+          "description": "Type of this Object.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "Model[Instrument]",
+              "link": "/helpfiles/types/model_instrument",
+              "isMultiValue": false
+            },
+            {
+              "type": "Pattern Description:",
+              "value": "Model[Instrument]",
+              "link": "/helpfiles/types/model_instrument",
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Notebook",
+          "description": "Notebook this object belongs to.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Pattern Description:",
+              "value": "Object[LaboratoryNotebook]",
+              "link": "/helpfiles/types/object_laboratorynotebook",
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Object[LaboratoryNotebook][Objects]",
+                  "link": "/helpfiles/types/object_laboratorynotebook?toggles=open#Objects"
+                }
+              ],
+              "value": "Object[LaboratoryNotebook][Objects]",
+              "link": "/helpfiles/types/object_laboratorynotebook?toggles=open#Objects",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Objects",
+          "description": "Objects that represent instances of this model.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Object[Instrument][Model]",
+                  "link": "/helpfiles/types/object_instrument?toggles=open#Model"
+                }
+              ],
+              "value": "Object[Instrument][Model]",
+              "link": "/helpfiles/types/object_instrument?toggles=open#Model",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Deprecated",
+          "description": "Indicates if this instrument model is historical and no longer used in the lab.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Authors",
+          "description": "The person(s) who created this instrument model.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Object[User]",
+                  "link": "/helpfiles/types/object_user"
+                }
+              ],
+              "value": "Object[User]",
+              "link": "/helpfiles/types/object_user",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "ImageFile",
+          "description": "An example photo of this model of instrument.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Object[EmeraldCloudFile]",
+                  "link": "/helpfiles/types/object_emeraldcloudfile"
+                }
+              ],
+              "value": "Object[EmeraldCloudFile]",
+              "link": "/helpfiles/types/object_emeraldcloudfile",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "UserManualFiles",
+          "description": "PDFs for the manuals or instruction guides for this model of instrument.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Object[EmeraldCloudFile]",
+                  "link": "/helpfiles/types/object_emeraldcloudfile"
+                }
+              ],
+              "value": "Object[EmeraldCloudFile]",
+              "link": "/helpfiles/types/object_emeraldcloudfile",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        }
+      ]
+    },
+    {
+      "title": "Instrument Specifications",
+      "fields": [
+        {
+          "name": "InstrumentSchematics",
+          "description": "Detailed drawings of the instrument that explain its capabilities and limitations.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {
+            "Schematic": [
+              {
+                "type": "Header:",
+                "value": "Schematic",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Link",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "_Link",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Relation:",
+                "valueList": [
+                  {
+                    "text": "Object[EmeraldCloudFile]",
+                    "link": "/helpfiles/types/object_emeraldcloudfile"
+                  }
+                ],
+                "value": "Object[EmeraldCloudFile]",
+                "link": "/helpfiles/types/object_emeraldcloudfile",
+                "isMultiValue": true
+              }
+            ],
+            "Caption": [
+              {
+                "type": "Header:",
+                "value": "Caption",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "String",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "_String",
+                "link": null,
+                "isMultiValue": false
+              }
+            ]
+          }
+        },
+        {
+          "name": "PowerType",
+          "description": "The type(s) of the power source(s) used by instruments of this model.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "PowerTypeP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "BatteryRequirements",
+          "description": "All battery requirements for battery-powered instruments of this model.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {
+            "Number of Batteries": [
+              {
+                "type": "Header:",
+                "value": "Number of Batteries",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Integer",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "GreaterP[0, 1]",
+                "link": null,
+                "isMultiValue": false
+              }
+            ],
+            "Battery Type": [
+              {
+                "type": "Header:",
+                "value": "Battery Type",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Expression",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "BatteryTypeP",
+                "link": null,
+                "isMultiValue": false
+              }
+            ]
+          }
+        },
+        {
+          "name": "PowerConsumption",
+          "description": "Estimated power consumption rate of the instrument in Watts (Joule/Second).",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 watt",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterEqualP[0 Watt]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Connector",
+          "description": "All data connector requirements needed to interface the instruments of this model with a computer.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {
+            "Number of Connectors": [
+              {
+                "type": "Header:",
+                "value": "Number of Connectors",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Integer",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "GreaterP[0, 1]",
+                "link": null,
+                "isMultiValue": false
+              }
+            ],
+            "Connector Type": [
+              {
+                "type": "Header:",
+                "value": "Connector Type",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Expression",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "DataConnectorP",
+                "link": null,
+                "isMultiValue": false
+              }
+            ]
+          }
+        },
+        {
+          "name": "OperatingSystem",
+          "description": "Operating system that the software of instruments of this model runs on.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "OperatingSystemP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "PCICard",
+          "description": "All PCICard requirements needed to install specialized hardware.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {
+            "Number of Cards": [
+              {
+                "type": "Header:",
+                "value": "Number of Cards",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Integer",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "GreaterEqualP[0, 1]",
+                "link": null,
+                "isMultiValue": false
+              }
+            ],
+            "Card Type": [
+              {
+                "type": "Header:",
+                "value": "Card Type",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Expression",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "PCICardP",
+                "link": null,
+                "isMultiValue": false
+              }
+            ]
+          }
+        },
+        {
+          "name": "Dongle",
+          "description": "Indicates if an instrument of this model requires a security dongle in the computer to run.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "AssociatedAccessories",
+          "description": "Items installed with the instrument for full function.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {
+            "Item": [
+              {
+                "type": "Header:",
+                "value": "Item",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Link",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "_Link",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Relation:",
+                "valueList": [
+                  {
+                    "text": "Model[Instrument][SupportedInstruments]",
+                    "link": "/helpfiles/types/model_instrument?toggles=open#SupportedInstruments"
+                  },
+                  {
+                    "text": "Model[Part][SupportedInstruments]",
+                    "link": "/helpfiles/types/model_part?toggles=open#SupportedInstruments"
+                  },
+                  {
+                    "text": "Model[Container, PlateSealMagazine][SupportedInstruments]",
+                    "link": "/helpfiles/types/model_container_platesealmagazine?toggles=open#SupportedInstruments"
+                  },
+                  {
+                    "text": "Model[Container, MagazineParkPosition][SupportedInstruments]",
+                    "link": "/helpfiles/types/model_container_magazineparkposition?toggles=open#SupportedInstruments"
+                  },
+                  {
+                    "text": "Model[Sensor][SupportedInstruments]",
+                    "link": "/helpfiles/types/model_sensor?toggles=open#SupportedInstruments"
+                  },
+                  {
+                    "text": "Model[Item][SupportedInstruments]",
+                    "link": "/helpfiles/types/model_item?toggles=open#SupportedInstruments"
+                  },
+                  {
+                    "text": "Model[Plumbing][SupportedInstruments]",
+                    "link": "/helpfiles/types/model_plumbing?toggles=open#SupportedInstruments"
+                  },
+                  {
+                    "text": "Model[Wiring][SupportedInstruments]",
+                    "link": "/helpfiles/types/model_wiring?toggles=open#SupportedInstruments"
+                  }
+                ],
+                "value": "Model[Instrument][SupportedInstruments] | Model[Part][SupportedInstruments] | Model[Container, PlateSealMagazine][SupportedInstruments] | Model[Container, MagazineParkPosition][SupportedInstruments] | Model[Sensor][SupportedInstruments] | Model[Item][SupportedInstruments] | Model[Plumbing][SupportedInstruments] | Model[Wiring][SupportedInstruments]",
+                "link": "/helpfiles/types/model_instrument?toggles=open#SupportedInstruments",
+                "isMultiValue": true
+              }
+            ],
+            "Quantity": [
+              {
+                "type": "Header:",
+                "value": "Quantity",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Integer",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "GreaterP[0, 1]",
+                "link": null,
+                "isMultiValue": false
+              }
+            ]
+          }
+        },
+        {
+          "name": "WasteType",
+          "description": "The type of waste generated by this instrument.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Model[Sample]",
+                  "link": "/helpfiles/types/model_sample"
+                }
+              ],
+              "value": "Model[Sample]",
+              "link": "/helpfiles/types/model_sample",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        }
+      ]
+    },
+    {
+      "title": "Pricing Information",
+      "fields": [
+        {
+          "name": "PricingRate",
+          "description": "The rate charged by the ECL for time used on this instrument in the course of conducting user experiments.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 US dollar per hour",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "USD\nHold[GreaterEqualP[0 ----]]\n                     Hour",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "PricingCategory",
+          "description": "The generic billing category this instrument model will be listed under.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "String",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "PricingCategoryP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "PricingLevel",
+          "description": "With respect to cost, the category of devices, for which this Instrument falls into.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Integer",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterEqualP[0, 1]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        }
+      ]
+    },
+    {
+      "title": "Compatibility",
+      "fields": [
+        {
+          "name": "PlugRequirements",
+          "description": "All electrical requirements for plug-in parts of this model.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {
+            "[PlugNumber]": [
+              {
+                "type": "Header:",
+                "value": "PlugNumber",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Integer",
+                "link": null,
+                "isMultiValue": false
+              }
+            ],
+            "[Phases]": [
+              {
+                "type": "Header:",
+                "value": "Phases",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Integer",
+                "link": null,
+                "isMultiValue": false
+              }
+            ],
+            "[Voltage]": [
+              {
+                "type": "Header:",
+                "value": "Voltage",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Integer",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Unit:",
+                "value": "1 volt",
+                "link": null,
+                "isMultiValue": false
+              }
+            ],
+            "[Current]": [
+              {
+                "type": "Header:",
+                "value": "Current",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Real",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Unit:",
+                "value": "1 ampere",
+                "link": null,
+                "isMultiValue": false
+              }
+            ],
+            "[PlugType]": [
+              {
+                "type": "Header:",
+                "value": "PlugType",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "String",
+                "link": null,
+                "isMultiValue": false
+              }
+            ]
+          }
+        },
+        {
+          "name": "AllowedPositions",
+          "description": "Generates a pattern of all the valid position names for this model of instrument.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Computable",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Alternatives",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Expression:",
+              "value": "SafeEvaluate[{Field[Positions]}, Computables`Private`allowedPositions[Field[Positions]]]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "WettedMaterials",
+          "description": "A list of materials in the instrument which may be wetted by user-specified liquids.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "MaterialP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "FacilityRequirementFiles",
+          "description": "PDFs for facility requirements and pre-installation checkoff forms provided by the supplier for instruments of this model.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Object[EmeraldCloudFile]",
+                  "link": "/helpfiles/types/object_emeraldcloudfile"
+                }
+              ],
+              "value": "Object[EmeraldCloudFile]",
+              "link": "/helpfiles/types/object_emeraldcloudfile",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        }
+      ]
+    },
+    {
+      "title": "Dimensions & Positions",
+      "fields": [
+        {
+          "name": "Dimensions",
+          "description": "The external dimensions of this model of instrument.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {
+            "DimensionX": [
+              {
+                "type": "Header:",
+                "value": "DimensionX",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Real",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Unit:",
+                "value": "1 meter",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "GreaterP[0 Meter]",
+                "link": null,
+                "isMultiValue": false
+              }
+            ],
+            "DimensionY": [
+              {
+                "type": "Header:",
+                "value": "DimensionY",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Real",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Unit:",
+                "value": "1 meter",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "GreaterP[0 Meter]",
+                "link": null,
+                "isMultiValue": false
+              }
+            ],
+            "DimensionZ": [
+              {
+                "type": "Header:",
+                "value": "DimensionZ",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Real",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Unit:",
+                "value": "1 meter",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "GreaterP[0 Meter]",
+                "link": null,
+                "isMultiValue": false
+              }
+            ]
+          }
+        },
+        {
+          "name": "CrossSectionalShape",
+          "description": "The shape of this model of instrument in the X-Y plane.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "Circle | Rectangle",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "ContainerImage2DFile",
+          "description": "A top-down (X-Y plane) image of this model of instrument which can be overlaid on a 2D container plot.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Object[EmeraldCloudFile]",
+                  "link": "/helpfiles/types/object_emeraldcloudfile"
+                }
+              ],
+              "value": "Object[EmeraldCloudFile]",
+              "link": "/helpfiles/types/object_emeraldcloudfile",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Shape2D",
+          "description": "A Graphics primitive corresponding to the 2D shape of this model of instrument.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Polygon | _Circle",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Shape3D",
+          "description": "A Graphics primitive corresponding to the 3D shape of this model of instrument.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Polygon",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Positions",
+          "description": "Spatial definitions of the positions that exist in this model of instrument.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {
+            "[Name]": [
+              {
+                "type": "Header:",
+                "value": "Name",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "String",
+                "link": null,
+                "isMultiValue": false
+              }
+            ],
+            "[Footprint]": [
+              {
+                "type": "Header:",
+                "value": "Footprint",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Expression",
+                "link": null,
+                "isMultiValue": false
+              }
+            ],
+            "[MaxWidth]": [
+              {
+                "type": "Header:",
+                "value": "MaxWidth",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Real",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Unit:",
+                "value": "1 meter",
+                "link": null,
+                "isMultiValue": false
+              }
+            ],
+            "[MaxDepth]": [
+              {
+                "type": "Header:",
+                "value": "MaxDepth",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Real",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Unit:",
+                "value": "1 meter",
+                "link": null,
+                "isMultiValue": false
+              }
+            ],
+            "[MaxHeight]": [
+              {
+                "type": "Header:",
+                "value": "MaxHeight",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Real",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Unit:",
+                "value": "1 meter",
+                "link": null,
+                "isMultiValue": false
+              }
+            ]
+          }
+        },
+        {
+          "name": "AvailableLayouts",
+          "description": "Readily available configurations of container models in specified positions on the deck of this instrument model.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Model[DeckLayout][InstrumentModel]",
+                  "link": "/helpfiles/types/model_decklayout?toggles=open#InstrumentModel"
+                }
+              ],
+              "value": "Model[DeckLayout][InstrumentModel]",
+              "link": "/helpfiles/types/model_decklayout?toggles=open#InstrumentModel",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        }
+      ]
+    },
+    {
+      "title": "Storage Information",
+      "fields": [
+        {
+          "name": "LocalCacheContents",
+          "description": "Items required to be present in the local cache for instruments of this model, along with the required quantity of each item.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {
+            "Item Model": [
+              {
+                "type": "Header:",
+                "value": "Item Model",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Link",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "_Link",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Relation:",
+                "valueList": [
+                  {
+                    "text": "Model[Container]",
+                    "link": "/helpfiles/types/model_container"
+                  },
+                  {
+                    "text": "Model[Sample]",
+                    "link": "/helpfiles/types/model_sample"
+                  },
+                  {
+                    "text": "Model[Part]",
+                    "link": "/helpfiles/types/model_part"
+                  },
+                  {
+                    "text": "Model[Plumbing]",
+                    "link": "/helpfiles/types/model_plumbing"
+                  },
+                  {
+                    "text": "Model[Wiring]",
+                    "link": "/helpfiles/types/model_wiring"
+                  }
+                ],
+                "value": "Model[Container] | Model[Sample] | Model[Part] | Model[Plumbing] | Model[Wiring]",
+                "link": "/helpfiles/types/model_container",
+                "isMultiValue": true
+              }
+            ],
+            "Required Quantity": [
+              {
+                "type": "Header:",
+                "value": "Required Quantity",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Integer",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "GreaterEqualP[0, 1]",
+                "link": null,
+                "isMultiValue": false
+              }
+            ]
+          }
+        },
+        {
+          "name": "ProvidedStorageCondition",
+          "description": "The physical conditions such as temperature and humidity this instrument provides for samples stored long term within it.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Model[StorageCondition]",
+                  "link": "/helpfiles/types/model_storagecondition"
+                }
+              ],
+              "value": "Model[StorageCondition]",
+              "link": "/helpfiles/types/model_storagecondition",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        }
+      ]
+    },
+    {
+      "title": "Plumbing Information",
+      "fields": [
+        {
+          "name": "Connectors",
+          "description": "Specifications for the ports on this model of instrument that may connect to other plumbing components.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {
+            "Connector Name": [
+              {
+                "type": "Header:",
+                "value": "Connector Name",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "String",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "ConnectorNameP",
+                "link": null,
+                "isMultiValue": false
+              }
+            ],
+            "Connector Type": [
+              {
+                "type": "Header:",
+                "value": "Connector Type",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Expression",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "ConnectorP",
+                "link": null,
+                "isMultiValue": false
+              }
+            ],
+            "Thread Type": [
+              {
+                "type": "Header:",
+                "value": "Thread Type",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Expression",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "ThreadP|GroundGlassJointSizeP|None",
+                "link": null,
+                "isMultiValue": false
+              }
+            ],
+            "Inner Diameter": [
+              {
+                "type": "Header:",
+                "value": "Inner Diameter",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Real",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Unit:",
+                "value": "1 inch",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "GreaterP[0 Inch]",
+                "link": null,
+                "isMultiValue": false
+              }
+            ],
+            "Outer Diameter": [
+              {
+                "type": "Header:",
+                "value": "Outer Diameter",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Real",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Unit:",
+                "value": "1 inch",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "GreaterP[0 Inch]",
+                "link": null,
+                "isMultiValue": false
+              }
+            ],
+            "Gender": [
+              {
+                "type": "Header:",
+                "value": "Gender",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Expression",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "ConnectorGenderP|None",
+                "link": null,
+                "isMultiValue": false
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Wiring Information",
+      "fields": [
+        {
+          "name": "WiringConnectors",
+          "description": "Specifications for the wiring ends of this instrument that may plug into and conductively connect to other items, parts or instruments.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {
+            "Wiring Connector Name": [
+              {
+                "type": "Header:",
+                "value": "Wiring Connector Name",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "String",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "WiringConnectorNameP",
+                "link": null,
+                "isMultiValue": false
+              }
+            ],
+            "Wiring Connector Type": [
+              {
+                "type": "Header:",
+                "value": "Wiring Connector Type",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Expression",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "WiringConnectorP",
+                "link": null,
+                "isMultiValue": false
+              }
+            ],
+            "Gender": [
+              {
+                "type": "Header:",
+                "value": "Gender",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Expression",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "ConnectorGenderP|None",
+                "link": null,
+                "isMultiValue": false
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Qualifications & Maintenance",
+      "fields": [
+        {
+          "name": "QualificationFrequency",
+          "description": "A list of the Qualifications which should be run on instruments of this model and their required frequencies.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {
+            "Qualification Model": [
+              {
+                "type": "Header:",
+                "value": "Qualification Model",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Link",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "_Link",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Relation:",
+                "valueList": [
+                  {
+                    "text": "Model[Qualification][Targets]",
+                    "link": "/helpfiles/types/model_qualification?toggles=open#Targets"
+                  }
+                ],
+                "value": "Model[Qualification][Targets]",
+                "link": "/helpfiles/types/model_qualification?toggles=open#Targets",
+                "isMultiValue": true
+              }
+            ],
+            "Time": [
+              {
+                "type": "Header:",
+                "value": "Time",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Real",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Unit:",
+                "value": "1 day",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "GreaterP[0 Second]",
+                "link": null,
+                "isMultiValue": false
+              }
+            ]
+          }
+        },
+        {
+          "name": "MaintenanceFrequency",
+          "description": "A list of the maintenance protocols which should be run on instruments of this model and their required frequencies.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {
+            "Maintenance Model": [
+              {
+                "type": "Header:",
+                "value": "Maintenance Model",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Link",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "_Link",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Relation:",
+                "valueList": [
+                  {
+                    "text": "Model[Maintenance][Targets]",
+                    "link": "/helpfiles/types/model_maintenance?toggles=open#Targets"
+                  }
+                ],
+                "value": "Model[Maintenance][Targets]",
+                "link": "/helpfiles/types/model_maintenance?toggles=open#Targets",
+                "isMultiValue": true
+              }
+            ],
+            "Time": [
+              {
+                "type": "Header:",
+                "value": "Time",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Real",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Unit:",
+                "value": "1 day",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "GreaterP[0 Second]",
+                "link": null,
+                "isMultiValue": false
+              }
+            ]
+          }
+        },
+        {
+          "name": "ReplacementParts",
+          "description": "A list of tracked replacement part models for this instrument.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Model[Part][SupportedInstruments]",
+                  "link": "/helpfiles/types/model_part?toggles=open#SupportedInstruments"
+                },
+                {
+                  "text": "Model[Plumbing][SupportedInstruments]",
+                  "link": "/helpfiles/types/model_plumbing?toggles=open#SupportedInstruments"
+                },
+                {
+                  "text": "Model[Wiring][SupportedInstruments]",
+                  "link": "/helpfiles/types/model_wiring?toggles=open#SupportedInstruments"
+                },
+                {
+                  "text": "Model[Item][SupportedInstruments]",
+                  "link": "/helpfiles/types/model_item?toggles=open#SupportedInstruments"
+                }
+              ],
+              "value": "Model[Part][SupportedInstruments] | Model[Plumbing][SupportedInstruments] | Model[Wiring][SupportedInstruments] | Model[Item][SupportedInstruments]",
+              "link": "/helpfiles/types/model_part?toggles=open#SupportedInstruments",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "PassiveClean",
+          "description": "Indicates if the exterior surfaces of this instrument model can be cleaned while in use.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "VentilationFlowRate\nRequirement",
+          "description": "The minimum flow rate of air generated by the instrument's ventilator for its safe and proper function.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 meter per second",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "Meter\nHold[GreaterP[0 ------]]\n                Second",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "VentilationFlowRate\nRecommendation",
+          "description": "The flow rate of air generated by the instrument's ventilator recommended by its manufacturer.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 meter per second",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "Meter\nHold[GreaterP[0 ------]]\n                Second",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "ContinuousOperation",
+          "description": "Indicates if the instrument is required to operate continuously in the lab, regardless of if it is InUse by a specific protocol, such as a freezer.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Boolean",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        }
+      ]
+    },
+    {
+      "title": "Inventory",
+      "fields": [
+        {
+          "name": "Manufacturer",
+          "description": "The company that originally manufactured this model of instrument.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Object[Company, Supplier][InstrumentsManufactured]",
+                  "link": "/helpfiles/types/object_company_supplier?toggles=open#InstrumentsManufactured"
+                }
+              ],
+              "value": "Object[Company, Supplier][InstrumentsManufactured]",
+              "link": "/helpfiles/types/object_company_supplier?toggles=open#InstrumentsManufactured",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "SupportedInstruments",
+          "description": "A list of instruments for which this model is an accompanying accessory.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Model[Instrument][AssociatedAccessories, 1]",
+                  "link": "/helpfiles/types/model_instrument?toggles=open#AssociatedAccessories"
+                }
+              ],
+              "value": "Model[Instrument][AssociatedAccessories, 1]",
+              "link": "/helpfiles/types/model_instrument?toggles=open#AssociatedAccessories",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        }
+      ]
+    },
+    {
+      "title": "Health & Safety",
+      "fields": [
+        {
+          "name": "Sterile",
+          "description": "Indicates that this model of instrument is used for protocols where SterileTechnique is indicated to be used.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "CultureHandling",
+          "description": "Indicates the type of cellular samples (Mammalian or Microbial) that this instrument is used to handle.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "CellTypeP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "GloveBoxStorage",
+          "description": "Indiciates that this model of instrument permanently resides in the glove box.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Boolean",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "HazardCategories",
+          "description": "Hazards to be aware of during operation of instruments of this model.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "HazardCategoryP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "SampleHandlingCategories",
+          "description": "Special handling considerations that samples on this instrument require.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "HandlingCategoryP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        }
+      ]
+    },
+    {
+      "title": "Sensor Information",
+      "fields": [
+        {
+          "name": "SensorBarrier",
+          "description": "Type of sensors which cannot monitor the internal contents of instruments of this model from the outside.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "Object[Sensor]",
+              "link": "/helpfiles/types/object_sensor",
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        }
+      ]
+    }
+  ]
+}

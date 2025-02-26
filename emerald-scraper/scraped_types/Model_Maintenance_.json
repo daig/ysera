@@ -1,0 +1,369 @@
+{
+  "typeName": "Model[Maintenance] Documentation",
+  "typeDescription": "Model information for a maintenance protocol used to keep instruments and experiments running smoothly.",
+  "url": "https://www.emeraldcloudlab.com/helpfiles/types/model_maintenance?toggles=open&toggles=open",
+  "scrapedAt": "2025-02-26T03:41:08.978Z",
+  "sections": [
+    {
+      "title": "Organizational Information",
+      "fields": [
+        {
+          "name": "Name",
+          "description": "Name of this Object.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "String",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_String",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Pattern Description:",
+              "value": "A string.",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "ID",
+          "description": "ID of this Object.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "String",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_String",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Pattern Description:",
+              "value": "The ID of this object.",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Object",
+          "description": "Object of this Object.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "Model[Maintenance, _String]",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Pattern Description:",
+              "value": "The object reference of this object.",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Type",
+          "description": "Type of this Object.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "Model[Maintenance]",
+              "link": "/helpfiles/types/model_maintenance",
+              "isMultiValue": false
+            },
+            {
+              "type": "Pattern Description:",
+              "value": "Model[Maintenance]",
+              "link": "/helpfiles/types/model_maintenance",
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Notebook",
+          "description": "Notebook this object belongs to.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Pattern Description:",
+              "value": "Object[LaboratoryNotebook]",
+              "link": "/helpfiles/types/object_laboratorynotebook",
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Object[LaboratoryNotebook][Objects]",
+                  "link": "/helpfiles/types/object_laboratorynotebook?toggles=open#Objects"
+                }
+              ],
+              "value": "Object[LaboratoryNotebook][Objects]",
+              "link": "/helpfiles/types/object_laboratorynotebook?toggles=open#Objects",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Objects",
+          "description": "Objects that represent instances of this model.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Object[Maintenance][Model]",
+                  "link": "/helpfiles/types/object_maintenance?toggles=open#Model"
+                }
+              ],
+              "value": "Object[Maintenance][Model]",
+              "link": "/helpfiles/types/object_maintenance?toggles=open#Model",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Authors",
+          "description": "The person who created this model of maintenance.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Object[User]",
+                  "link": "/helpfiles/types/object_user"
+                }
+              ],
+              "value": "Object[User]",
+              "link": "/helpfiles/types/object_user",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Deprecated",
+          "description": "Indicates if this type of maintenance is historical and no longer used in the lab.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        }
+      ]
+    },
+    {
+      "title": "Qualifications & Maintenance",
+      "fields": [
+        {
+          "name": "Targets",
+          "description": "The target model of object for which this model of Maintenance is designed to maintain.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Model[Instrument][MaintenanceFrequency, 1]",
+                  "link": "/helpfiles/types/model_instrument?toggles=open#MaintenanceFrequency"
+                },
+                {
+                  "text": "Model[Container][MaintenanceFrequency, 1]",
+                  "link": "/helpfiles/types/model_container?toggles=open#MaintenanceFrequency"
+                },
+                {
+                  "text": "Model[Sample][MaintenanceFrequency, 1]",
+                  "link": "/helpfiles/types/model_sample?toggles=open#MaintenanceFrequency"
+                },
+                {
+                  "text": "Model[Sensor][MaintenanceFrequency, 1]",
+                  "link": "/helpfiles/types/model_sensor?toggles=open#MaintenanceFrequency"
+                },
+                {
+                  "text": "Model[Part][MaintenanceFrequency, 1]",
+                  "link": "/helpfiles/types/model_part?toggles=open#MaintenanceFrequency"
+                },
+                {
+                  "text": "Model[Item][MaintenanceFrequency, 1]",
+                  "link": "/helpfiles/types/model_item?toggles=open#MaintenanceFrequency"
+                }
+              ],
+              "value": "Model[Instrument][MaintenanceFrequency, 1] | Model[Container][MaintenanceFrequency, 1] | Model[Sample][MaintenanceFrequency, 1] | Model[Sensor][MaintenanceFrequency, 1] | Model[Part][MaintenanceFrequency, 1] | Model[Item][MaintenanceFrequency, 1]",
+              "link": "/helpfiles/types/model_instrument?toggles=open#MaintenanceFrequency",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "MaintenanceFrequencies",
+          "description": "A list of the targets and their required frequencies.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Computable",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {
+            "['Target', 'Time Interval']": [
+              {
+                "type": "Programmatic Pattern:",
+                "value": "Model[Instrument]",
+                "link": "/helpfiles/types/model_instrument",
+                "isMultiValue": false
+              },
+              {
+                "type": "Expression:",
+                "value": "SafeEvaluate[{Field[Targets], Field[Object]}, Computables`Private`maintenanceFrequenciesComputable[Field[Targets], Field[Object]]]",
+                "link": null,
+                "isMultiValue": false
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3992 @@
+{
+  "typeName": "Model[Sample] Documentation",
+  "typeDescription": "Model information for a reagent used in an experiment.",
+  "url": "https://www.emeraldcloudlab.com/helpfiles/types/model_sample?toggles=open&toggles=open",
+  "scrapedAt": "2025-02-26T03:51:12.521Z",
+  "sections": [
+    {
+      "title": "Organizational Information",
+      "fields": [
+        {
+          "name": "Name",
+          "description": "Name of this Object.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "String",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_String",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Pattern Description:",
+              "value": "A string.",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "ID",
+          "description": "ID of this Object.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "String",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_String",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Pattern Description:",
+              "value": "The ID of this object.",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Object",
+          "description": "Object of this Object.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "Model[Sample, _String]",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Pattern Description:",
+              "value": "The object reference of this object.",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Type",
+          "description": "Type of this Object.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "Model[Sample]",
+              "link": "/helpfiles/types/model_sample",
+              "isMultiValue": false
+            },
+            {
+              "type": "Pattern Description:",
+              "value": "Model[Sample]",
+              "link": "/helpfiles/types/model_sample",
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Notebook",
+          "description": "Notebook this object belongs to.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Pattern Description:",
+              "value": "Object[LaboratoryNotebook]",
+              "link": "/helpfiles/types/object_laboratorynotebook",
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Object[LaboratoryNotebook][Objects]",
+                  "link": "/helpfiles/types/object_laboratorynotebook?toggles=open#Objects"
+                }
+              ],
+              "value": "Object[LaboratoryNotebook][Objects]",
+              "link": "/helpfiles/types/object_laboratorynotebook?toggles=open#Objects",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Objects",
+          "description": "Objects that represent instances of this model.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Object[Sample][Model]",
+                  "link": "/helpfiles/types/object_sample?toggles=open#Model"
+                }
+              ],
+              "value": "Object[Sample][Model]",
+              "link": "/helpfiles/types/object_sample?toggles=open#Model",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Synonyms",
+          "description": "List of possible alternative names this model goes by.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "String",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_String",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Composition",
+          "description": "The molecular composition of this model.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {
+            "Amount": [
+              {
+                "type": "Header:",
+                "value": "Amount",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "VariableUnit",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "CompositionP",
+                "link": null,
+                "isMultiValue": false
+              }
+            ],
+            "Identity Model": [
+              {
+                "type": "Header:",
+                "value": "Identity Model",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Link",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "_Link",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Relation:",
+                "valueList": [
+                  {
+                    "text": "Model[Molecule]",
+                    "link": "/helpfiles/types/model_molecule"
+                  },
+                  {
+                    "text": "Model[Molecule, cDNA]",
+                    "link": "/helpfiles/types/model_molecule_cdna"
+                  },
+                  {
+                    "text": "Model[Molecule, Oligomer]",
+                    "link": "/helpfiles/types/model_molecule_oligomer"
+                  },
+                  {
+                    "text": "Model[Molecule, Transcript]",
+                    "link": "/helpfiles/types/model_molecule_transcript"
+                  },
+                  {
+                    "text": "Model[Molecule, Protein]",
+                    "link": "/helpfiles/types/model_molecule_protein"
+                  },
+                  {
+                    "text": "Model[Molecule, Protein, Antibody]",
+                    "link": "/helpfiles/types/model_molecule_protein_antibody"
+                  },
+                  {
+                    "text": "Model[Molecule, Carbohydrate]",
+                    "link": "/helpfiles/types/model_molecule_carbohydrate"
+                  },
+                  {
+                    "text": "Model[Molecule, Polymer]",
+                    "link": "/helpfiles/types/model_molecule_polymer"
+                  },
+                  {
+                    "text": "Model[Resin]",
+                    "link": "/helpfiles/types/model_resin"
+                  },
+                  {
+                    "text": "Model[Resin, SolidPhaseSupport]",
+                    "link": "/helpfiles/types/model_resin_solidphasesupport"
+                  },
+                  {
+                    "text": "Model[Lysate]",
+                    "link": "/helpfiles/types/model_lysate"
+                  },
+                  {
+                    "text": "Model[ProprietaryFormulation]",
+                    "link": "/helpfiles/types/model_proprietaryformulation"
+                  },
+                  {
+                    "text": "Model[Virus]",
+                    "link": "/helpfiles/types/model_virus"
+                  },
+                  {
+                    "text": "Model[Cell]",
+                    "link": "/helpfiles/types/model_cell"
+                  },
+                  {
+                    "text": "Model[Cell, Mammalian]",
+                    "link": "/helpfiles/types/model_cell_mammalian"
+                  },
+                  {
+                    "text": "Model[Cell, Bacteria]",
+                    "link": "/helpfiles/types/model_cell_bacteria"
+                  },
+                  {
+                    "text": "Model[Cell, Yeast]",
+                    "link": "/helpfiles/types/model_cell_yeast"
+                  },
+                  {
+                    "text": "Model[Tissue]",
+                    "link": "/helpfiles/types/model_tissue"
+                  },
+                  {
+                    "text": "Model[Material]",
+                    "link": "/helpfiles/types/model_material"
+                  },
+                  {
+                    "text": "Model[Species]",
+                    "link": "/helpfiles/types/model_species"
+                  }
+                ],
+                "value": "Model[Molecule] | Model[Molecule, cDNA] | Model[Molecule, Oligomer] | Model[Molecule, Transcript] | Model[Molecule, Protein] | Model[Molecule, Protein, Antibody] | Model[Molecule, Carbohydrate] | Model[Molecule, Polymer] | Model[Resin] | Model[Resin, SolidPhaseSupport] | Model[Lysate] | Model[ProprietaryFormulation] | Model[Virus] | Model[Cell] | Model[Cell, Mammalian] | Model[Cell, Bacteria] | Model[Cell, Yeast] | Model[Tissue] | Model[Material] | Model[Species]",
+                "link": "/helpfiles/types/model_molecule",
+                "isMultiValue": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "OpticalComposition",
+          "description": "Describes the molar composition (in percent) of enantiomers, if this sample contains one of the enantiomers or is a mixture of enantiomers.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {
+            "Amount": [
+              {
+                "type": "Header:",
+                "value": "Amount",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Real",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Unit:",
+                "value": "1 percent",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "RangeP[-100 Percent, 100 Percent]",
+                "link": null,
+                "isMultiValue": false
+              }
+            ],
+            "Identity Model": [
+              {
+                "type": "Header:",
+                "value": "Identity Model",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Link",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "_Link",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Relation:",
+                "valueList": [
+                  {
+                    "text": "Model[Molecule]",
+                    "link": "/helpfiles/types/model_molecule"
+                  },
+                  {
+                    "text": "Model[Molecule, cDNA]",
+                    "link": "/helpfiles/types/model_molecule_cdna"
+                  },
+                  {
+                    "text": "Model[Molecule, Oligomer]",
+                    "link": "/helpfiles/types/model_molecule_oligomer"
+                  },
+                  {
+                    "text": "Model[Molecule, Transcript]",
+                    "link": "/helpfiles/types/model_molecule_transcript"
+                  },
+                  {
+                    "text": "Model[Molecule, Protein]",
+                    "link": "/helpfiles/types/model_molecule_protein"
+                  },
+                  {
+                    "text": "Model[Molecule, Protein, Antibody]",
+                    "link": "/helpfiles/types/model_molecule_protein_antibody"
+                  },
+                  {
+                    "text": "Model[Molecule, Carbohydrate]",
+                    "link": "/helpfiles/types/model_molecule_carbohydrate"
+                  },
+                  {
+                    "text": "Model[Molecule, Polymer]",
+                    "link": "/helpfiles/types/model_molecule_polymer"
+                  },
+                  {
+                    "text": "Model[Resin]",
+                    "link": "/helpfiles/types/model_resin"
+                  },
+                  {
+                    "text": "Model[Resin, SolidPhaseSupport]",
+                    "link": "/helpfiles/types/model_resin_solidphasesupport"
+                  },
+                  {
+                    "text": "Model[Lysate]",
+                    "link": "/helpfiles/types/model_lysate"
+                  },
+                  {
+                    "text": "Model[ProprietaryFormulation]",
+                    "link": "/helpfiles/types/model_proprietaryformulation"
+                  },
+                  {
+                    "text": "Model[Virus]",
+                    "link": "/helpfiles/types/model_virus"
+                  },
+                  {
+                    "text": "Model[Cell]",
+                    "link": "/helpfiles/types/model_cell"
+                  },
+                  {
+                    "text": "Model[Cell, Mammalian]",
+                    "link": "/helpfiles/types/model_cell_mammalian"
+                  },
+                  {
+                    "text": "Model[Cell, Bacteria]",
+                    "link": "/helpfiles/types/model_cell_bacteria"
+                  },
+                  {
+                    "text": "Model[Cell, Yeast]",
+                    "link": "/helpfiles/types/model_cell_yeast"
+                  },
+                  {
+                    "text": "Model[Tissue]",
+                    "link": "/helpfiles/types/model_tissue"
+                  },
+                  {
+                    "text": "Model[Material]",
+                    "link": "/helpfiles/types/model_material"
+                  },
+                  {
+                    "text": "Model[Species]",
+                    "link": "/helpfiles/types/model_species"
+                  }
+                ],
+                "value": "Model[Molecule] | Model[Molecule, cDNA] | Model[Molecule, Oligomer] | Model[Molecule, Transcript] | Model[Molecule, Protein] | Model[Molecule, Protein, Antibody] | Model[Molecule, Carbohydrate] | Model[Molecule, Polymer] | Model[Resin] | Model[Resin, SolidPhaseSupport] | Model[Lysate] | Model[ProprietaryFormulation] | Model[Virus] | Model[Cell] | Model[Cell, Mammalian] | Model[Cell, Bacteria] | Model[Cell, Yeast] | Model[Tissue] | Model[Material] | Model[Species]",
+                "link": "/helpfiles/types/model_molecule",
+                "isMultiValue": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "Solvent",
+          "description": "Describes the composition of the solvent of this model.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {
+            "Amount": [
+              {
+                "type": "Header:",
+                "value": "Amount",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Real",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Unit:",
+                "value": "1 VolumePercent",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "VolumePercentP",
+                "link": null,
+                "isMultiValue": false
+              }
+            ],
+            "Component": [
+              {
+                "type": "Header:",
+                "value": "Component",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Link",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "_Link",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Relation:",
+                "valueList": [
+                  {
+                    "text": "Model[Molecule]",
+                    "link": "/helpfiles/types/model_molecule"
+                  },
+                  {
+                    "text": "Model[Molecule, cDNA]",
+                    "link": "/helpfiles/types/model_molecule_cdna"
+                  },
+                  {
+                    "text": "Model[Molecule, Oligomer]",
+                    "link": "/helpfiles/types/model_molecule_oligomer"
+                  },
+                  {
+                    "text": "Model[Molecule, Transcript]",
+                    "link": "/helpfiles/types/model_molecule_transcript"
+                  },
+                  {
+                    "text": "Model[Molecule, Protein]",
+                    "link": "/helpfiles/types/model_molecule_protein"
+                  },
+                  {
+                    "text": "Model[Molecule, Protein, Antibody]",
+                    "link": "/helpfiles/types/model_molecule_protein_antibody"
+                  },
+                  {
+                    "text": "Model[Molecule, Carbohydrate]",
+                    "link": "/helpfiles/types/model_molecule_carbohydrate"
+                  },
+                  {
+                    "text": "Model[Molecule, Polymer]",
+                    "link": "/helpfiles/types/model_molecule_polymer"
+                  },
+                  {
+                    "text": "Model[Resin]",
+                    "link": "/helpfiles/types/model_resin"
+                  },
+                  {
+                    "text": "Model[Resin, SolidPhaseSupport]",
+                    "link": "/helpfiles/types/model_resin_solidphasesupport"
+                  },
+                  {
+                    "text": "Model[Lysate]",
+                    "link": "/helpfiles/types/model_lysate"
+                  },
+                  {
+                    "text": "Model[ProprietaryFormulation]",
+                    "link": "/helpfiles/types/model_proprietaryformulation"
+                  },
+                  {
+                    "text": "Model[Virus]",
+                    "link": "/helpfiles/types/model_virus"
+                  },
+                  {
+                    "text": "Model[Cell]",
+                    "link": "/helpfiles/types/model_cell"
+                  },
+                  {
+                    "text": "Model[Cell, Mammalian]",
+                    "link": "/helpfiles/types/model_cell_mammalian"
+                  },
+                  {
+                    "text": "Model[Cell, Bacteria]",
+                    "link": "/helpfiles/types/model_cell_bacteria"
+                  },
+                  {
+                    "text": "Model[Cell, Yeast]",
+                    "link": "/helpfiles/types/model_cell_yeast"
+                  },
+                  {
+                    "text": "Model[Tissue]",
+                    "link": "/helpfiles/types/model_tissue"
+                  },
+                  {
+                    "text": "Model[Material]",
+                    "link": "/helpfiles/types/model_material"
+                  },
+                  {
+                    "text": "Model[Species]",
+                    "link": "/helpfiles/types/model_species"
+                  },
+                  {
+                    "text": "Model[Sample]",
+                    "link": "/helpfiles/types/model_sample"
+                  }
+                ],
+                "value": "Model[Molecule] | Model[Molecule, cDNA] | Model[Molecule, Oligomer] | Model[Molecule, Transcript] | Model[Molecule, Protein] | Model[Molecule, Protein, Antibody] | Model[Molecule, Carbohydrate] | Model[Molecule, Polymer] | Model[Resin] | Model[Resin, SolidPhaseSupport] | Model[Lysate] | Model[ProprietaryFormulation] | Model[Virus] | Model[Cell] | Model[Cell, Mammalian] | Model[Cell, Bacteria] | Model[Cell, Yeast] | Model[Tissue] | Model[Material] | Model[Species] | Model[Sample]",
+                "link": "/helpfiles/types/model_molecule",
+                "isMultiValue": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "UsedAsSolvent",
+          "description": "Indicates if this sample is used as a solvent.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Boolean",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "ConcentrationFactor",
+          "description": "The amount by which this the sample must be diluted with its Solvents in order to form standard ratio of Models for 1X buffer.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterP[0]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "AlternativeStock\nConcentrations",
+          "description": "The models that when diluted with their Solvents by ConcentrationFactor form equivalent 1X versions of the same buffer.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Model[Sample][AlternativeStockConcentrations]",
+                  "link": "/helpfiles/types/model_sample?toggles=open#AlternativeStockConcentrations"
+                }
+              ],
+              "value": "Model[Sample][AlternativeStockConcentrations]",
+              "link": "/helpfiles/types/model_sample?toggles=open#AlternativeStockConcentrations",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Grade",
+          "description": "The purity of this model, encapsulating a set of purity standards for specific uses.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GradeP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "AlternativeForms",
+          "description": "Models of other samples with different grades, hydration states, monobasic/dibasic forms, etc.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Model[Sample][AlternativeForms]",
+                  "link": "/helpfiles/types/model_sample?toggles=open#AlternativeForms"
+                }
+              ],
+              "value": "Model[Sample][AlternativeForms]",
+              "link": "/helpfiles/types/model_sample?toggles=open#AlternativeForms",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Deprecated",
+          "description": "Indicates that this model is historical and no longer used in the ECL.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Authors",
+          "description": "The people who created this model.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Object[User]",
+                  "link": "/helpfiles/types/object_user"
+                }
+              ],
+              "value": "Object[User]",
+              "link": "/helpfiles/types/object_user",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Analytes",
+          "description": "The molecular identities of primary interest in this sample.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Model[Molecule]",
+                  "link": "/helpfiles/types/model_molecule"
+                },
+                {
+                  "text": "Model[Molecule, cDNA]",
+                  "link": "/helpfiles/types/model_molecule_cdna"
+                },
+                {
+                  "text": "Model[Molecule, Oligomer]",
+                  "link": "/helpfiles/types/model_molecule_oligomer"
+                },
+                {
+                  "text": "Model[Molecule, Transcript]",
+                  "link": "/helpfiles/types/model_molecule_transcript"
+                },
+                {
+                  "text": "Model[Molecule, Protein]",
+                  "link": "/helpfiles/types/model_molecule_protein"
+                },
+                {
+                  "text": "Model[Molecule, Protein, Antibody]",
+                  "link": "/helpfiles/types/model_molecule_protein_antibody"
+                },
+                {
+                  "text": "Model[Molecule, Carbohydrate]",
+                  "link": "/helpfiles/types/model_molecule_carbohydrate"
+                },
+                {
+                  "text": "Model[Molecule, Polymer]",
+                  "link": "/helpfiles/types/model_molecule_polymer"
+                },
+                {
+                  "text": "Model[Resin]",
+                  "link": "/helpfiles/types/model_resin"
+                },
+                {
+                  "text": "Model[Resin, SolidPhaseSupport]",
+                  "link": "/helpfiles/types/model_resin_solidphasesupport"
+                },
+                {
+                  "text": "Model[Lysate]",
+                  "link": "/helpfiles/types/model_lysate"
+                },
+                {
+                  "text": "Model[ProprietaryFormulation]",
+                  "link": "/helpfiles/types/model_proprietaryformulation"
+                },
+                {
+                  "text": "Model[Virus]",
+                  "link": "/helpfiles/types/model_virus"
+                },
+                {
+                  "text": "Model[Cell]",
+                  "link": "/helpfiles/types/model_cell"
+                },
+                {
+                  "text": "Model[Cell, Mammalian]",
+                  "link": "/helpfiles/types/model_cell_mammalian"
+                },
+                {
+                  "text": "Model[Cell, Bacteria]",
+                  "link": "/helpfiles/types/model_cell_bacteria"
+                },
+                {
+                  "text": "Model[Cell, Yeast]",
+                  "link": "/helpfiles/types/model_cell_yeast"
+                },
+                {
+                  "text": "Model[Tissue]",
+                  "link": "/helpfiles/types/model_tissue"
+                },
+                {
+                  "text": "Model[Material]",
+                  "link": "/helpfiles/types/model_material"
+                },
+                {
+                  "text": "Model[Species]",
+                  "link": "/helpfiles/types/model_species"
+                }
+              ],
+              "value": "Model[Molecule] | Model[Molecule, cDNA] | Model[Molecule, Oligomer] | Model[Molecule, Transcript] | Model[Molecule, Protein] | Model[Molecule, Protein, Antibody] | Model[Molecule, Carbohydrate] | Model[Molecule, Polymer] | Model[Resin] | Model[Resin, SolidPhaseSupport] | Model[Lysate] | Model[ProprietaryFormulation] | Model[Virus] | Model[Cell] | Model[Cell, Mammalian] | Model[Cell, Bacteria] | Model[Cell, Yeast] | Model[Tissue] | Model[Material] | Model[Species]",
+              "link": "/helpfiles/types/model_molecule",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Tags",
+          "description": "User-supplied labels that are used for the management and organization of samples. If an aliquot is taken out of this sample, the new sample that is generated will inherit this sample's tags.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "String",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_String",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "UNII",
+          "description": "Unique Ingredient Identifier of compounds based on the unified identification scheme of FDA.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "String",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_String",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Waste",
+          "description": "Indicates if samples of this model are a collection of other samples that are to be thrown out.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Boolean",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "WasteType",
+          "description": "Indicates the type of waste collected in this sample.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "WasteTypeP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        }
+      ]
+    },
+    {
+      "title": "Physical Properties",
+      "fields": [
+        {
+          "name": "State",
+          "description": "The physical state of the sample when well solvated at room temperature and pressure.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "ModelStateP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "SampleHandling",
+          "description": "The method by which this sample should be manipulated in the lab when transfers out of the sample are requested.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "SampleHandlingP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "CellType",
+          "description": "The primary types of cells that are contained within this sample.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "CellTypeP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "CultureAdhesion",
+          "description": "The default type of cell culture (adherent or suspension) that should be performed when growing these cells. If a cell line can be cultured via an adherent or suspension culture, this is set to the most common cell culture type for the cell line.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "CultureAdhesionP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "ProductDocumentationFiles",
+          "description": "PDFs of any product documentation provided by the supplier of this model.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Object[EmeraldCloudFile]",
+                  "link": "/helpfiles/types/object_emeraldcloudfile"
+                }
+              ],
+              "value": "Object[EmeraldCloudFile]",
+              "link": "/helpfiles/types/object_emeraldcloudfile",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "MeltingPoint",
+          "description": "Melting temperature of the pure substance at atmospheric pressure.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 degree Celsius",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterP[0 Kelvin]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "BoilingPoint",
+          "description": "Temperature at which the pure substance boils under atmospheric pressure.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 degree Celsius",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterP[0 Kelvin]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "VaporPressure",
+          "description": "Vapor pressure of the substance at room temperature.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 kilopascal",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterEqualP[0 Kilo Pascal]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Viscosity",
+          "description": "The viscosity of the substance in pure form at room temperature.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 second pascal",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterEqualP[0 Pascal Second]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "RefractiveIndex",
+          "description": "The refractive index of the substance at 20 degree Celsius.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterP[1]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "pKa",
+          "description": "The logarithmic acid dissociation constants of the substance at room temperature.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "NumericP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Density",
+          "description": "Known density of samples of this model at room temperature.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 gram per milliliter",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "0 Gram\nHold[GreaterP[------ Milli]]\n              Liter",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "ParticleWeight",
+          "description": "The weight of a single particle of the sample, if the sample is a powder.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 gram",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterP[0 Gram]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "SurfaceTension",
+          "description": "The surface tension of the substance in pure form at room temperature.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 millinewton per meter",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "Newton\nHold[GreaterEqualP[0 Milli ------]]\n                           Meter",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "ExtinctionCoefficients",
+          "description": "A measure of how strongly this sample absorbs light at a particular wavelength.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {
+            "[Wavelength]": [
+              {
+                "type": "Header:",
+                "value": "Wavelength",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "VariableUnit",
+                "link": null,
+                "isMultiValue": false
+              }
+            ],
+            "[ExtinctionCoefficient]": [
+              {
+                "type": "Header:",
+                "value": "ExtinctionCoefficient",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "VariableUnit",
+                "link": null,
+                "isMultiValue": false
+              }
+            ]
+          }
+        },
+        {
+          "name": "InitialConcentration",
+          "description": "The initial manufacturer concentration for samples of this model.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 micromolar",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterEqualP[0 Micromolar]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "InitialMassConcentration",
+          "description": "The initial manufacturer mass of the consitutent(s) divided by the volume of the mixture for samples of this model.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 gram per liter",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "0 Gram\nHold[GreaterEqualP[------]]\n                   Liter",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "pH",
+          "description": "The logarithmic concentration of hydrogen ions of the substance at room temperature.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "RangeP[0, 14]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "NominalParticleSize",
+          "description": "The manufacture designated size distribution of particles in the sample model.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Distribution",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 nanometer",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "DistributionP[Nanometer]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Conductivity",
+          "description": "The conductivity of the substance.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "Siemens\nHold[DistributionP[Micro ----------]]\n                         Centimeter",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Tablet",
+          "description": "Indicates if this model is in the form of a small disk or cylinder of compressed solid substance in a measured amount.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Boolean",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "TabletWeight",
+          "description": "The mean mass of a single tablet of this model.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 gram",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterEqualP[0 Gram]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "TabletWeightDistribution",
+          "description": "The distribution of the single tablet weights measured from multiple samplings.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "DistributionP[Gram]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "FixedAmounts",
+          "description": "The pre-measured amounts in which samples of this model are always stored.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "VariableUnit",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterP[0 Milliliter] | GreaterP[0 Gram]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "TransferOutSolventVolumes",
+          "description": "For each member of FixedAmounts, the amount of the dissolution solvent required to solvate the fixed amount component in this model.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 milliliter",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterP[0 Liter]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Resuspension",
+          "description": "Indicates if one of the components in the stock solution is a sample which can only be prepared by adding a solution to its original container to dissolve it. The dissolved sample can be optionally removed from the original container for other preparation steps.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Boolean",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "SingleUse",
+          "description": "Indicates if this model of sample must be used only once and then disposed of after use.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Boolean",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "NucleicAcidFree",
+          "description": "Indicates if this model of sample is tested to be not contaminated with DNA and RNA by the manufacturer.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "PyrogenFree",
+          "description": "Indicates if this model of sample is tested to be not contaminated with endotoxin by the manufacturer.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "ReversePipetting",
+          "description": "Indicates if reverse pipetting technique should be used when transferring this sample via pipette. It is recommended to set ReversePipetting->True if this sample foams or forms bubbles easily.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Boolean",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        }
+      ]
+    },
+    {
+      "title": "Inventory",
+      "fields": [
+        {
+          "name": "Products",
+          "description": "Products ordering information for this model.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Object[Product][ProductModel]",
+                  "link": "/helpfiles/types/object_product?toggles=open#ProductModel"
+                }
+              ],
+              "value": "Object[Product][ProductModel]",
+              "link": "/helpfiles/types/object_product?toggles=open#ProductModel",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "KitProducts",
+          "description": "Products ordering information for this model if this model is part of one or more kits.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Object[Product][KitComponents, ProductModel]",
+                  "link": "/helpfiles/types/object_product?toggles=open#KitComponents"
+                }
+              ],
+              "value": "Object[Product][KitComponents, ProductModel]",
+              "link": "/helpfiles/types/object_product?toggles=open#KitComponents",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "MixedBatchProducts",
+          "description": "Products ordering information for this model if this model is part of one or more mixed batches.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Object[Product][MixedBatchComponents, ProductModel]",
+                  "link": "/helpfiles/types/object_product?toggles=open#MixedBatchComponents"
+                }
+              ],
+              "value": "Object[Product][MixedBatchComponents, ProductModel]",
+              "link": "/helpfiles/types/object_product?toggles=open#MixedBatchComponents",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "ServiceProviders",
+          "description": "Service companies that provide synthesis of this model as a service.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Object[Company, Service][CustomSynthesizes]",
+                  "link": "/helpfiles/types/object_company_service?toggles=open#CustomSynthesizes"
+                }
+              ],
+              "value": "Object[Company, Service][CustomSynthesizes]",
+              "link": "/helpfiles/types/object_company_service?toggles=open#CustomSynthesizes",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        }
+      ]
+    },
+    {
+      "title": "Storage Information",
+      "fields": [
+        {
+          "name": "Expires",
+          "description": "Indicates if samples of this model expire after a given amount of time.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "ShelfLife",
+          "description": "The length of time after DateCreated that samples of this model are recommended for use before they should be discarded.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 day",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterP[0 Day]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "UnsealedShelfLife",
+          "description": "The length of time after DateUnsealed that samples of this model are recommended for use before they should be discarded.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 day",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterP[0 Day]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "PreferredWashBin",
+          "description": "Indicates the recommended bin for dishwashing this container.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Model[Container, WashBin]",
+                  "link": "/helpfiles/types/model_container_washbin"
+                }
+              ],
+              "value": "Model[Container, WashBin]",
+              "link": "/helpfiles/types/model_container_washbin",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "LightSensitive",
+          "description": "Determines if the sample reacts or degrades in the presence of light and should be stored in the dark to avoid exposure.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "DefaultStorageCondition",
+          "description": "The condition in which samples of this model are stored when not in use by an experiment; this condition may be overridden by the specific storage condition of any given sample.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Model[StorageCondition]",
+                  "link": "/helpfiles/types/model_storagecondition"
+                }
+              ],
+              "value": "Model[StorageCondition]",
+              "link": "/helpfiles/types/model_storagecondition",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "TransportChilled",
+          "description": "Indicates if samples of this model should be refrigerated during transport when used in experiments.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "TransportWarmed",
+          "description": "The temperature that samples of this model should be incubated at while transported between instruments during experimentation.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 degree Celsius",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterP[0 Kelvin]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "TransportCondition",
+          "description": "Specifies how the samples of this model should be transported when in use in the lab.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Model[TransportCondition]",
+                  "link": "/helpfiles/types/model_transportcondition"
+                }
+              ],
+              "value": "Model[TransportCondition]",
+              "link": "/helpfiles/types/model_transportcondition",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "TransferTemperature",
+          "description": "The temperature that samples of this model should be at before any transfers using this sample occur.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 degree Celsius",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterP[0 Kelvin]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "ThawTemperature",
+          "description": "The default temperature that samples of this model should be thawed at before using in experimentation.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 degree Celsius",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterP[0 Kelvin]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "ThawTime",
+          "description": "The default time that samples of this model should be thawed before using in experimentation. If the samples are still not thawed after this time, thawing will continue until the samples are fully thawed.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 minute",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterP[0 Second]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "MaxThawTime",
+          "description": "The default maximum time that samples of this model should be thawed before using in experimentation.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 minute",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterP[0 Second]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "ThawMixType",
+          "description": "The default style of motion used to mix samples of this model following thawing.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "MixTypeP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "ThawMixRate",
+          "description": "The default frequency of rotation the mixing instrument uses to mix samples of this model following thawing.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 revolution per minute",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterP[0 RPM]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "ThawNumberOfMixes",
+          "description": "The default number of times samples of this model are mixed by inversion or pipetting up and down following thawing.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Integer",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterP[0]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "PipettingMethod",
+          "description": "The pipetting parameters used to manipulate samples of this model; these parameters may be overridden by direct specification of pipetting parameters in manipulation primitives.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Model[Method, Pipetting][Models]",
+                  "link": "/helpfiles/types/model_method_pipetting?toggles=open#Models"
+                }
+              ],
+              "value": "Model[Method, Pipetting][Models]",
+              "link": "/helpfiles/types/model_method_pipetting?toggles=open#Models",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Parafilm",
+          "description": "Indicates if containers that contain this sample model should have their covers sealed with parafilm by default.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Boolean",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "AluminumFoil",
+          "description": "Indicates if containers that contain this sample model should be wrapped in aluminum foil to protect the container contents from light by default.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Boolean",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        }
+      ]
+    },
+    {
+      "title": "Dimensions & Positions",
+      "fields": [
+        {
+          "name": "Dimensions",
+          "description": "The external dimensions of this model of container.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {
+            "X Direction (Width)": [
+              {
+                "type": "Header:",
+                "value": "X Direction (Width)",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Real",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Unit:",
+                "value": "1 meter",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "GreaterEqualP[0 Meter]",
+                "link": null,
+                "isMultiValue": false
+              }
+            ],
+            "Y Direction (Depth)": [
+              {
+                "type": "Header:",
+                "value": "Y Direction (Depth)",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Real",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Unit:",
+                "value": "1 meter",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "GreaterEqualP[0 Meter]",
+                "link": null,
+                "isMultiValue": false
+              }
+            ],
+            "Z Direction (Height)": [
+              {
+                "type": "Header:",
+                "value": "Z Direction (Height)",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Real",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Unit:",
+                "value": "1 meter",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "GreaterEqualP[0 Meter]",
+                "link": null,
+                "isMultiValue": false
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Mixing",
+      "fields": [
+        {
+          "name": "ThawMixTime",
+          "description": "The default duration for which samples of this model are mixed following thawing.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Real",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Unit:",
+              "value": "1 minute",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "GreaterP[0 Minute]",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        }
+      ]
+    },
+    {
+      "title": "Health & Safety",
+      "fields": [
+        {
+          "name": "Sterile",
+          "description": "Indicates that this model of sample arrives sterile from the manufacturer.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "RNaseFree",
+          "description": "Indicates that this model of sample is free of any RNases.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Boolean",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Radioactive",
+          "description": "Indicates if samples of this model emit substantial ionizing radiation.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Ventilated",
+          "description": "Indicates if samples of this model must be handled in a ventilated enclosures.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "InertHandling",
+          "description": "Indicates if samples of this model must be handled in a glove box.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "BiosafetyHandling",
+          "description": "Indicates if samples of this model must be handled in a biosafety cabinet.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "GloveBoxIncompatible",
+          "description": "Indicates if samples of this model cannot be used inside of the glove box due high volatility and/or detrimental reactivity with the catalyst in the glove box that is used to remove traces of water and oxygen. Sulfur and sulfur compounds (such as H2S, RSH, COS, SO2, SO3), halides, halogen (Freon), alcohols, hydrazine, phosphene, arsine, arsenate, mercury, and saturation with water may deactivate the catalyst.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "GloveBoxBlowerIncompatible",
+          "description": "Indicates that the glove box blower must be turned off to prevent damage to the catalyst in the glove box that is used to remove traces of water and oxygen when manipulating samples of this model inside of the glove box.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Flammable",
+          "description": "Indicates if samples of this model are easily set aflame under standard conditions.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Acid",
+          "description": "Indicates if samples of this model are strong acids (pH <= 2) and require dedicated secondary containment during storage.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Base",
+          "description": "Indicates if samples of this model are strong bases (pH >= 12) and require dedicated secondary containment during storage.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Pyrophoric",
+          "description": "Indicates if samples of this model can ignite spontaneously upon exposure to air.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "WaterReactive",
+          "description": "Indicates if samples of this model react spontaneously upon exposure to water.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Fuming",
+          "description": "Indicates if samples of this model emit fumes spontaneously when exposed to air.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Aqueous",
+          "description": "Indicates if samples of this model are a solution in water.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Anhydrous",
+          "description": "Indicates if samples of this model do not contain water.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Boolean",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "HazardousBan",
+          "description": "Indicates if samples of this model are currently banned from usage in the ECL because the facility isn't yet equiped to handle them.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "ExpirationHazard",
+          "description": "Indicates if samples of this model become hazardous once they are expired and therefore must be automatically disposed of when they pass their expiration date.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Boolean",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "ParticularlyHazardous\nSubstance",
+          "description": "Indicates if special precautions should be taken in handling this substance as indicated by the MSDS classification.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "DrainDisposal",
+          "description": "Indicates if samples of this model may be safely disposed down a standard drain.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "Pungent",
+          "description": "Indicates if samples of this model have a strong odor.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Boolean",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "MSDSRequired",
+          "description": "Indicates if an MSDS is applicable for this model.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "MSDSFile",
+          "description": "PDF of the models MSDS (Materials Saftey Data Sheet).",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Object[EmeraldCloudFile]",
+                  "link": "/helpfiles/types/object_emeraldcloudfile"
+                }
+              ],
+              "value": "Object[EmeraldCloudFile]",
+              "link": "/helpfiles/types/object_emeraldcloudfile",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "NFPA",
+          "description": "The National Fire Protection Association (NFPA) 704 hazard diamond classification for the substance.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "NFPAP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "DOTHazardClass",
+          "description": "The Department of Transportation hazard classification of the substance.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "String",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "DOTHazardClassP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "BiosafetyLevel",
+          "description": "The Biosafety classification of the substance.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BiosafetyLevelP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        }
+      ]
+    },
+    {
+      "title": "Compatibility",
+      "fields": [
+        {
+          "name": "IncompatibleMaterials",
+          "description": "A list of materials that would be damaged if wetted by this model.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "MaterialP | None",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "WettedMaterials",
+          "description": "The materials of which this sample is made that may come in direct contact with fluids.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "MaterialP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "LiquidHandlerIncompatible",
+          "description": "Indicates if this sample cannot be reliably aspirated or dispensed on an automated liquid handling robot.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "UltrasonicIncompatible",
+          "description": "Indicates if volume measurements of samples of this model cannot be performed via the ultrasonic distance method due to vapors interfering with the reading.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Expression",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "PreferredMALDIMatrix",
+          "description": "The model of the matrix that is best suited for MALDI mass spectrometry of this sample.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Model[Sample, Matrix]",
+                  "link": "/helpfiles/types/model_sample_matrix"
+                }
+              ],
+              "value": "Model[Sample, Matrix]",
+              "link": "/helpfiles/types/model_sample_matrix",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        }
+      ]
+    },
+    {
+      "title": "Qualifications & Maintenance",
+      "fields": [
+        {
+          "name": "QualificationFrequency",
+          "description": "The model Qualifications and their required frequencies.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {
+            "Model Qualification": [
+              {
+                "type": "Header:",
+                "value": "Model Qualification",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Link",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "_Link",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Relation:",
+                "valueList": [
+                  {
+                    "text": "Model[Qualification][Targets]",
+                    "link": "/helpfiles/types/model_qualification?toggles=open#Targets"
+                  }
+                ],
+                "value": "Model[Qualification][Targets]",
+                "link": "/helpfiles/types/model_qualification?toggles=open#Targets",
+                "isMultiValue": true
+              }
+            ],
+            "Time Interval": [
+              {
+                "type": "Header:",
+                "value": "Time Interval",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Real",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Unit:",
+                "value": "1 day",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "GreaterP[0 Day]",
+                "link": null,
+                "isMultiValue": false
+              }
+            ]
+          }
+        },
+        {
+          "name": "MaintenanceFrequency",
+          "description": "The model maintenances and their required frequencies.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {
+            "Model Maintenance": [
+              {
+                "type": "Header:",
+                "value": "Model Maintenance",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Link",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "_Link",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Relation:",
+                "valueList": [
+                  {
+                    "text": "Model[Maintenance][Targets]",
+                    "link": "/helpfiles/types/model_maintenance?toggles=open#Targets"
+                  }
+                ],
+                "value": "Model[Maintenance][Targets]",
+                "link": "/helpfiles/types/model_maintenance?toggles=open#Targets",
+                "isMultiValue": true
+              }
+            ],
+            "Time Interval": [
+              {
+                "type": "Header:",
+                "value": "Time Interval",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Class:",
+                "value": "Real",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Unit:",
+                "value": "1 day",
+                "link": null,
+                "isMultiValue": false
+              },
+              {
+                "type": "Programmatic Pattern:",
+                "value": "GreaterP[0 Day]",
+                "link": null,
+                "isMultiValue": false
+              }
+            ]
+          }
+        },
+        {
+          "name": "ContinuousOperation",
+          "description": "Indicates if the sample is required to operate continuously in the lab, regardless of if it is InUse by a specific protocol.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Boolean",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        }
+      ]
+    },
+    {
+      "title": "General",
+      "fields": [
+        {
+          "name": "Protocols",
+          "description": "All protocols that used this sample at any point during their execution in the lab.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Multiple",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Object[Protocol][SamplesIn]",
+                  "link": "/helpfiles/types/object_protocol?toggles=open#SamplesIn"
+                }
+              ],
+              "value": "Object[Protocol][SamplesIn]",
+              "link": "/helpfiles/types/object_protocol?toggles=open#SamplesIn",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "ThawCellsMethod",
+          "description": "The default method by which to thaw cryovials of this sample model.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Object[Method, ThawCells]",
+                  "link": "/helpfiles/types/object_method_thawcells"
+                }
+              ],
+              "value": "Object[Method, ThawCells]",
+              "link": "/helpfiles/types/object_method_thawcells",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "WashCellsMethod",
+          "description": "The default method by which to wash cultures of this sample model.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Object[Method, WashCells]",
+                  "link": "/helpfiles/types/object_method_washcells"
+                }
+              ],
+              "value": "Object[Method, WashCells]",
+              "link": "/helpfiles/types/object_method_washcells",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        },
+        {
+          "name": "ChangeMediaMethod",
+          "description": "The default method by which to change the media for cultures of this sample model.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "_Link",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Relation:",
+              "valueList": [
+                {
+                  "text": "Object[Method, ChangeMedia]",
+                  "link": "/helpfiles/types/object_method_changemedia"
+                }
+              ],
+              "value": "Object[Method, ChangeMedia]",
+              "link": "/helpfiles/types/object_method_changemedia",
+              "isMultiValue": true
+            }
+          ],
+          "nestedMetadata": {}
+        }
+      ]
+    },
+    {
+      "title": "Sample Preparation",
+      "fields": [
+        {
+          "name": "Preparable",
+          "description": "Indicates if this samples/items of this model maybe prepared as needed during the course of an experiment.",
+          "metadata": [
+            {
+              "type": "Format:",
+              "value": "Single",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Class:",
+              "value": "Boolean",
+              "link": null,
+              "isMultiValue": false
+            },
+            {
+              "type": "Programmatic Pattern:",
+              "value": "BooleanP",
+              "link": null,
+              "isMultiValue": false
+            }
+          ],
+          "nestedMetadata": {}
+        }
+      ]
+    }
+  ]
+}
