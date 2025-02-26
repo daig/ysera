@@ -1,15 +1,24 @@
 {
   "name": "emerald-scraper",
   "version": "1.0.0",
+  "description": "Scraper for Emerald Cloud Lab documentation",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "process": "ts-node process_objects.ts",
+    "process-batch": "ts-node process_objects_batch.ts",
+    "merge-results": "ts-node merge_batch_results.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
-    "puppeteer": "^24.3.0"
+    "puppeteer": "^21.0.0",
+    "glob": "^10.3.10"
+  },
+  "devDependencies": {
+    "@types/glob": "^8.1.0",
+    "@types/node": "^20.10.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.3.2"
   }
 }

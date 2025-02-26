@@ -277,9 +277,9 @@ async function scrapeTableData(url: string): Promise<Result> {
   console.error('Navigating to the documentation page...');
   await page.goto(url);
   
-  // Wait for initial page load and table content
+  // Wait for initial page load
   console.error('Waiting for page content to load...');
-  await page.waitForSelector('table', { timeout: 10000 });
+  await page.waitForSelector('body', { timeout: 10000 });
   
   const result: Result = {
     objectName: '',
@@ -288,6 +288,21 @@ async function scrapeTableData(url: string): Promise<Result> {
   };
 
   try {
+    // Check if the page contains "not been published" message
+    const notPublishedText = await page.evaluate(() => {
+      const body = document.body.textContent || '';
+      return body.includes('has not been published') ? body.trim() : null;
+    });
+
+    if (notPublishedText) {
+      console.error('Object has not been published');
+      result.objectName = notPublishedText;
+      return result;
+    }
+
+    // Wait for table to load
+    await page.waitForSelector('table', { timeout: 10000 });
+    
     // First process the main table to get the structure
     const mainTable = await page.$('table[class^="PublishedObject__PublishedObjectTableElement"]');
     if (!mainTable) { throw new Error('Main table not found'); }
@@ -311,7 +326,9 @@ async function scrapeTableData(url: string): Promise<Result> {
   return result;
 }
 
-// Run the scraper with the URL
-// const url = 'https://www.emeraldcloudlab.com/documentation/publish/object/?id=id:kEJ9mqRV4Ye3';
-const url = 'https://www.emeraldcloudlab.com/documentation/publish/object/?id=id:dORYzZJDvjqw';
-scrapeTableData(url); 
+// Export the scrapeTableData function
+export { scrapeTableData, Result };
+
+// Comment out the direct function call
+// const url = 'https://www.emeraldcloudlab.com/documentation/publish/object/?id=id:dORYzZJDvjqw';
+// scrapeTableData(url); 

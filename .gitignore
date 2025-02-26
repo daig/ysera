@@ -61,3 +61,5 @@ build/
 *.swo
 .DS_Store
 Thumbs.db 
+
+emerald-scraper/objects/
